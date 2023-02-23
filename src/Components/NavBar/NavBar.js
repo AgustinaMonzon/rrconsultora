@@ -33,8 +33,8 @@ export default function NavBar(){
        borderTop="1px solid gray" shadow={"lg"}
        borderBottom="1px solid gray"
        padding="0px"
-       
-       /* backgroundColor={'rgb(159, 138, 172)'} */
+       /* backgroundColor={'rgb(124, 199, 249)'}  */
+       /* backgroundColor={"rgb(157, 210, 245);"} */
       >
         {/* Desktop */}
         {/* <Image src={imgLogo} width={["60px","100px"]} marginLeft={"2%"}></Image> */}
@@ -44,24 +44,24 @@ export default function NavBar(){
           marginLeft={["24%","24%","24%","41%","53%","60%"]}
           
         >
-           <Link href="/" passHref>
+           <Link to="/" passHref>
               <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
               Home
              </Button>
            </Link>
 
-          <Link href="/about" passHref>
+          <Link to="/about" passHref>
           <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
              Quienes somos
              </Button>
           </Link>
 
-          <Link href="/services" passHref>
+          <Link to="/services" passHref>
               <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
             Servicios
               </Button>
           </Link>
-          <Link href="/contact" passHref>
+          <Link to="/contact" passHref>
               <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
             Contacto
               </Button>
@@ -137,38 +137,24 @@ export default function NavBar(){
           align="center"
           backgroundColor={"black"}
         >
-        {/*   <a
-              href="https://www.linkedin.com/in/melina-veyrat-durbex-b66b3b227/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IconButton m="5px" colorScheme="linkedin" icon={<FaLinkedinIn />} />
-            </a>
-            <a
-              href="https://github.com/meliveyrat1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IconButton m="5px" colorScheme="pink" icon={<FaInstagram />} />
-            </a> */}
-          <Link href="/" passHref>
+          <Link to="/" passHref>
               <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%" color={"white"}>
               Home
              </Button>
            </Link>
 
-          <Link href="/about" passHref>
+          <Link to="/about" passHref>
           <Button as="a" variant="ghost" aria-label="About" my={5} w="100%" color={"white"}>
              Quienes somos
              </Button>
           </Link>
 
-          <Link href="/services" passHref>
+          <Link to="/services" passHref>
               <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%" color={"white"}>
             Servicios
               </Button>
           </Link>
-          <Link href="/contact" passHref>
+          <Link to="/contact" passHref>
               <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%" color={"white"}>
             Contacto
               </Button>
