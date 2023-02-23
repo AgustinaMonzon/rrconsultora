@@ -4,7 +4,6 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import Services from "./Components/Services/Services";
 import Contact from "./Components/Contact/Contact";
 
-
 function App() {
   return (
     <Router>
@@ -19,4 +18,3 @@ function App() {
 }
 
 export default App;
-
