@@ -1,8 +1,15 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
+import NavBar from "../NavBar/NavBar";
 
 function Home() {
   return (
-    <Box p={4}>
+    <Box p={0}>
+      <NavBar/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <Text fontSize="lg">El único sitio dónde</Text>
       <Heading as="h1" size="xl" mb={4}>
         EL ÉXITO

@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import { Link } from "react-router-dom";
 import {
   useColorMode,
   Switch,
@@ -7,6 +8,7 @@ import {
   IconButton,
   Image,
   Text,
+  Box,
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import {
@@ -30,7 +32,7 @@ export default function NavBar(){
        w={"100%"}
        borderTop="1px solid gray" shadow={"lg"}
        borderBottom="1px solid gray"
-       padding="15px"
+       padding="0px"
        
        /* backgroundColor={'rgb(159, 138, 172)'} */
       >
@@ -39,22 +41,44 @@ export default function NavBar(){
         <Text>Logo</Text>
         <Flex
           display={['none', 'none', 'flex','flex']}
-          marginLeft={["34%","34%", "34%","65%", "75%"]}
+          marginLeft={["24%","24%","24%","41%","53%","60%"]}
           
         >
+           <Link href="/" passHref>
+              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+              Home
+             </Button>
+           </Link>
+
+          <Link href="/about" passHref>
+          <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
+             Quienes somos
+             </Button>
+          </Link>
+
+          <Link href="/services" passHref>
+              <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
+            Servicios
+              </Button>
+          </Link>
+          <Link href="/contact" passHref>
+              <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
+            Contacto
+              </Button>
+          </Link>
             <a
               href="https://www.linkedin.com/in/melina-veyrat-durbex-b66b3b227/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconButton m="5px" colorScheme="black" icon={<FaLinkedinIn />} />
+              <IconButton m="5px" marginTop={"40%"} colorScheme="gray" icon={<FaLinkedinIn />} />
             </a>
             <a
               href="https://github.com/meliveyrat1"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconButton m="5px" colorScheme="black" icon={<FaInstagram />} />
+              <IconButton m="5px" marginTop={"40%"}  colorScheme="gray" icon={<FaInstagram />} />
             </a>
            
         </Flex>
@@ -113,7 +137,7 @@ export default function NavBar(){
           align="center"
           backgroundColor={"black"}
         >
-          <a
+        {/*   <a
               href="https://www.linkedin.com/in/melina-veyrat-durbex-b66b3b227/"
               target="_blank"
               rel="noopener noreferrer"
@@ -126,8 +150,43 @@ export default function NavBar(){
               rel="noopener noreferrer"
             >
               <IconButton m="5px" colorScheme="pink" icon={<FaInstagram />} />
+            </a> */}
+          <Link href="/" passHref>
+              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%" color={"white"}>
+              Home
+             </Button>
+           </Link>
+
+          <Link href="/about" passHref>
+          <Button as="a" variant="ghost" aria-label="About" my={5} w="100%" color={"white"}>
+             Quienes somos
+             </Button>
+          </Link>
+
+          <Link href="/services" passHref>
+              <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%" color={"white"}>
+            Servicios
+              </Button>
+          </Link>
+          <Link href="/contact" passHref>
+              <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%" color={"white"}>
+            Contacto
+              </Button>
+          </Link>
+            <a
+              href="https://www.linkedin.com/in/melina-veyrat-durbex-b66b3b227/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconButton m="5px" marginTop={"40%"} colorScheme="gray" icon={<FaLinkedinIn />} />
             </a>
-         
+            <a
+              href="https://github.com/meliveyrat1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconButton m="5px" marginTop={"40%"}  colorScheme="gray" icon={<FaInstagram />} />
+            </a>
         </Flex>
       </Flex>
     </Flex>
