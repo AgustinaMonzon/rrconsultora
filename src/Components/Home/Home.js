@@ -1,20 +1,22 @@
-
-import "./Home.css";
+import { Box } from "@chakra-ui/react";
+import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
+import Carrousel from "./Carrousel";
+import AboutUs from "../AboutUs/AboutUs";
 
 function Home() {
   return (
-    <div className="Container">
-      <div className="Content">
-        <div className="Frase">
-          <p>El único sitio dónde</p>
-          <h1>EL ÉXITO</h1>
-          <p>aparece antes que el trabajo, es en el diccionario.</p>
-          <p>Donald M. Kendall.</p>
-        </div>
-      </div>
+    <Box p={0} height="250vh">
+      <NavBar />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Carrousel />
+      <AboutUs />
       <Footer />
-    </div>
+    </Box>
   );
 }
 
