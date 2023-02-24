@@ -12,11 +12,13 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
   const [display, changeDisplay] = useState("none");
+
   return (
     <Flex>
       <Flex
@@ -44,11 +46,17 @@ export default function NavBar() {
             </Button>
           </Link>
 
-          <Link to="/about" passHref>
+          <ScrollLink
+            to="about-us"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            passHref
+          >
             <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
               Quienes somos
             </Button>
-          </Link>
+          </ScrollLink>
 
           <Link to="/services" passHref>
             <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
@@ -147,6 +155,7 @@ export default function NavBar() {
               my={5}
               w="100%"
               color={"white"}
+              href="#about-us"
             >
               Quienes somos
             </Button>
