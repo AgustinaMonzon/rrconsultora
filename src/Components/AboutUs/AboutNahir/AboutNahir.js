@@ -18,7 +18,7 @@ function AboutNahir () {
       <br/>
       <br/>
       <Box>
-        <Text  fontWeight="bold" fontSize={["20px","22px", "35"]} mb="4" display={"flex"}  ml={["29%","38%","7%"]} mt={["-18%","-10%","0%"]}>
+        <Text fontWeight="bold" fontSize={["20px","22px", "35"]} mb="4" display={"flex"}  ml={["29%","38%","7%"]} mt={["-18%","-10%","0%"]}>
           Acerca de mí
         </Text>
         </Box>
