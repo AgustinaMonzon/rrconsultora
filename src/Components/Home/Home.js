@@ -8,7 +8,7 @@ function Home() {
   return (
     <Box display="flex" flexDirection="column" minHeight="100vh">
       <NavBar />
-      <Box flexGrow={1} className="content">
+      <Box flexGrow={1}>
         <Carrousel />
         <AboutUs />
       </Box>
