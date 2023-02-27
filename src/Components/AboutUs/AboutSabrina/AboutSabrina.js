@@ -17,9 +17,9 @@ function AboutSabrina () {
       <br/>
       <br/>
       <br/>
-      <Box>
-        <Text fontWeight="bold" fontSize={["20px","22px", "27px"]} mb="4" display={"flex"}  ml={["29%","38%","8%"]} mt={["-18%","-10%","0%"]}>
-          Acerca de mí
+      <Box >
+        <Text fontWeight="bold" fontSize={["20px","22px", "35"]} mb="4" display={"flex"}  ml={["29%","38%","7%"]} mt={["-18%","-10%","0%"]}>
+          Acerca de mi
         </Text>
         </Box>
     <Box

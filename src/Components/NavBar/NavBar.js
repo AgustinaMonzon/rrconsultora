@@ -42,7 +42,7 @@ export default function NavBar() {
           marginLeft={["24%", "24%", "24%", "41%", "53%", "60%"]}
         >
           <Link to="/" passHref>
-            <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+            <Button as="a" variant="ghost" color={"black"} _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }} aria-label="Home" my={5} w="100%">
               Home
             </Button>
           </Link>
@@ -54,18 +54,18 @@ export default function NavBar() {
             offset={-70}
             passHref
           >
-            <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
+            <Button as="a" variant="ghost" color={"black"} _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }}  aria-label="About" my={5} w="100%">
               Quienes somos
             </Button>
           </ScrollLink>
 
           <Link to="/services" passHref>
-            <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
+            <Button as="a" variant="ghost" color={"black"} _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }} aria-label="Contact" my={5} w="100%">
               Servicios
             </Button>
           </Link>
           <Link to="/contact" passHref>
-            <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
+            <Button as="a" variant="ghost" color={"black"} _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }} aria-label="Contact" my={5} w="100%">
               Contacto
             </Button>
           </Link>
@@ -77,7 +77,9 @@ export default function NavBar() {
             <IconButton
               m="5px"
               marginTop={"40%"}
-              colorScheme="gray"
+              colorScheme="white"
+              color={"black"}
+              _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }}
               icon={<FaLinkedinIn />}
             />
           </a>
@@ -89,7 +91,9 @@ export default function NavBar() {
             <IconButton
               m="5px"
               marginTop={"40%"}
-              colorScheme="gray"
+              colorScheme="white"
+              color={"black"}
+              _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }}
               icon={<FaInstagram />}
             />
           </a>
@@ -104,8 +108,9 @@ export default function NavBar() {
           icon={<HamburgerIcon />}
           onClick={() => changeDisplay("flex")}
           display={["flex", "flex", "none", "none"]}
+          color="black"
         />
-        <Switch color="green" isChecked={isDark} onChange={toggleColorMode} />
+        <Switch color="black" isChecked={isDark} onChange={toggleColorMode} />
       </Flex>
 
       {/* Mobile Content */}
@@ -139,6 +144,7 @@ export default function NavBar() {
             <Button
               as="a"
               variant="ghost"
+              _hover={{ bg: 'rgb(89, 109, 190)' }}
               aria-label="Home"
               my={5}
               w="100%"
@@ -152,6 +158,7 @@ export default function NavBar() {
             <Button
               as="a"
               variant="ghost"
+              _hover={{ bg: 'rgb(89, 109, 190)' }}
               aria-label="About"
               my={5}
               w="100%"
@@ -166,6 +173,7 @@ export default function NavBar() {
             <Button
               as="a"
               variant="ghost"
+              _hover={{ bg: 'rgb(89, 109, 190)' }}
               aria-label="Contact"
               my={5}
               w="100%"
@@ -178,6 +186,7 @@ export default function NavBar() {
             <Button
               as="a"
               variant="ghost"
+              _hover={{ bg: 'rgb(89, 109, 190)' }}
               aria-label="Contact"
               my={5}
               w="100%"
@@ -195,6 +204,7 @@ export default function NavBar() {
               m="5px"
               marginTop={"40%"}
               colorScheme="gray"
+              _hover={{ bg: 'rgb(89, 109, 190)' }}
               icon={<FaLinkedinIn />}
             />
           </a>
@@ -207,6 +217,7 @@ export default function NavBar() {
               m="5px"
               marginTop={"40%"}
               colorScheme="gray"
+              _hover={{ bg: 'pink' }}
               icon={<FaInstagram />}
             />
           </a>
