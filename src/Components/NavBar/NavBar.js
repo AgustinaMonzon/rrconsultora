@@ -31,7 +31,7 @@ export default function NavBar() {
         /* boxShadow={"0 2px 2px rgb(157, 210, 245)"} */
         borderBottom="1px solid gray"
         padding="0px"
-        /* backgroundColor={'rgb(124, 199, 249)'}  */
+        backgroundColor={"#f2f2f2"}
         /*    backgroundColor={"rgba(183, 221, 246, 0.712)"}  */
       >
         {/* Desktop */}
