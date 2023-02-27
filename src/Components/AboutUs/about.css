@@ -1,6 +1,10 @@
-.about-link {
-    color: green;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
+.about-link, .contact-link {
+  color: rgb(89, 109, 190);
+  font-weight: bold;
+  text-decoration: underline;
+  margin-right: 20px; /* Agrega un margen derecho para separar los links */
+}
+.aboutChicas{
+  display:flex ;
+ justify-content: center;
+}

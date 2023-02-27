@@ -6,15 +6,12 @@ import AboutUs from "../AboutUs/AboutUs";
 
 function Home() {
   return (
-    <Box p={0} height="250vh">
+    <Box display="flex" flexDirection="column" minHeight="100vh">
       <NavBar />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Carrousel />
-      <AboutUs />
+      <Box flexGrow={1}>
+        <Carrousel />
+        <AboutUs />
+      </Box>
       <Footer />
     </Box>
   );

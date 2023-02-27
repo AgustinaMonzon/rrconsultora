@@ -1,5 +1,7 @@
 import React from "react";
 import "./Services.css";
+import NavBar from "../NavBar/NavBar";
+import Footer from "../Footer/Footer";
 
 function Services() {
   const servicios = [
@@ -26,19 +28,24 @@ function Services() {
   ];
 
   return (
-    <div className="services">
-      <h2>Servicios</h2>
-      <ul>
-        {servicios.map((servicio, index) => (
-          <li key={index}>
-            <div className="service-card">
-              <img src={servicio.image} alt={servicio.title} />
-              <h3 className="service-title">{servicio.title}</h3>
-              <p className="service-description">{servicio.description}</p>
-            </div>
-          </li>
-        ))}
-      </ul>
+    <div>
+      {" "}
+      <NavBar />
+      <div className="services">
+        <h2>Servicios</h2>
+        <ul>
+          {servicios.map((servicio, index) => (
+            <li key={index}>
+              <div className="service-card">
+                <img src={servicio.image} alt={servicio.title} />
+                <h3 className="service-title">{servicio.title}</h3>
+                <p className="service-description">{servicio.description}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <Footer />
     </div>
   );
 }
