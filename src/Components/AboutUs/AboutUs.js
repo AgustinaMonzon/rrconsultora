@@ -10,9 +10,14 @@ function AboutUs() {
       maxW={{ base: "100%", md: "80%" }}
       mx="auto"
     >
+      <Box display={"flex"}>
       <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }}>
-        ¿Quiénes somos?
+        ¿Quiénes
       </Heading>
+      <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }} marginLeft={"1%"} color={"rgb(89, 109, 190)"}>
+        somos?
+      </Heading>
+      </Box>
       <Text fontSize={{ base: "md", md: "lg" }}>
         Why do we use it? It is a long established fact that a reader will be
         distracted by the readable content of a page when looking at its layout.
