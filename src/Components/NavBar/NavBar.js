@@ -30,8 +30,8 @@ export default function NavBar() {
         shadow={"lg"}
         borderBottom="1px solid gray"
         padding="0px"
-        /* backgroundColor={'rgb(124, 199, 249)'}  */
-        /* backgroundColor={"rgb(157, 210, 245);"} */
+        // /* backgroundColor={'rgb(124, 199, 249)'}
+        backgroundColor={"rgb(157, 210, 245);"}
       >
         {/* Desktop */}
         {/* <Image src={imgLogo} width={["60px","100px"]} marginLeft={"2%"}></Image> */}
