@@ -27,12 +27,12 @@ export default function NavBar() {
         zIndex={1}
         w={"100%"}
         borderTop="1px solid gray"
-         shadow={"lg"} 
+        shadow={"lg"}
         /* boxShadow={"0 2px 2px rgb(157, 210, 245)"} */
         borderBottom="1px solid gray"
         padding="0px"
         /* backgroundColor={'rgb(124, 199, 249)'}  */
-      /*    backgroundColor={"rgba(183, 221, 246, 0.712)"}  */
+        /*    backgroundColor={"rgba(183, 221, 246, 0.712)"}  */
       >
         {/* Desktop */}
         {/* <Image src={imgLogo} width={["60px","100px"]} marginLeft={"2%"}></Image> */}
