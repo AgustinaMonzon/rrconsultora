@@ -18,7 +18,7 @@
 // }
 
 // export default Home;
-import { Box } from "@chakra-ui/react";
+import { Box, Text, Heading} from "@chakra-ui/react";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import Carrousel from "./Carrousel";
@@ -27,16 +27,21 @@ import Slider from "react-slick";
 
 function Home() {
   return (
-    <Box display="flex" flexDirection="column" minHeight="100vh">
+    <Box display="flex" flexDirection="column" minHeight="100vh" >
       <NavBar />
       <Box flexGrow={1}>
         <Carrousel />
         <AboutUs />
         <Box bg="blue.100" py={6}>
           <Box maxW="2xl" mx="auto" px={6}>
-            <Box mb={6} fontSize="1xl" fontWeight="bold" textAlign="center">
-              Empresas que confían en nosotros
-            </Box>
+            <Box mb={6} fontSize="1xl" fontWeight="bold" textAlign="center" display={"flex"} marginLeft={"-41%"}>
+            <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }}>
+        Empresas que confiaron en
+      </Heading>
+      <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }} marginLeft={"1%"} color={"rgb(89, 109, 190)"}>
+        nosotros
+      </Heading>
+            </Box >
             <CarrouselEmpresas />
           </Box>
         </Box>
