@@ -1,42 +1,85 @@
-// import { Box } from "@chakra-ui/react";
-// import NavBar from "../NavBar/NavBar";
-// import Footer from "../Footer/Footer";
-// import Carrousel from "./Carrousel";
-// import AboutUs from "../AboutUs/AboutUs";
-
-// function Home() {
-//   return (
-//     <Box display="flex" flexDirection="column" minHeight="100vh">
-//       <NavBar />
-//       <Box flexGrow={1}>
-//         <Carrousel />
-//         <AboutUs />
-//       </Box>
-//       <Footer />
-//     </Box>
-//   );
-// }
-
-// export default Home;
-import { Box } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import Carrousel from "./Carrousel";
 import AboutUs from "../AboutUs/AboutUs";
 import Slider from "react-slick";
-
+import "./Home.css";
 function Home() {
   return (
     <Box display="flex" flexDirection="column" minHeight="100vh">
       <NavBar />
       <Box flexGrow={1}>
-        <Carrousel />
-        <AboutUs />
+        <Box mt={20}>
+          <Carrousel />
+        </Box>
+        <Box mb={10}>
+          <AboutUs />
+        </Box>
+
+        <Box display={"flex"} marginLeft={"13%"}>
+          <Heading as="h2" size="xl" mb={{ base: 8, md: 12 }}>
+            Valores en
+          </Heading>
+          <Heading
+            as="h2"
+            size="xl"
+            mb={{ base: 8, md: 12 }}
+            marginLeft={"1%"}
+            color={"rgb(89, 109, 190)"}
+          >
+            RR Consultoría
+          </Heading>
+
+          <Box
+            as="ul"
+            listStyleType="none"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            marginTop="50px"
+            marginBottom="10px"
+          >
+            {" "}
+            <Box className="LI">
+              <ul
+                className="LI"
+                style={{
+                  listStyleType: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginTop: "50px",
+                  marginBottom: "10px",
+                }}
+              >
+                <li className="list-item" style={{ marginRight: "20px" }}>
+                  Profesionalismo
+                </li>
+                <li className="list-item" style={{ marginRight: "20px" }}>
+                  Empatía
+                </li>
+                <li className="list-item" style={{ marginRight: "20px" }}>
+                  Honestidad
+                </li>
+                <li className="list-item">Flexibilidad</li>
+              </ul>
+            </Box>
+          </Box>
+        </Box>
+
         <Box bg="blue.100" py={6}>
           <Box maxW="2xl" mx="auto" px={6}>
-            <Box mb={6} fontSize="1xl" fontWeight="bold" textAlign="center">
-              Empresas que confían en nosotros
-            </Box>
+            <Heading
+              as="h2"
+              mb={6}
+              fontSize="2xl"
+              fontWeight="bold"
+              textAlign="center"
+              color={"rgb(89, 109, 190)"}
+            >
+              Clientes
+            </Heading>
             <CarrouselEmpresas />
           </Box>
         </Box>
