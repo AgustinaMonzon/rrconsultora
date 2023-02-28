@@ -70,16 +70,9 @@ function Home() {
 
         <Box bg="blue.100" py={6}>
           <Box maxW="2xl" mx="auto" px={6}>
-            <Heading
-              as="h2"
-              mb={6}
-              fontSize="2xl"
-              fontWeight="bold"
-              textAlign="center"
-              color={"rgb(89, 109, 190)"}
-            >
-              Clientes
-            </Heading>
+            <Box mb={6} fontSize="1xl" fontWeight="bold" textAlign="center">
+              Empresas que confían en nosotros
+            </Box>
             <CarrouselEmpresas />
           </Box>
         </Box>

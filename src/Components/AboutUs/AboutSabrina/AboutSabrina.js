@@ -16,9 +16,8 @@ function AboutSabrina () {
       <br/>
       <br/>
       <br/>
-      <br/>
       <Box >
-        <Text fontWeight="bold" fontSize={["20px","22px", "35"]} mb="4" display={"flex"}  ml={["29%","38%","7%"]} mt={["-18%","-10%","0%"]}>
+        <Text fontWeight="bold" fontSize={["20px","22px", "35"]} mb="4" display={"flex"}  ml={["0%","0%","0%","-65%","-72%","-76%"]} mt={["-11%","-4%","0%"]} justifyContent={"center"}>
           Acerca de mi
         </Text>
         </Box>
@@ -32,7 +31,7 @@ function AboutSabrina () {
       p={["50px","40px","20"]}
     >
       {isLargerThan640 && (
-        <Box mr="6" width={["100%","100%","23%"]}>
+        <Box mr="6" width={["100%","100%","45%","24%"]}>
           <Image
             borderRadius="full"
             boxSize="200"
@@ -42,11 +41,17 @@ function AboutSabrina () {
         </Box>
       )}
       
-      <Box w={["130%","100%","40%"]}  display={"grid"} justifyContent={"center"} mr={["-5%","-5%","31%"]}>
-        <Text fontSize={["12px","14px","15px","17px"]}>
-        Licenciada en Administración de RRHH recibida en la Universidad del Salvador.
-        Cuenta con más de 10 años de experiencia desarrollando distintas funciones de RRHH en empresas pymes y multinacionales.
-        Celina trabaja de manera colaborativa junto a un equipo interdisciplinario de profesionales para poder cumplir con las necesidades y expectativas de nuestros clientes.
+      <Box w={["120%","100%","55%","45%"]}  display={"grid"} justifyContent={"center"} mr={["6%","5%","15%","32%"]}>
+      <Text fontSize={["12px","14px","18px","17px"]} fontWeight="bold" color={"rgb(89, 109, 190)"}>
+        Sabrina Reiris.
+
+        </Text>
+        <Text fontSize={["12px","14px","15px","16px"]}>
+        Soy una profesional de Recursos Humanos con más de 6 años de experiencia en reclutamiento, selección y consultoría para empresas de primer nivel nacional e internacional. 
+        Me caracterizo por ser una persona responsable, proactiva y empática, que siempre busca nuevos desafíos. Busco constantemente superarme y alcanzar mis objetivos, 
+        me considero una persona muy resolutiva. 
+        Estas competencias me llevan a trabajar por y para el cumplimiento de objetivos disfrutando de asumir nuevos desafíos y del aprendizaje continuo.
+
         </Text>
       </Box>
       {!isLargerThan640 && (
@@ -63,11 +68,11 @@ function AboutSabrina () {
     </Box>
     <Flex
          justifyContent={"center"}
-          marginLeft={["0%", "0%", "-23%", "-31%", "-32%", "-35%"]}
+          marginLeft={["0%", "0%", "-3%","-32%", "-35%", "-35%", "-35%"]}
         >
           
           <a
-            href="https://www.linkedin.com/in/melina-veyrat-durbex-b66b3b227/"
+            href="https://www.linkedin.com/in/sabrinareiris"
             target="_blank"
             rel="noopener noreferrer"
           >

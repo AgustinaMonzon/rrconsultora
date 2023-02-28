@@ -5,7 +5,7 @@ import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import profileImg from "./profile.jpeg"
 
 
-function AboutNahir () {
+function AboutSabrina () {
   const [isLargerThan640] = useMediaQuery("(min-width: 640px)");
 
   return (
@@ -16,10 +16,9 @@ function AboutNahir () {
       <br/>
       <br/>
       <br/>
-      <br/>
-      <Box>
-        <Text fontWeight="bold" fontSize={["20px","22px", "35"]} mb="4" display={"flex"}  ml={["29%","38%","7%"]} mt={["-18%","-10%","0%"]}>
-          Acerca de mí
+      <Box >
+        <Text fontWeight="bold" fontSize={["20px","22px", "35"]} mb="4" display={"flex"}  ml={["0%","0%","0%","-65%","-72%","-76%"]} mt={["-11%","-4%","0%"]} justifyContent={"center"}>
+          Acerca de mi
         </Text>
         </Box>
     <Box
@@ -32,7 +31,7 @@ function AboutNahir () {
       p={["50px","40px","20"]}
     >
       {isLargerThan640 && (
-        <Box mr="6" width={["100%","100%","23%"]}>
+        <Box mr="6" width={["100%","100%","45%","24%"]}>
           <Image
             borderRadius="full"
             boxSize="200"
@@ -42,11 +41,15 @@ function AboutNahir () {
         </Box>
       )}
       
-      <Box w={["130%","100%","40%"]}  display={"grid"} justifyContent={"center"} mr={["-5%","-5%","31%"]}>
-        <Text fontSize={["12px","14px","15px","17px"]}>
-        Licenciada en Administración de RRHH recibida en la Universidad del Salvador.
-        Cuenta con más de 10 años de experiencia desarrollando distintas funciones de RRHH en empresas pymes y multinacionales.
-        Celina trabaja de manera colaborativa junto a un equipo interdisciplinario de profesionales para poder cumplir con las necesidades y expectativas de nuestros clientes.
+      <Box w={["120%","100%","55%","45%"]}  display={"grid"} justifyContent={"center"} mr={["6%","5%","15%","32%"]}>
+      <Text fontSize={["12px","14px","18px","17px"]} fontWeight="bold" color={"rgb(89, 109, 190)"}>
+      Nahir Reverdito.
+
+        </Text>
+        <Text fontSize={["12px","14px","15px","16px"]}>
+        Profesional apasionada por la selección y atracción de talentos. Creo que lo más importante es generar una cálida experiencia tanto para el candidato como para la empresa.
+        Licenciada en Recursos Humanos (Universidad de Ciencias Empresariales y Sociales,) Diplomada en Selección de personal orientado en nuevas tecnologías.
+        Me caracterizo por ser una persona organizada, dedicada, responsable, que siempre busca cumplir con los objetivos de la mejor manera y adaptándose a los cambiantes desafíos del entorno. Disfruto trabajando en equipo, con objetivos claros y animada a los desafíos.
         </Text>
       </Box>
       {!isLargerThan640 && (
@@ -63,11 +66,11 @@ function AboutNahir () {
     </Box>
     <Flex
          justifyContent={"center"}
-          marginLeft={["0%", "0%", "-23%", "-31%", "-32%", "-35%"]}
+          marginLeft={["0%", "0%", "-3%","-32%", "-35%", "-35%", "-35%"]}
         >
           
           <a
-            href="https://www.linkedin.com/in/melina-veyrat-durbex-b66b3b227/"
+            href="https://www.linkedin.com/in/nahir-reverdito"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -96,7 +99,7 @@ function AboutNahir () {
   );
 }
 
-export default AboutNahir ;
+export default AboutSabrina ;
 
         
 
