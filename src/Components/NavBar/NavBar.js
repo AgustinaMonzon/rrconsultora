@@ -13,6 +13,7 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
+import logo from "./logoRRC.png"
 
 export default function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -37,11 +38,11 @@ export default function NavBar() {
         /*    backgroundColor={"rgba(183, 221, 246, 0.712)"}  */
       >
         {/* Desktop */}
-        {/* <Image src={imgLogo} width={["60px","100px"]} marginLeft={"2%"}></Image> */}
-        <Text>Logo</Text>
+        <Image src={logo} width={["50px","70px"]}  marginLeft={["3%","0.5%"]}></Image>
+        
         <Flex
           display={["none", "none", "flex", "flex"]}
-          marginLeft={["24%", "24%", "24%", "41%", "53%", "60%"]}
+          marginLeft={["17%", "17%", "17%","35%","50%", "58%"]}
         >
           <Link to="/" passHref>
             <Button as="a" variant="ghost" color={"black"} _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }} aria-label="Home" my={5} w="100%">
@@ -72,7 +73,7 @@ export default function NavBar() {
             </Button>
           </Link>
           <a
-            href="https://www.linkedin.com/in/melina-veyrat-durbex-b66b3b227/"
+            href="https://www.linkedin.com/company/r-r-consultoria/?viewAsMember=true"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -86,7 +87,7 @@ export default function NavBar() {
             />
           </a>
           <a
-            href="https://github.com/meliveyrat1"
+            href="https://www.instagram.com/rrconsultoria_/"
             target="_blank"
             rel="noopener noreferrer"
           >
