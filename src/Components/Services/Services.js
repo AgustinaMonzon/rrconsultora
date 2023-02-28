@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 function Services() {
   const servicios = [
     {
-      title: "Desarrollo Web",
+      title: "Atracción de talentos",
       description:
         "Creamos sitios web a medida para tus necesidades, utilizando las últimas tecnologías y prácticas recomendadas.",
       image:
@@ -32,7 +32,7 @@ function Services() {
       {" "}
       <NavBar />
       <div className="services">
-        <h2>Servicios</h2>
+        <h2>Servicios que ofrecemos</h2>
         <ul>
           {servicios.map((servicio, index) => (
             <li key={index}>
