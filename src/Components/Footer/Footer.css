@@ -31,6 +31,7 @@ footer.footer {
 .footer-logo img {
   height: 50px;
   width: auto;
+  margin-top: -5px;
 }
 
 .footer-social a {
@@ -40,5 +41,5 @@ footer.footer {
 }
 
 .footer-social a:hover {
-  color: c;
+  color: rgb(89, 109, 190);
 }
