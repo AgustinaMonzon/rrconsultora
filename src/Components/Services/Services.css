@@ -51,10 +51,17 @@
 }
 
 .service-description {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  max-width: 90%;
 }
 
-.service-card:hover .service-description {
-  opacity: 1;
+@media screen and (min-width: 768px) {
+  .service-description {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .service-card:hover .service-description {
+    opacity: 1;
+  }
 }
