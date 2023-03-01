@@ -7,23 +7,38 @@ function Services() {
   const servicios = [
     {
       title: "Atracción de talentos",
-      description:
-        "Creamos sitios web a medida para tus necesidades, utilizando las últimas tecnologías y prácticas recomendadas.",
+      // description:
+      //   "Creamos sitios web a medida para tus necesidades, utilizando las últimas tecnologías y prácticas recomendadas.",
       image:
-        "https://www.creative4all.com/blog/blog/file/uploads/2019/04/how-creative-4-all-can-help-your-business-with-marketing.jpg",
+        "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677670331/atraccion_de_talento_y1tigj.jpg",
     },
     {
-      title: "Diseño Gráfico",
-      description:
-        "Diseñamos logotipos, banners, flyers y todo tipo de material gráfico para promocionar tu negocio.",
-      image: "https://biospectrumasia.com/uploads/articles/1-12026.jpg",
+      title: "Asesoría Laboral",
+      // description:
+      //   "Diseñamos logotipos, banners, flyers y todo tipo de material gráfico para promocionar tu negocio.",
+      image:
+        "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677671014/asesoria_wayry0.jpg",
     },
     {
-      title: "Marketing Digital",
-      description:
-        "Creamos estrategias de marketing digital para aumentar la visibilidad de tu marca y generar más ventas.",
+      title: "Confección de CVS.",
+      // description:
+      //   "Creamos estrategias de marketing digital para aumentar la visibilidad de tu marca y generar más ventas.",
       image:
-        "https://www.peninsulagrouplimited.com/media/1268/payroll-advice-small-2.jpg",
+        "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677670754/CVSERVICIO_vi7pdu.jpg",
+    },
+    {
+      title: "Servicio de armado de LinkedIn",
+      // description:
+      //   "Creamos estrategias de marketing digital para aumentar la visibilidad de tu marca y generar más ventas.",
+      image:
+        "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677670754/servicioDELINKEDIN_hv2va0.png",
+    },
+    {
+      title: "Servicio de psicotécnicos.",
+      // description:
+      //   "Creamos estrategias de marketing digital para aumentar la visibilidad de tu marca y generar más ventas.",
+      image:
+        "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677670754/serviciopsico_monhjd.jpg",
     },
   ];
 

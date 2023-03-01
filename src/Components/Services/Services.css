@@ -1,6 +1,6 @@
 .services {
     text-align: center;
-    padding: 8rem;
+    padding: 7rem;
   }
   
   .services h2 {
@@ -21,8 +21,8 @@
   }
   
   .service-card img {
-    width: 80%;
-    max-width: 100%;
+    width: 70%;
+    max-width: 90%;
     margin-bottom: 1.5rem;
     border-radius: 5px;
     display: block;
