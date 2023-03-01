@@ -13,7 +13,7 @@ function Carrousel() {
       alt: "Imagen 2",
     },
     {
-      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/bo_0px_solid_rgb:24244c,c_scale,h_475,w_615/v1677587047/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS._2_qlzfip.png",
+      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677685588/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS._3_udmxdi.png",
       alt: "Imagen 3",
     },
     {
