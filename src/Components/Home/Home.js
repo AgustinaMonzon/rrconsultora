@@ -1,4 +1,4 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import Carrousel from "./Carrousel";
@@ -7,7 +7,7 @@ import Slider from "react-slick";
 import "./Home.css";
 function Home() {
   return (
-    <Box display="flex" flexDirection="column" minHeight="100vh">
+    <Box  display="flex" flexDirection="column" minHeight="100vh">
       <NavBar />
       <Box flexGrow={1}>
         <Box mt={20}>
@@ -16,8 +16,37 @@ function Home() {
         <Box mb={10}>
           <AboutUs />
         </Box>
-
-        <Box display={"flex"} marginLeft={"13%"}>
+        <Box display={"flex"}/*  backgroundColor={"rgba(233, 225, 225, 0.636)"} */
+         justifyContent={"center"} p="25px" marginLeft={"-47%"}>
+        <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }} /* marginRight={"47%"} */>
+          Valores en
+        </Heading>
+        <Heading
+          as="h1"
+          size="xl"
+          mb={{ base: 4, md: 8 }}
+          marginLeft={"1%"}
+          color={"rgb(89, 109, 190)"}
+        >
+          RR Consultoría
+        </Heading>
+      </Box>
+      <Box /* backgroundColor={"rgba(233, 225, 225, 0.636)"} */ paddingBottom="20px"
+       justifyContent={"center"} display={"grid"} marginBottom={"5%"}   marginLeft={"-67%"}>
+      <Text fontSize={{ base: "md", md: "lg" }}>
+     Profesionalismo
+      </Text>
+      <Text fontSize={{ base: "md", md: "lg" }}>
+      Empatía
+      </Text>
+      <Text fontSize={{ base: "md", md: "lg" }}>
+      Honestidad
+      </Text>
+      <Text fontSize={{ base: "md", md: "lg" }}>
+      Flexibilidad
+      </Text>
+      </Box>
+       {/*  <Box display={"flex"} marginLeft={"-31%"} justifyContent={"center"}>
           <Heading as="h2" size="xl" mb={{ base: 8, md: 12 }}>
             Valores en
           </Heading>
@@ -40,9 +69,9 @@ function Home() {
             marginTop="50px"
             marginBottom="10px"
           >
-            {" "}
+            
             <Box className="LI">
-              <ul
+               <ul
                 className="LI"
                 style={{
                   listStyleType: "none",
@@ -51,6 +80,7 @@ function Home() {
                   alignItems: "center",
                   marginTop: "50px",
                   marginBottom: "10px",
+                  marginLeft: "-298px"
                 }}
               >
                 <li className="list-item" style={{ marginRight: "20px" }}>
@@ -63,10 +93,11 @@ function Home() {
                   Honestidad
                 </li>
                 <li className="list-item">Flexibilidad</li>
-              </ul>
+              </ul> 
+           
             </Box>
           </Box>
-        </Box>
+        </Box> */}
         <Box bg="blue.100" py={6}>
           <Box maxW="2xl" mx="auto" px={6}>
             <Box
