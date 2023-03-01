@@ -1,4 +1,4 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import Carrousel from "./Carrousel";
@@ -8,52 +8,51 @@ import "./Home.css";
 
 function Home() {
   return (
-    <Box minHeight="100vh">
+
+    <Box  display="flex" flexDirection="column" minHeight="100vh">
+
+   
       <NavBar />
       <Box flexGrow={1}>
-        <Box mt={{ base: 20, md: 40 }}>
+        <Box mt={{ base: 20, md: 20 }}>
           <Carrousel />
         </Box>
-        <Box mb={10}>
+        <Box mb={10} mt={20}>
           <AboutUs />
         </Box>
 
-        <Box display={{ base: "block", md: "flex" }} alignItems="center">
-          <Heading as="h2" size="xl" mb={{ base: 8, md: 12 }} mr={{ md: "5%" }}>
-            Valores en
-          </Heading>
-          <Heading
-            as="h2"
-            size="xl"
-            mb={{ base: 8, md: 12 }}
-            color={"rgb(89, 109, 190)"}
-          >
-            RR Consultoría
-          </Heading>
-
-          <Box
-            as="ul"
-            listStyleType="none"
-            display="flex"
-            flexWrap="wrap"
-            justifyContent={{ base: "flex-start", md: "center" }}
-            alignItems="center"
-            marginTop={{ base: "20px", md: "50px" }}
-            marginBottom="10px"
-            marginLeft={{ md: "13%" }}
-          >
-            <li className="list-item" style={{ marginRight: "20px" }}>
-              Profesionalismo
-            </li>
-            <li className="list-item" style={{ marginRight: "20px" }}>
-              Empatía
-            </li>
-            <li className="list-item" style={{ marginRight: "20px" }}>
-              Honestidad
-            </li>
-            <li className="list-item">Flexibilidad</li>
-          </Box>
-        </Box>
+        <Box display={"flex"}/*  backgroundColor={"rgba(233, 225, 225, 0.636)"} */
+         justifyContent={"center"} p="25px" marginLeft={"-46%"}>
+        <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }} /* marginRight={"47%"} */>
+          Valores en
+        </Heading>
+        <Heading
+          as="h1"
+          size="xl"
+          mb={{ base: 4, md: 8 }}
+          marginLeft={"1%"}
+          color={"rgb(89, 109, 190)"}
+        >
+          RR Consultoría
+        </Heading>
+      </Box>
+      <Box /* backgroundColor={"rgba(233, 225, 225, 0.636)"} */ paddingBottom="20px"
+       justifyContent={"center"} display={"grid"} marginBottom={"5%"}   marginLeft={"-67%"}>
+      <Text fontSize={{ base: "md", md: "lg" }}>
+     Profesionalismo
+      </Text>
+      <Text fontSize={{ base: "md", md: "lg" }}>
+      Empatía
+      </Text>
+      <Text fontSize={{ base: "md", md: "lg" }}>
+      Honestidad
+      </Text>
+      <Text fontSize={{ base: "md", md: "lg" }}>
+      Flexibilidad
+      </Text>
+      </Box>
+   
+          
         <Box bg="blue.100" py={6}>
           <Box maxW="2xl" mx="auto" px={6}>
             <Box
@@ -64,6 +63,8 @@ function Home() {
               display="flex"
               alignItems="center"
               flexDirection={{ base: "column", md: "row" }}
+              justifyContent={"center"}
+              marginLeft={"-84%"}
             >
               <Heading
                 as="h1"
