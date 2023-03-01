@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Services.css";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
@@ -6,40 +6,68 @@ import Footer from "../Footer/Footer";
 function Services() {
   const servicios = [
     {
-      title: "Desarrollo Web",
+      title: "Atracción de talentos",
       description:
-        "Creamos sitios web a medida para tus necesidades, utilizando las últimas tecnologías y prácticas recomendadas.",
+        "Nuestra consultora se encarga de ayudar a las empresas a encontrar el talento adecuado para sus necesidades. Nos enfocamos en identificar y atraer a los candidatos más calificados y adecuados para las posiciones que nuestros clientes necesitan cubrir.",
       image:
-        "https://www.creative4all.com/blog/blog/file/uploads/2019/04/how-creative-4-all-can-help-your-business-with-marketing.jpg",
+        "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677670331/atraccion_de_talento_y1tigj.jpg",
     },
     {
-      title: "Diseño Gráfico",
+      title: "Asesoría Laboral",
       description:
-        "Diseñamos logotipos, banners, flyers y todo tipo de material gráfico para promocionar tu negocio.",
-      image: "https://biospectrumasia.com/uploads/articles/1-12026.jpg",
+        "Brindamos asesoría a nuestros clientes en temas laborales, como la elaboración de contratos, la gestión de relaciones laborales, el cumplimiento de leyes y regulaciones laborales, entre otros temas.",
+      image:
+        "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677671014/asesoria_wayry0.jpg",
     },
     {
-      title: "Marketing Digital",
+      title: "Confección de CVS.",
       description:
-        "Creamos estrategias de marketing digital para aumentar la visibilidad de tu marca y generar más ventas.",
+        "Sabemos que el CV es la primera impresión que los empleadores tienen de los candidatos, por lo que nos aseguramos de que el CV de nuestros clientes sea profesional, claro y convincente. Nos encargamos de elaborar CVs personalizados para cada candidato, destacando sus habilidades, experiencia y logros.",
       image:
-        "https://www.peninsulagrouplimited.com/media/1268/payroll-advice-small-2.jpg",
+        "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677670754/CVSERVICIO_vi7pdu.jpg",
+    },
+    {
+      title: "Servicio de armado de LinkedIn",
+      description:
+        " LinkedIn es una herramienta poderosa para la búsqueda de empleo y la construcción de redes profesionales. Nuestra consultora ofrece un servicio de armado de perfiles de LinkedIn para nuestros clientes, asegurándonos de que su perfil sea atractivo y destacando su experiencia y habilidades.",
+      image:
+        "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677670754/servicioDELINKEDIN_hv2va0.png",
+    },
+    {
+      title: "Servicio de psicotécnicos.",
+      description:
+        "Los psicotécnicos son una herramienta útil para evaluar a los candidatos en términos de habilidades y aptitudes. Ofrecemos un servicio de psicotécnicos para nuestros clientes, ayudándoles a tomar decisiones informadas en la selección de candidatos y la gestión de su personal.",
+      image:
+        "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677670754/serviciopsico_monhjd.jpg",
     },
   ];
 
+  const [hoveredIndex, setHoveredIndex] = useState(-1);
+
   return (
     <div>
-      {" "}
       <NavBar />
       <div className="services">
-        <h2>Servicios</h2>
+        <h2>Servicios que ofrecemos</h2>
         <ul>
           {servicios.map((servicio, index) => (
             <li key={index}>
-              <div className="service-card">
+              <div
+                className={`service-card ${
+                  hoveredIndex === index ? "hovered" : ""
+                }`}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(-1)}
+              >
                 <img src={servicio.image} alt={servicio.title} />
                 <h3 className="service-title">{servicio.title}</h3>
-                <p className="service-description">{servicio.description}</p>
+                <p
+                  className={`service-description ${
+                    hoveredIndex === index ? "visible" : ""
+                  }`}
+                >
+                  {servicio.description}
+                </p>
               </div>
             </li>
           ))}

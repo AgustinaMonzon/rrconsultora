@@ -1,41 +1,87 @@
-// import { Box } from "@chakra-ui/react";
-// import NavBar from "../NavBar/NavBar";
-// import Footer from "../Footer/Footer";
-// import Carrousel from "./Carrousel";
-// import AboutUs from "../AboutUs/AboutUs";
-
-// function Home() {
-//   return (
-//     <Box display="flex" flexDirection="column" minHeight="100vh">
-//       <NavBar />
-//       <Box flexGrow={1}>
-//         <Carrousel />
-//         <AboutUs />
-//       </Box>
-//       <Footer />
-//     </Box>
-//   );
-// }
-
-// export default Home;
-import { Box } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import Carrousel from "./Carrousel";
 import AboutUs from "../AboutUs/AboutUs";
 import Slider from "react-slick";
+import "./Home.css";
 
 function Home() {
   return (
-    <Box display="flex" flexDirection="column" minHeight="100vh">
+
+    <Box  display="flex" flexDirection="column" minHeight="100vh">
+
+   
       <NavBar />
       <Box flexGrow={1}>
-        <Carrousel />
-        <AboutUs />
+        <Box mt={{ base: 20, md: 20 }}>
+          <Carrousel />
+        </Box>
+        <Box mb={10} mt={20}>
+          <AboutUs />
+        </Box>
+
+        <Box display={"flex"}/*  backgroundColor={"rgba(233, 225, 225, 0.636)"} */
+         justifyContent={"center"} p="25px" marginLeft={"-46%"}>
+        <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }} /* marginRight={"47%"} */>
+          Valores en
+        </Heading>
+        <Heading
+          as="h1"
+          size="xl"
+          mb={{ base: 4, md: 8 }}
+          marginLeft={"1%"}
+          color={"rgb(89, 109, 190)"}
+        >
+          RR Consultoría
+        </Heading>
+      </Box>
+      <Box /* backgroundColor={"rgba(233, 225, 225, 0.636)"} */ paddingBottom="20px"
+       justifyContent={"center"} display={"grid"} marginBottom={"5%"}   marginLeft={"-67%"}>
+      <Text fontSize={{ base: "md", md: "lg" }}>
+     Profesionalismo
+      </Text>
+      <Text fontSize={{ base: "md", md: "lg" }}>
+      Empatía
+      </Text>
+      <Text fontSize={{ base: "md", md: "lg" }}>
+      Honestidad
+      </Text>
+      <Text fontSize={{ base: "md", md: "lg" }}>
+      Flexibilidad
+      </Text>
+      </Box>
+   
+          
         <Box bg="blue.100" py={6}>
           <Box maxW="2xl" mx="auto" px={6}>
-            <Box mb={6} fontSize="1xl" fontWeight="bold" textAlign="center">
-              Empresas que confían en nosotros
+            <Box
+              mb={6}
+              fontSize="1xl"
+              fontWeight="bold"
+              textAlign="center"
+              display="flex"
+              alignItems="center"
+              flexDirection={{ base: "column", md: "row" }}
+              justifyContent={"center"}
+              marginLeft={"-84%"}
+            >
+              <Heading
+                as="h1"
+                size="xl"
+                mb={{ base: 4, md: 8 }}
+                mr={{ md: "2%" }}
+              >
+                Empresas que confiaron en
+              </Heading>
+              <Heading
+                as="h1"
+                size="xl"
+                mb={{ base: 4, md: 8 }}
+                color={"rgb(89, 109, 190)"}
+              >
+                nosotros
+              </Heading>
             </Box>
             <CarrouselEmpresas />
           </Box>
@@ -60,28 +106,24 @@ function CarrouselEmpresas() {
 
   const images = [
     {
-      url: "https://png.pngtree.com/png-vector/20210818/ourlarge/pngtree-thank-you-simple-phrase-png-image_3806169.jpg",
-      alt: "Imagen 1",
+      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/c_scale,h_220/v1677668545/WhatsApp_Image_2023-03-01_at_08.00.56_ijm4ue.jpg",
+      alt: "Delicious",
+      link: "http://deliciouscafe.com.ar/?fbclid=IwAR2SqSw7mTLgYzYoXMAzA_0qyw2FcU-bK4pgn9Qx1wXrxCePuPxoB_AYXYQs",
     },
     {
-      url: "https://i.pinimg.com/564x/4d/f6/48/4df648d6b51c9fcdebdaa3461888b266.jpg",
-      alt: "Imagen 2",
+      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677668544/WhatsApp_Image_2023-03-01_at_07.57.57_hwyrxw.jpg",
+      alt: "ENVAPLAST",
+      link: "https://www.envaplast.com.ar/,",
     },
     {
-      url: "https://png.pngtree.com/png-vector/20210818/ourlarge/pngtree-thank-you-simple-phrase-png-image_3806169.jpg",
-      alt: "Imagen 3",
+      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677668544/WhatsApp_Image_2023-03-01_at_07.59.12_rlfqgc.jpg",
+      alt: "BOX CUSTODIA DIGITAL",
+      link: "https://pki.boxcustodia.com/",
     },
     {
-      url: "https://i.pinimg.com/564x/f0/73/08/f073080da871b186f7995784a4468a14.jpg",
-      alt: "Imagen 4",
-    },
-    {
-      url: "https://i.pinimg.com/564x/47/28/5e/47285e52f2b9649e53f98045fdad4453.jpg",
-      alt: "Imagen 5",
-    },
-    {
-      url: "https://i.pinimg.com/564x/63/aa/09/63aa09e5114c420c432ec2022ebdd284.jpg",
-      alt: "Imagen 6",
+      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677668544/WhatsApp_Image_2023-03-01_at_07.57.18_bbkjdy.jpg",
+      alt: "FAMIQ",
+      link: "https://www.famiq.com.ar/",
     },
   ];
   const settings = {
@@ -98,7 +140,9 @@ function CarrouselEmpresas() {
       <Slider className="Carrousel" {...settings}>
         {images.map((image, index) => (
           <div className="contenedor-foto" key={index}>
-            <img src={image.url} alt={image.alt} style={imgStyle} />
+            <a href={image.link} target="_blank" rel="noreferrer">
+              <img src={image.url} alt={image.alt} style={imgStyle} />
+            </a>
             <div className="caption">{image.caption}</div>
           </div>
         ))}

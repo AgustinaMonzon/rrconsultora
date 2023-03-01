@@ -13,7 +13,7 @@ function Carrousel() {
       alt: "Imagen 2",
     },
     {
-      url: "https://tyzergroup.com/wp-content/uploads/2020/07/group-people-working-out-business-plan-office-3-scaled.jpg",
+      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677685588/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS._3_udmxdi.png",
       alt: "Imagen 3",
     },
     {

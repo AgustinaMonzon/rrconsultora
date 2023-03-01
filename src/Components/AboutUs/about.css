@@ -2,9 +2,17 @@
   color: rgb(89, 109, 190);
   font-weight: bold;
   text-decoration: underline;
-  margin-right: 20px; /* Agrega un margen derecho para separar los links */
+  margin-right: 20px; 
 }
-.aboutChicas{
-  display:flex ;
- justify-content: center;
+.aboutChicas {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+
+}
+#about-us p {
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 0px;
 }

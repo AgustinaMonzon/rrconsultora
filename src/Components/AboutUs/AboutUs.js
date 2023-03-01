@@ -11,24 +11,32 @@ function AboutUs() {
       mx="auto"
     >
       <Box display={"flex"}>
-      <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }}>
-        ¿Quiénes
-      </Heading>
-      <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }} marginLeft={"1%"} color={"rgb(89, 109, 190)"}>
-        somos?
-      </Heading>
+        <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }}>
+          ¿Quiénes
+        </Heading>
+        <Heading
+          as="h1"
+          size="xl"
+          mb={{ base: 4, md: 8 }}
+          marginLeft={"1%"}
+          color={"rgb(89, 109, 190)"}
+        >
+          somos?
+        </Heading>
       </Box>
       <Text fontSize={{ base: "md", md: "lg" }}>
-        Why do we use it? It is a long established fact that a reader will be
-        distracted by the readable content of a page when looking at its layout.
-        The point of using Lorem Ipsum is that it has a more-or-less normal
-        distribution of letters, as opposed to using 'Content here, content
-        here', making it look like readable English. Many desktop publishing
-        packages and web page editors now use Lorem Ipsum as their default model
-        text, and a search for 'lorem ipsum' will uncover many web sites still
-        in their infancy. Various versions have evolved over the years,
-        sometimes by accident, sometimes on purpose .injected humour and the
-        {/* like).//Lorem copiado de internet */}
+        Somos RR Consultoría, conformado por dos profesionales innovadoras y
+        apasionadas por lo que hacemos. Nos dedicamos a liderar procesos de
+        atracción de talentos y brindar soluciones que aporten un plus extra al
+        momento de gestionar el recurso más importante que tienen las empresas,
+        ¡Las personas!. Nuestra Consultora se basa en la comunicación como
+        elemento esencial de toda relación humana, potenciando las capacidades
+        internas de los equipos de trabajo. A partir de esto diseñamos y
+        desarrollamos un proceso de reclutamiento y selección utilizando
+        diferentes herramientas que nos permiten evaluar las habilidades y
+        competencias de los candidatos para encontrar al mejor perfil para su
+        organización. Nuestro objetivo es buscar el talento que tu empresa
+        necesita a través de un proceso ágil e integral.
       </Text>
       <div className="aboutChicas">
         <a href="/aboutSabrina" class="about-link">

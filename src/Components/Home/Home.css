@@ -1,0 +1,23 @@
+.LI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .list-item {
+    color: black;
+    font-size: 20px;
+    margin: 10px 15px !important; 
+  }
+  
+  
+  .list-item:hover {
+    background-color: #76c6eb;
+    cursor: pointer;
+  }
+  
