@@ -13,7 +13,7 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
-import logo from "./logoRRC.png"
+import logo from "./logoRRC.png";
 
 export default function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -28,24 +28,36 @@ export default function NavBar() {
         zIndex={1}
         w={"100%"}
         borderTop="1px solid gray"
-
         // shadow={"lg"}
         boxShadow={"0 2px 2px rgb(157, 210, 245)"}
-
         borderBottom="1px solid gray"
         padding="0px"
         backgroundColor={"#f2f2f2"}
         /*    backgroundColor={"rgba(183, 221, 246, 0.712)"}  */
       >
         {/* Desktop */}
-        <Image src={logo} width={["50px","70px"]}  marginLeft={["3%","0.5%"]}></Image>
-        
+        <Link to="/">
+          <Image
+            src={logo}
+            width={["50px", "70px"]}
+            marginLeft={["3%", "0.5%"]}
+          ></Image>
+        </Link>
+
         <Flex
           display={["none", "none", "flex", "flex"]}
-          marginLeft={["17%", "17%", "17%","35%","50%", "58%"]}
+          marginLeft={["17%", "17%", "17%", "35%", "50%", "58%"]}
         >
           <Link to="/" passHref>
-            <Button as="a" variant="ghost" color={"black"} _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }} aria-label="Home" my={5} w="100%">
+            <Button
+              as="a"
+              variant="ghost"
+              color={"black"}
+              _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+              aria-label="Home"
+              my={5}
+              w="100%"
+            >
               Home
             </Button>
           </Link>
@@ -57,18 +69,42 @@ export default function NavBar() {
             offset={-70}
             passHref
           >
-            <Button as="a" variant="ghost" color={"black"} _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }}  aria-label="About" my={5} w="100%">
+            <Button
+              as="a"
+              variant="ghost"
+              color={"black"}
+              _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+              aria-label="About"
+              my={5}
+              w="100%"
+            >
               Quienes somos
             </Button>
           </ScrollLink>
 
           <Link to="/services" passHref>
-            <Button as="a" variant="ghost" color={"black"} _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }} aria-label="Contact" my={5} w="100%">
+            <Button
+              as="a"
+              variant="ghost"
+              color={"black"}
+              _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+              aria-label="Contact"
+              my={5}
+              w="100%"
+            >
               Servicios
             </Button>
           </Link>
           <Link to="/contact" passHref>
-            <Button as="a" variant="ghost" color={"black"} _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }} aria-label="Contact" my={5} w="100%">
+            <Button
+              as="a"
+              variant="ghost"
+              color={"black"}
+              _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+              aria-label="Contact"
+              my={5}
+              w="100%"
+            >
               Contacto
             </Button>
           </Link>
@@ -82,7 +118,7 @@ export default function NavBar() {
               marginTop={"40%"}
               colorScheme="white"
               color={"black"}
-              _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }}
+              _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               icon={<FaLinkedinIn />}
             />
           </a>
@@ -96,7 +132,7 @@ export default function NavBar() {
               marginTop={"40%"}
               colorScheme="white"
               color={"black"}
-              _hover={{ bg: 'rgba(183, 221, 246, 0.712)' }}
+              _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               icon={<FaInstagram />}
             />
           </a>
@@ -147,7 +183,7 @@ export default function NavBar() {
             <Button
               as="a"
               variant="ghost"
-              _hover={{ bg: 'rgb(89, 109, 190)' }}
+              _hover={{ bg: "rgb(89, 109, 190)" }}
               aria-label="Home"
               my={5}
               w="100%"
@@ -161,7 +197,7 @@ export default function NavBar() {
             <Button
               as="a"
               variant="ghost"
-              _hover={{ bg: 'rgb(89, 109, 190)' }}
+              _hover={{ bg: "rgb(89, 109, 190)" }}
               aria-label="About"
               my={5}
               w="100%"
@@ -176,7 +212,7 @@ export default function NavBar() {
             <Button
               as="a"
               variant="ghost"
-              _hover={{ bg: 'rgb(89, 109, 190)' }}
+              _hover={{ bg: "rgb(89, 109, 190)" }}
               aria-label="Contact"
               my={5}
               w="100%"
@@ -189,7 +225,7 @@ export default function NavBar() {
             <Button
               as="a"
               variant="ghost"
-              _hover={{ bg: 'rgb(89, 109, 190)' }}
+              _hover={{ bg: "rgb(89, 109, 190)" }}
               aria-label="Contact"
               my={5}
               w="100%"
@@ -207,7 +243,7 @@ export default function NavBar() {
               m="5px"
               marginTop={"40%"}
               colorScheme="gray"
-              _hover={{ bg: 'rgb(89, 109, 190)' }}
+              _hover={{ bg: "rgb(89, 109, 190)" }}
               icon={<FaLinkedinIn />}
             />
           </a>
@@ -220,7 +256,7 @@ export default function NavBar() {
               m="5px"
               marginTop={"40%"}
               colorScheme="gray"
-              _hover={{ bg: 'pink' }}
+              _hover={{ bg: "pink" }}
               icon={<FaInstagram />}
             />
           </a>
