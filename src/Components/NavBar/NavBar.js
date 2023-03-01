@@ -69,6 +69,7 @@ export default function NavBar() {
             offset={-70}
             passHref
           >
+            
             <Button
               as="a"
               variant="ghost"
