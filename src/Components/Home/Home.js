@@ -14,15 +14,15 @@ function Home() {
    
       <NavBar />
       <Box flexGrow={1}>
-        <Box mt={{ base: 20, md: 40 }}>
+        <Box mt={{ base: 20, md: 20 }}>
           <Carrousel />
         </Box>
-        <Box mb={10}>
+        <Box mb={10} mt={20}>
           <AboutUs />
         </Box>
 
         <Box display={"flex"}/*  backgroundColor={"rgba(233, 225, 225, 0.636)"} */
-         justifyContent={"center"} p="25px" marginLeft={"-47%"}>
+         justifyContent={"center"} p="25px" marginLeft={"-46%"}>
         <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }} /* marginRight={"47%"} */>
           Valores en
         </Heading>
@@ -63,6 +63,8 @@ function Home() {
               display="flex"
               alignItems="center"
               flexDirection={{ base: "column", md: "row" }}
+              justifyContent={"center"}
+              marginLeft={"-84%"}
             >
               <Heading
                 as="h1"
