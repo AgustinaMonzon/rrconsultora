@@ -40,7 +40,7 @@ export default function NavBar() {
           <Image
             src={logo}
             width={["50px", "70px"]}
-            marginLeft={["3%", "0.5%"]}
+            marginLeft={["20%", "10%"]}
           ></Image>
         </Link>
 
