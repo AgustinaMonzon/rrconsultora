@@ -8,35 +8,35 @@ function Services() {
     {
       title: "Atracción de talentos",
       description:
-        "Creamos sitios web a medida para tus necesidades, utilizando las últimas tecnologías y prácticas recomendadas.",
+        "Nuestra consultora se encarga de ayudar a las empresas a encontrar el talento adecuado para sus necesidades. Nos enfocamos en identificar y atraer a los candidatos más calificados y adecuados para las posiciones que nuestros clientes necesitan cubrir.",
       image:
         "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677670331/atraccion_de_talento_y1tigj.jpg",
     },
     {
       title: "Asesoría Laboral",
       description:
-        "Diseñamos logotipos, banners, flyers y todo tipo de material gráfico para promocionar tu negocio.",
+        "Brindamos asesoría a nuestros clientes en temas laborales, como la elaboración de contratos, la gestión de relaciones laborales, el cumplimiento de leyes y regulaciones laborales, entre otros temas.",
       image:
         "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677671014/asesoria_wayry0.jpg",
     },
     {
       title: "Confección de CVS.",
       description:
-        "Creamos estrategias de marketing digital para aumentar la visibilidad de tu marca y generar más ventas.",
+        "Sabemos que el CV es la primera impresión que los empleadores tienen de los candidatos, por lo que nos aseguramos de que el CV de nuestros clientes sea profesional, claro y convincente. Nos encargamos de elaborar CVs personalizados para cada candidato, destacando sus habilidades, experiencia y logros.",
       image:
         "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677670754/CVSERVICIO_vi7pdu.jpg",
     },
     {
       title: "Servicio de armado de LinkedIn",
       description:
-        "Creamos estrategias de marketing digital para aumentar la visibilidad de tu marca y generar más ventas.",
+        " LinkedIn es una herramienta poderosa para la búsqueda de empleo y la construcción de redes profesionales. Nuestra consultora ofrece un servicio de armado de perfiles de LinkedIn para nuestros clientes, asegurándonos de que su perfil sea atractivo y destacando su experiencia y habilidades.",
       image:
         "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677670754/servicioDELINKEDIN_hv2va0.png",
     },
     {
       title: "Servicio de psicotécnicos.",
       description:
-        "Creamos estrategias de marketing digital para aumentar la visibilidad de tu marca y generar más ventas.",
+        "Los psicotécnicos son una herramienta útil para evaluar a los candidatos en términos de habilidades y aptitudes. Ofrecemos un servicio de psicotécnicos para nuestros clientes, ayudándoles a tomar decisiones informadas en la selección de candidatos y la gestión de su personal.",
       image:
         "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677670754/serviciopsico_monhjd.jpg",
     },
