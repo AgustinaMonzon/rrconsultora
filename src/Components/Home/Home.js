@@ -5,27 +5,27 @@ import Carrousel from "./Carrousel";
 import AboutUs from "../AboutUs/AboutUs";
 import Slider from "react-slick";
 import "./Home.css";
+
 function Home() {
   return (
-    <Box display="flex" flexDirection="column" minHeight="100vh">
+    <Box minHeight="100vh">
       <NavBar />
       <Box flexGrow={1}>
-        <Box mt={20}>
+        <Box mt={{ base: 20, md: 40 }}>
           <Carrousel />
         </Box>
         <Box mb={10}>
           <AboutUs />
         </Box>
 
-        <Box display={"flex"} marginLeft={"13%"}>
-          <Heading as="h2" size="xl" mb={{ base: 8, md: 12 }}>
+        <Box display={{ base: "block", md: "flex" }} alignItems="center">
+          <Heading as="h2" size="xl" mb={{ base: 8, md: 12 }} mr={{ md: "5%" }}>
             Valores en
           </Heading>
           <Heading
             as="h2"
             size="xl"
             mb={{ base: 8, md: 12 }}
-            marginLeft={"1%"}
             color={"rgb(89, 109, 190)"}
           >
             RR Consultoría
@@ -35,36 +35,23 @@ function Home() {
             as="ul"
             listStyleType="none"
             display="flex"
-            justifyContent="center"
+            flexWrap="wrap"
+            justifyContent={{ base: "flex-start", md: "center" }}
             alignItems="center"
-            marginTop="50px"
+            marginTop={{ base: "20px", md: "50px" }}
             marginBottom="10px"
+            marginLeft={{ md: "13%" }}
           >
-            {" "}
-            <Box className="LI">
-              <ul
-                className="LI"
-                style={{
-                  listStyleType: "none",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  marginTop: "50px",
-                  marginBottom: "10px",
-                }}
-              >
-                <li className="list-item" style={{ marginRight: "20px" }}>
-                  Profesionalismo
-                </li>
-                <li className="list-item" style={{ marginRight: "20px" }}>
-                  Empatía
-                </li>
-                <li className="list-item" style={{ marginRight: "20px" }}>
-                  Honestidad
-                </li>
-                <li className="list-item">Flexibilidad</li>
-              </ul>
-            </Box>
+            <li className="list-item" style={{ marginRight: "20px" }}>
+              Profesionalismo
+            </li>
+            <li className="list-item" style={{ marginRight: "20px" }}>
+              Empatía
+            </li>
+            <li className="list-item" style={{ marginRight: "20px" }}>
+              Honestidad
+            </li>
+            <li className="list-item">Flexibilidad</li>
           </Box>
         </Box>
         <Box bg="blue.100" py={6}>
@@ -74,17 +61,22 @@ function Home() {
               fontSize="1xl"
               fontWeight="bold"
               textAlign="center"
-              display={"flex"}
-              marginLeft={"-41%"}
+              display="flex"
+              alignItems="center"
+              flexDirection={{ base: "column", md: "row" }}
             >
-              <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }}>
+              <Heading
+                as="h1"
+                size="xl"
+                mb={{ base: 4, md: 8 }}
+                mr={{ md: "2%" }}
+              >
                 Empresas que confiaron en
               </Heading>
               <Heading
                 as="h1"
                 size="xl"
                 mb={{ base: 4, md: 8 }}
-                marginLeft={"1%"}
                 color={"rgb(89, 109, 190)"}
               >
                 nosotros
