@@ -61,7 +61,6 @@
     color: black;
   }
 }
-
 @media (prefers-color-scheme: dark) {
   .service-card {
     background-color: #000;

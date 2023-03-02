@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Box, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import {
   faInstagram,
@@ -18,6 +19,9 @@ function Footer() {
           <img src={logo} alt="Logo" />
         </a>
       </div>
+      <Box className="copy-container" h="22px" textAlign="center" fontSize={["0px","13px"]} marginTop={["0%","2%"]} >
+        <Text color="black">© All Rights Reserved 2023</Text>
+      </Box>
       <div className="footer-social">
         <a href="https://facebook.com/" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faFacebook} />
