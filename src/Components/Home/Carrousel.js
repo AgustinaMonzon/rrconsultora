@@ -5,7 +5,7 @@ import "./Carrousel.css";
 function Carrousel() {
   const images = [
     {
-      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677685588/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS._3_udmxdi.png",
+      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677772329/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS_1_vvctap.png",
       alt: "Imagen 1",
     },
     {
