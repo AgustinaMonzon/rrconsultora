@@ -42,18 +42,19 @@ function AboutUs() {
       </Text>
       <br />
       <br />
-      <Box className="aboutChicas">
-        <Box display={"flex"} justifyContent="center">
-          <Box className="aboutImgContainer">
+      <Box className="aboutChicas" justifyContent="center">
+        <Box display={"flex"} justifyContent="center" marginLeft={"20%"}> 
+          <Box className="aboutImgContainer" justifyContent="center">
             <Link to="/aboutSabrina">
               <Image
                 src={profileImg}
                 w={["88%", "35%"]}
                 alt="Foto de perfil de Sabrina"
-                p={"5px"}
                 className="aboutImg"
+                justifyContent="center"
+               
               />
-              <Text as="h2" fontSize="xl" className="aboutName">
+              <Text as="h2" fontSize={["15px","20px"]} className="aboutName" textAlign="center"  marginRight={["0%","55%"]}>
                 Sabrina Reiris
               </Text>
             </Link>
@@ -64,10 +65,9 @@ function AboutUs() {
                 src={profileImg}
                 w={["100%", "35%"]}
                 alt="Foto de perfil de Nahir"
-                p={"5px"}
                 className="aboutImg"
               />
-              <Text as="h2" fontSize="xl" className="aboutName">
+              <Text as="h2" fontSize={["15px","20px"]} className="aboutName" textAlign="center" marginRight={["0%","55%"]}>
                 Nahir Reverdito
               </Text>
             </Link>
