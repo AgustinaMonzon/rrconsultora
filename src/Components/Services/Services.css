@@ -56,7 +56,17 @@
   opacity: 1;
   max-width: 90%;
 }
+@media (prefers-color-scheme: dark) {
+  .service-title, .service-description {
+    color: black;
+  }
+}
 
+@media (prefers-color-scheme: dark) {
+  .service-card {
+    background-color: #000;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .service-description {

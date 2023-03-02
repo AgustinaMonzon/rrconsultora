@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Heading, Text, Image,} from "@chakra-ui/react";
+import { Box, Heading, Text, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import "./about.css";
-import profileImg from "./profile.jpeg"
+import profileImg from "./profile.jpeg";
 
 function AboutUs() {
   return (
@@ -40,29 +40,38 @@ function AboutUs() {
         organización. Nuestro objetivo es buscar el talento que tu empresa
         necesita a través de un proceso ágil e integral.
       </Text>
-     
-      <Box className="aboutChicas" justifyContent="center" >
-        <Box display={"grid"}  justifyContent="center">
-      <Image src={profileImg}  
-        
-           w={["88%","35%"]}
-            alt="Foto de perfil"
-            p={"5px"}
-            /> 
-       
-        <Link to="/aboutSabrina" class="about-link">
-        Sabrina 
-        </Link>
-        </Box>
-        <br />
-        <Box display={"grid"}  justifyContent="center">
-        <Image src={profileImg}  
-          w={["100%","35%"]}
-          alt="Foto de perfil"
-          p={"5px"}/> 
-        <Link to="/aboutNahir" class="about-link">
-        Nahir 
-        </Link>
+      <br />
+      <br />
+      <Box className="aboutChicas">
+        <Box display={"flex"} justifyContent="center">
+          <Box className="aboutImgContainer">
+            <Link to="/aboutSabrina">
+              <Image
+                src={profileImg}
+                w={["88%", "35%"]}
+                alt="Foto de perfil de Sabrina"
+                p={"5px"}
+                className="aboutImg"
+              />
+              <Text as="h2" fontSize="xl" className="aboutName">
+                Sabrina Reiris
+              </Text>
+            </Link>
+          </Box>
+          <Box className="aboutImgContainer" ml={[0, 4]}>
+            <Link to="/aboutNahir">
+              <Image
+                src={profileImg}
+                w={["100%", "35%"]}
+                alt="Foto de perfil de Nahir"
+                p={"5px"}
+                className="aboutImg"
+              />
+              <Text as="h2" fontSize="xl" className="aboutName">
+                Nahir Reverdito
+              </Text>
+            </Link>
+          </Box>
         </Box>
       </Box>
     </Box>
