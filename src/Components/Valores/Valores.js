@@ -17,7 +17,7 @@ export default function Valores(){
             size="xl"
             mb={{ base: 4, md: 8 }}
             marginLeft={"1%"}
-            color={"#446b9c"}
+            color={"rgb(89, 109, 190)"}
           >
             RR Consultoría
           </Heading>
@@ -43,31 +43,95 @@ export default function Valores(){
                   <Image src="https://cdn-icons-png.flaticon.com/512/1189/1189183.png?w=740&t=st=1677694438~exp=1677695038~hmac=f49a9f0654855cb7bd1893522eae04cabe1bf295d7a29bffb812a9b378c9e502"
                    width={"80%"} height={"90%"} display={"flex"} justifyContent={"center"} marginLeft={"10%"}/>
 
-                  <Text textAlign={"center"} justifyContent={"center"} display={"grid"}
-                  fontWeight="bold" fontSize={["13px","10px", "15px"]}>Empatía</Text>
-
-                </Box>
-                <Box display={"grid"} justifyContent={"center"} backgroundColor={'rgba(159, 138, 172, 0.281)'}
-                 width={[ "30%", "23%"]} padding={["1%","2%"]} boxShadow={"xl"}>
-
-                  <Image src="https://cdn-icons-png.flaticon.com/512/1246/1246329.png?w=740&t=st=1677694549~exp=1677695149~hmac=5b1cd652e7009addb89893383ec8db3d4b02cce9c77d063180e13f9ebb0c9215"
-                   width={"80%"} height={"90%"} display={"flex"} justifyContent={"center"} marginLeft={"10%"}/>
-
-                <Text textAlign={"center"} justifyContent={"center"} display={"grid"}
-                fontWeight="bold" fontSize={["13px","10px", "15px"]}>Honestidad</Text>
-
-                </Box>
-                <Box display={"grid"} justifyContent={"center"} backgroundColor={'rgba(159, 138, 172, 0.281)'}
-                 width={[ "30%", "23%"]} padding={["1%","2%"]} boxShadow={"xl"}>
-
-                  <Image src="https://cdn-icons-png.flaticon.com/512/1244/1244554.png?w=740&t=st=1677694582~exp=1677695182~hmac=02bf4dfebe923ee12dfcd609a3e16839de0651506905fdda38f3744b994adbd1"
-                   width={"80%"} height={"90%"} display={"flex"} justifyContent={"center"} marginLeft={"10%"}/>
-
-                  <Text textAlign={"center"} justifyContent={"center"} display={"grid"}
-                  fontWeight="bold" fontSize={["13px","10px", "15px"]}>Flexibilidad</Text>
-                </Box>
-               </Box>
+          <Text
+            textAlign={"center"}
+            justifyContent={"center"}
+            display={"grid"}
+            fontWeight="bold"
+            fontSize={["13px", "10px", "15px"]}
+          >
+            Empatía
+          </Text>
+          <Box marginTop={2}>
+            En RR Consultoría valoramos la empatía porque entendemos que cada
+            cliente es único y tiene necesidades y circunstancias únicas.
+            Nuestros consultores están comprometidos en escuchar activamente a
+            nuestros clientes y comprender sus desafíos, metas y objetivos. Solo
+            entonces podemos ofrecer soluciones personalizadas que se adapten a
+            sus necesidades específicas.
+          </Box>
         </Box>
- )
+        <Box
+          display={"grid"}
+          justifyContent={"center"}
+          backgroundColor={"rgba(255, 255, 255, 0.8)"}
+          width={["30%", "23%"]}
+          padding={["1%", "2%"]}
+          boxShadow={"xl"}
+        >
+          <Image
+            src="https://cdn-icons-png.flaticon.com/512/1246/1246329.png?w=740&t=st=1677694549~exp=1677695149~hmac=5b1cd652e7009addb89893383ec8db3d4b02cce9c77d063180e13f9ebb0c9215"
+            width={"80%"}
+            height={"90%"}
+            display={"flex"}
+            justifyContent={"center"}
+            marginLeft={"10%"}
+          />
 
+          <Text
+            textAlign={"center"}
+            justifyContent={"center"}
+            display={"grid"}
+            fontWeight="bold"
+            fontSize={["13px", "10px", "15px"]}
+          >
+            Honestidad
+          </Text>
+          <Box marginTop={2}>
+            La honestidad es un valor clave en RR Consultoría. Nos comprometemos
+            a ser honestos y transparentes con nuestros clientes en todo
+            momento, incluso si eso significa decir cosas difíciles de escuchar.
+            Creemos que la honestidad y la transparencia son esenciales para
+            establecer una relación de confianza a largo plazo con nuestros
+            clientes.
+          </Box>
+        </Box>
+        <Box
+          display={"grid"}
+          justifyContent={"center"}
+          backgroundColor={"rgba(255, 255, 255, 0.8)"}
+          width={["30%", "23%"]}
+          padding={["1%", "2%"]}
+          boxShadow={"xl"}
+        >
+          <Image
+            src="https://cdn-icons-png.flaticon.com/512/1244/1244554.png?w=740&t=st=1677694582~exp=1677695182~hmac=02bf4dfebe923ee12dfcd609a3e16839de0651506905fdda38f3744b994adbd1"
+            width={"80%"}
+            height={"90%"}
+            display={"flex"}
+            justifyContent={"center"}
+            marginLeft={"10%"}
+          />
+
+          <Text
+            textAlign={"center"}
+            justifyContent={"center"}
+            display={"grid"}
+            fontWeight="bold"
+            fontSize={["13px", "10px", "15px"]}
+          >
+            Flexibilidad
+          </Text>
+          <Box marginTop={2}>
+            Reconocemos que los desafíos de los recursos humanos pueden surgir
+            en cualquier momento y que nuestras soluciones deben ser flexibles
+            para adaptarse a las necesidades cambiantes de nuestros clientes.
+            Valoramos la flexibilidad porque nos permite responder rápidamente a
+            las necesidades de nuestros clientes y ofrecer soluciones
+            innovadoras y adaptadas a sus necesidades.
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  );
 }
