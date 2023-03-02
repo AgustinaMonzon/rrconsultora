@@ -30,6 +30,7 @@ export default function Valores() {
         width={"100%"}
       >
         <Box
+          className="card"
           display={"grid"}
           justifyContent={"center"}
           backgroundColor={"rgba(255, 255, 255, 0.8)"}

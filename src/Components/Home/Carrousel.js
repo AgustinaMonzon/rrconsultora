@@ -5,7 +5,7 @@ import "./Carrousel.css";
 function Carrousel() {
   const images = [
     {
-      url: "https://www.trisul-sa.com.br/blog/wp-content/uploads/2022/04/contrato-de-compra-e-venda.jpeg",
+      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677685588/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS._3_udmxdi.png",
       alt: "Imagen 1",
     },
     {
@@ -13,7 +13,7 @@ function Carrousel() {
       alt: "Imagen 2",
     },
     {
-      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677685588/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS._3_udmxdi.png",
+      url: "https://www.trisul-sa.com.br/blog/wp-content/uploads/2022/04/contrato-de-compra-e-venda.jpeg",
       alt: "Imagen 3",
     },
     {
