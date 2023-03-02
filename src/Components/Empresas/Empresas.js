@@ -26,7 +26,7 @@ export default function Empresas(){
                 as="h1"
                 size="xl"
                 mb={{ base: 4, md: 8 }}
-                color={"rgb(89, 109, 190)"}
+                color={"#446b9c"}
               >
                 nosotros
               </Heading>

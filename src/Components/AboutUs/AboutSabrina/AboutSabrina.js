@@ -42,7 +42,7 @@ function AboutSabrina () {
       )}
       
       <Box w={["120%","100%","55%","45%"]}  display={"grid"} justifyContent={"center"} mr={["6%","5%","15%","32%"]}>
-      <Text fontSize={["12px","14px","18px","17px"]} fontWeight="bold" color={"rgb(89, 109, 190)"}>
+      <Text fontSize={["12px","14px","18px","17px"]} fontWeight="bold" color={"#446b9c"}>
         Sabrina Reiris.
 
         </Text>
@@ -69,6 +69,7 @@ function AboutSabrina () {
     <Flex
          justifyContent={"center"}
           marginLeft={["0%", "0%", "-3%","-32%", "-35%", "-35%", "-35%"]}
+          backgroundColor={"#446b9c"}
         >
           
           <a
