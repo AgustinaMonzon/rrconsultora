@@ -1,19 +1,16 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import Carrousel from "./Carrousel";
 import AboutUs from "../AboutUs/AboutUs";
-
-import "./Home.css";
 import Valores from "../Valores/Valores";
 import Empresas from "../Empresas/Empresas";
 
+import "./Home.css";
+
 function Home() {
   return (
-
-    <Box  display="flex" flexDirection="column" minHeight="100vh">
-
-   
+    <Box display="flex" flexDirection="column" minHeight="100vh">
       <NavBar />
       <Box flexGrow={1}>
         <Box mt={{ base: 20, md: 20 }}>
@@ -26,7 +23,7 @@ function Home() {
           <Valores />
         </Box>
         <Box mb={10} mt={20}>
-          <Empresas/>
+          <Empresas />
         </Box>
       </Box>
       <Footer />
