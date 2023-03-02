@@ -1,6 +1,8 @@
 import React from "react";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text, Image,} from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import "./about.css";
+import profileImg from "./profile.jpeg"
 
 function AboutUs() {
   return (
@@ -19,7 +21,7 @@ function AboutUs() {
           size="xl"
           mb={{ base: 4, md: 8 }}
           marginLeft={"1%"}
-          color={"rgb(89, 109, 190)"}
+          color={"#446b9c"}
         >
           somos?
         </Heading>
@@ -38,15 +40,31 @@ function AboutUs() {
         organización. Nuestro objetivo es buscar el talento que tu empresa
         necesita a través de un proceso ágil e integral.
       </Text>
-      <div className="aboutChicas">
-        <a href="/aboutSabrina" class="about-link">
-          Sabrina
-        </a>
+     
+      <Box className="aboutChicas" justifyContent="center" >
+        <Box display={"grid"}  justifyContent="center">
+      <Image src={profileImg}  
+        
+           w={["88%","35%"]}
+            alt="Foto de perfil"
+            p={"5px"}
+            /> 
+       
+        <Link to="/aboutSabrina" class="about-link">
+        Sabrina 
+        </Link>
+        </Box>
         <br />
-        <a href="/aboutNahir" class="about-link">
-          Nahir
-        </a>
-      </div>
+        <Box display={"grid"}  justifyContent="center">
+        <Image src={profileImg}  
+          w={["100%","35%"]}
+          alt="Foto de perfil"
+          p={"5px"}/> 
+        <Link to="/aboutNahir" class="about-link">
+        Nahir 
+        </Link>
+        </Box>
+      </Box>
     </Box>
   );
 }
