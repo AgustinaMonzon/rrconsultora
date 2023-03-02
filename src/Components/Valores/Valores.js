@@ -17,7 +17,7 @@ export default function Valores() {
           size="xl"
           mb={{ base: 4, md: 8 }}
           marginLeft={"1%"}
-          color={"rgb(89, 109, 190)"}
+          color={"#446b9c"}
         >
           RR Consultoría
         </Heading>
@@ -30,6 +30,7 @@ export default function Valores() {
         width={"100%"}
       >
         <Box
+          className="card"
           display={"grid"}
           justifyContent={"center"}
           backgroundColor={"rgba(255, 255, 255, 0.8)"}

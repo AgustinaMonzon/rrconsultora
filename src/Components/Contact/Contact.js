@@ -150,12 +150,13 @@ const Contact = () => {
             <button
               type="submit"
               style={{
-                backgroundColor: "black",
+                backgroundColor: "#2b2c64",
                 color: "white",
                 padding: "10px 20px",
                 borderRadius: "5px",
                 alignItems: "center",
                 marginTop: "1rem",
+                
               }}
             >
               Enviar Email
