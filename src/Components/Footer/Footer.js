@@ -19,9 +19,9 @@ function Footer() {
           <img src={logo} alt="Logo" />
         </a>
       </div>
-      <Box className="copy-container" h="22px" textAlign="center" fontSize={["0px","13px"]} marginTop={["0%","2%"]} >
+      {/* <Box className="copy-container" h="22px" textAlign="center" fontSize={["0px","13px"]} marginTop={["0%","2%"]} >
         <Text color="black">© All Rights Reserved 2023</Text>
-      </Box>
+      </Box> */}
       <div className="footer-social">
         <a href="https://facebook.com/" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faFacebook} />

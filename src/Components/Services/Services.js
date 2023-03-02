@@ -48,7 +48,7 @@ function Services() {
     <div>
       <NavBar />
       <div className="services">
-        <h2>Servicios que ofrecemos</h2>
+        <h2>Nuestros servicios </h2>
         <ul>
           {servicios.map((servicio, index) => (
             <li key={index}>

@@ -33,7 +33,7 @@ export default function Valores() {
           className="card"
           display={"grid"}
           justifyContent={"center"}
-          backgroundColor={"rgba(255, 255, 255, 0.8)"}
+          backgroundColor={"rgba(139,200,232,255)"}
           width={["23%", "23%"]}
           padding={["1%", "2%"]}
           boxShadow={"xl"}
@@ -52,10 +52,11 @@ export default function Valores() {
             display={"grid"}
             fontWeight="bold"
             fontSize={["13px", "10px", "15px"]}
+            color="black"
           >
             Profesionalismo
           </Text>
-          <Box marginTop={2}>
+          <Box color="black" marginTop={2}>
             Creemos que el profesionalismo es fundamental para brindar el mejor
             servicio a nuestros clientes. Nos esforzamos por mantener altos
             estándares en todo lo que hacemos, desde nuestra comunicación hasta
@@ -68,7 +69,7 @@ export default function Valores() {
         <Box
           display={"grid"}
           justifyContent={"center"}
-          backgroundColor={"rgba(255, 255, 255, 0.8)"}
+          backgroundColor={"rgba(139,200,232,255)"}
           width={["30%", "23%"]}
           padding={["1%", "2%"]}
           boxShadow={"xl"}
@@ -88,10 +89,11 @@ export default function Valores() {
             display={"grid"}
             fontWeight="bold"
             fontSize={["13px", "10px", "15px"]}
+            color="black"
           >
             Empatía
           </Text>
-          <Box marginTop={2}>
+          <Box color="black" marginTop={2}>
             En RR Consultoría valoramos la empatía porque entendemos que cada
             cliente es único y tiene necesidades y circunstancias únicas.
             Nuestros consultores están comprometidos en escuchar activamente a
@@ -103,7 +105,7 @@ export default function Valores() {
         <Box
           display={"grid"}
           justifyContent={"center"}
-          backgroundColor={"rgba(255, 255, 255, 0.8)"}
+          backgroundColor={"rgba(139,200,232,255)"}
           width={["30%", "23%"]}
           padding={["1%", "2%"]}
           boxShadow={"xl"}
@@ -122,11 +124,12 @@ export default function Valores() {
             justifyContent={"center"}
             display={"grid"}
             fontWeight="bold"
+            color="black"
             fontSize={["13px", "10px", "15px"]}
           >
             Honestidad
           </Text>
-          <Box marginTop={2}>
+          <Box color="black" marginTop={2}>
             La honestidad es un valor clave en RR Consultoría. Nos comprometemos
             a ser honestos y transparentes con nuestros clientes en todo
             momento, incluso si eso significa decir cosas difíciles de escuchar.
@@ -138,7 +141,7 @@ export default function Valores() {
         <Box
           display={"grid"}
           justifyContent={"center"}
-          backgroundColor={"rgba(255, 255, 255, 0.8)"}
+          backgroundColor={"rgba(139,200,232,255)"}
           width={["30%", "23%"]}
           padding={["1%", "2%"]}
           boxShadow={"xl"}
@@ -158,10 +161,11 @@ export default function Valores() {
             display={"grid"}
             fontWeight="bold"
             fontSize={["13px", "10px", "15px"]}
+            color="black"
           >
             Flexibilidad
           </Text>
-          <Box marginTop={2}>
+          <Box color="black" marginTop={2}>
             Reconocemos que los desafíos de los recursos humanos pueden surgir
             en cualquier momento y que nuestras soluciones deben ser flexibles
             para adaptarse a las necesidades cambiantes de nuestros clientes.
