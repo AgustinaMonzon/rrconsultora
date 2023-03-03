@@ -29,11 +29,11 @@ export default function NavBar() {
         w={"100%"}
         borderTop="1px solid gray"
         // shadow={"lg"}
-        boxShadow={"0 2px 2px rgb(157, 210, 245)"}
+        // boxShadow={"0 2px 2px rgb(157, 210, 245)"}
         borderBottom="1px solid gray"
         padding="0px"
-        backgroundColor={"#f2f2f2"}
-        /*    backgroundColor={"rgba(183, 221, 246, 0.712)"}  */
+        backgroundColor={"#4b749c"}
+        // backgroundColor={"rgba(255, 255, 255, 0.8);"}
       >
         {/* Desktop */}
         <Link to="/">
@@ -52,7 +52,7 @@ export default function NavBar() {
             <Button
               as="a"
               variant="ghost"
-              color={"black"}
+              color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               aria-label="Home"
               my={5}
@@ -72,7 +72,7 @@ export default function NavBar() {
             <Button
               as="a"
               variant="ghost"
-              color={"black"}
+              color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               aria-label="About"
               my={5}
@@ -86,20 +86,33 @@ export default function NavBar() {
             <Button
               as="a"
               variant="ghost"
-              color={"black"}
+              color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               aria-label="Contact"
               my={5}
               w="100%"
             >
-              Servicios
+              Soy Empresa
+            </Button>
+          </Link>
+          <Link to="/services" passHref>
+            <Button
+              as="a"
+              variant="ghost"
+              color={"white"}
+              _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+              aria-label="Contact"
+              my={5}
+              w="100%"
+            >
+              Soy Candidato
             </Button>
           </Link>
           <Link to="/contact" passHref>
             <Button
               as="a"
               variant="ghost"
-              color={"black"}
+              color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               aria-label="Contact"
               my={5}
@@ -116,8 +129,8 @@ export default function NavBar() {
             <IconButton
               m="5px"
               marginTop={"40%"}
-              colorScheme="white"
-              color={"black"}
+              colorScheme="linkedin"
+              color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               icon={<FaLinkedinIn />}
             />
@@ -130,8 +143,8 @@ export default function NavBar() {
             <IconButton
               m="5px"
               marginTop={"40%"}
-              colorScheme="white"
-              color={"black"}
+              colorScheme="pink"
+              color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               icon={<FaInstagram />}
             />
@@ -242,7 +255,7 @@ export default function NavBar() {
             <IconButton
               m="5px"
               marginTop={"40%"}
-              colorScheme="gray"
+              colorScheme="linkedin"
               _hover={{ bg: "rgb(89, 109, 190)" }}
               icon={<FaLinkedinIn />}
             />
@@ -255,7 +268,7 @@ export default function NavBar() {
             <IconButton
               m="5px"
               marginTop={"40%"}
-              colorScheme="gray"
+              colorScheme="pink"
               _hover={{ bg: "pink" }}
               icon={<FaInstagram />}
             />
