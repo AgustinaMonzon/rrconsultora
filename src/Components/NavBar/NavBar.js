@@ -40,13 +40,17 @@ export default function NavBar() {
           <Image
             src={logo}
             width={["50px", "70px"]}
-            marginLeft={["20%", "10%"]}
+           marginLeft={["20%", "15%"]} 
+           /* backgroundColor={" rgb(157, 210, 245) "} */
+           backgroundColor={" white "}
+            borderRadius={"full"} 
           ></Image>
         </Link>
 
         <Flex
           display={["none", "none", "flex", "flex"]}
-          marginLeft={["17%", "17%", "17%", "35%", "50%", "58%"]}
+          marginLeft={["0%", "0%", "0%", "17%", "38%", "48%"]}
+          justifyContent={"center"}
         >
           <Link to="/" passHref>
             <Button
@@ -154,8 +158,8 @@ export default function NavBar() {
         {/* Mobile */}
         <IconButton
           aria-label="Open Menu"
-          size="lg"
-          marginLeft={["12px", "35px", "280px"]}
+          size="xs"
+          marginLeft={["20px", "45px", "280px"]}
           mr={2}
           icon={<HamburgerIcon />}
           onClick={() => changeDisplay("flex")}

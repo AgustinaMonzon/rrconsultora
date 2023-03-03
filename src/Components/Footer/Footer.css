@@ -32,12 +32,15 @@ footer.footer {
   height: 50px;
   width: auto;
   margin-top: -5px;
+  background-color: #c0f0f8 ;
+  border-radius: 100px;
 }
 
 .footer-social a {
-  margin-right: 10px;
-  color: #333;
+  margin-right: 32px;
+  color: #d4cfcf;
   font-size: 20px;
+  margin-bottom: -20px;
  
 }
 

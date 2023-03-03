@@ -195,8 +195,8 @@ border-width: 7px 0 7px 14px;
 border-color: transparent transparent transparent #fff;
 }
 
-.slick-arrow:hover:before {
-border-color: transparent transparent transparent #6f6f6f;
+.slick-arrow:hover:before{
+border-color: transparent transparent transparent #4b749c;
 }
 
 .slick-dots {
@@ -269,10 +269,11 @@ display: none;
   border-style: solid;
   border-width: 7px 0 7px 14px;
   border-color: transparent transparent transparent #fff;
+  
 }
 
 .slick-arrow:hover:before {
-  border-color: transparent transparent transparent #6f6f6f;
+  border-color: transparent transparent transparent #4b749c;
 }
 
 .slick-dots {

@@ -8,7 +8,7 @@ export default function Empresas() {
       p={{ base: 4, md: 8 }}
       maxW={{ base: "100%", md: "80%" }}
       mx="auto"
-      backgroundColor={"rgb(157, 210, 245)"}
+      backgroundColor={"#c0f0f8"}
       marginBottom={"10%"}
       marginTop={"-7%"}
     >
