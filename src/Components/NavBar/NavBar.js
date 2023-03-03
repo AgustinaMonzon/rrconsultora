@@ -34,22 +34,24 @@ export default function NavBar() {
         padding="0px"
         backgroundColor={"#4b749c"}
         // backgroundColor={"rgba(255, 255, 255, 0.8);"}
+        justifyContent={"center"}
       >
         {/* Desktop */}
         <Link to="/">
           <Image
             src={logo}
             width={["50px", "70px"]}
-            marginLeft={["20%", "15%"]}
+             marginLeft={["0%","-5%","-5%", "260%", "0%", "0%", "0%", "0%", "0%", "75%"]} 
             /* backgroundColor={" rgb(157, 210, 245) "} */
             backgroundColor={" white "}
             borderRadius={"full"}
+            justifyContent={"center"}
           ></Image>
         </Link>
 
         <Flex
           display={["none", "none", "flex", "flex"]}
-          marginLeft={["0%", "0%", "0%", "17%", "38%", "48%"]}
+          marginLeft={["0%", "0%", "20%", "18%", "20%", "8%"]} 
           justifyContent={"center"}
         >
           <Link to="/" passHref>
@@ -61,6 +63,8 @@ export default function NavBar() {
               aria-label="Home"
               my={5}
               w="100%"
+              fontSize={"13px"}
+              
             >
               HOME
             </Button>
@@ -81,6 +85,7 @@ export default function NavBar() {
               aria-label="About"
               my={5}
               w="100%"
+              fontSize={"13px"}
             >
               QUIÉNES SOMOS
             </Button>
@@ -95,6 +100,7 @@ export default function NavBar() {
               aria-label="Contact"
               my={5}
               w="100%"
+              fontSize={"13px"}
             >
               SOY EMPRESA
             </Button>
@@ -108,6 +114,7 @@ export default function NavBar() {
               aria-label="Contact"
               my={5}
               w="100%"
+              fontSize={"13px"}
             >
               SOY CANDIDATO
             </Button>
@@ -121,10 +128,27 @@ export default function NavBar() {
               aria-label="Contact"
               my={5}
               w="100%"
+              fontSize={"13px"}
             >
               CONTACTO
             </Button>
           </Link>
+          <a href="https://docs.google.com/forms/d/1PeGHSBTKg1Hz5GXaY8SSjFGD3k0owQx7V8XrRXsMpFo/edit"  target="_blank"
+            rel="noopener noreferrer">
+            <Button
+              as="a"
+              color={"white"}
+              colorScheme={"cyan"}
+              _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+              aria-label="Contact"
+              my={5}
+              w="100%"
+              fontSize={"13"}
+              marginLeft={["0%","0%","0%","40%","67%"]}
+            >
+              CARGÁ TU CV
+            </Button>
+          </a>
           <a
             href="https://www.linkedin.com/company/r-r-consultoria/?viewAsMember=true"
             target="_blank"
@@ -132,10 +156,11 @@ export default function NavBar() {
           >
             <IconButton
               m="5px"
-              marginTop={"40%"}
+              marginTop={"42%"}
               colorScheme="linkedin"
               color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+               marginLeft={["0%","0%","30%","160%", "200%"]}  
               icon={<FaLinkedinIn />}
             />
           </a>
@@ -146,10 +171,11 @@ export default function NavBar() {
           >
             <IconButton
               m="5px"
-              marginTop={"40%"}
+              marginTop={"42%"}
               colorScheme="pink"
               color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+               marginLeft={["0%",,"50%","180%","218%", "215%"]}  
               icon={<FaInstagram />}
             />
           </a>
@@ -166,7 +192,7 @@ export default function NavBar() {
           display={["flex", "flex", "none", "none"]}
           color="black"
         />
-        <Switch color="black" isChecked={isDark} onChange={toggleColorMode} />
+        <Switch color="black" isChecked={isDark} marginLeft={["0%","4%","4%","8%","8%","7%"]} onChange={toggleColorMode} />
       </Flex>
 
       {/* Mobile Content */}
@@ -190,7 +216,7 @@ export default function NavBar() {
             size="lg"
             justifyContent={"center"}
             marginRight={"10%"}
-            icon={<CloseIcon />}
+            icon={< CloseIcon />}
             onClick={() => changeDisplay("none")}
           />
         </Flex>
@@ -221,7 +247,7 @@ export default function NavBar() {
               color={"white"}
               href="#about-us"
             >
-              Quienes somos
+              Quienes Somos
             </Button>
           </Link>
 
@@ -238,6 +264,32 @@ export default function NavBar() {
               Servicios
             </Button>
           </Link> */}
+          <Link to="/soyEmpresa" passHref>
+            <Button
+              as="a"
+              variant="ghost"
+              _hover={{ bg: "rgb(89, 109, 190)" }}
+              aria-label="Contact"
+              my={5}
+              w="100%"
+              color={"white"}
+            >
+              Soy Empresa
+            </Button>
+          </Link>
+          <Link to="/soyCandidato" passHref>
+            <Button
+              as="a"
+              variant="ghost"
+              _hover={{ bg: "rgb(89, 109, 190)" }}
+              aria-label="Contact"
+              my={5}
+              w="100%"
+              color={"white"}
+            >
+              Soy Candidato
+            </Button>
+          </Link>
           <Link to="/contact" passHref>
             <Button
               as="a"
@@ -251,8 +303,22 @@ export default function NavBar() {
               Contacto
             </Button>
           </Link>
+          <a href="https://docs.google.com/forms/d/1PeGHSBTKg1Hz5GXaY8SSjFGD3k0owQx7V8XrRXsMpFo/edit"  target="_blank"
+            rel="noopener noreferrer">
+            <Button
+              as="a"
+              colorScheme={"cyan"}
+              _hover={{ bg: "rgb(89, 109, 190)" }}
+              aria-label="Contact"
+              my={5}
+              w="100%"
+              color={"white"}
+            >
+              Cargá Tu CV
+            </Button>
+          </a>
           <a
-            href="https://www.linkedin.com/in/melina-veyrat-durbex-b66b3b227/"
+            href="https://www.linkedin.com/company/r-r-consultoria/?viewAsMember=true"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -265,7 +331,7 @@ export default function NavBar() {
             />
           </a>
           <a
-            href="https://github.com/meliveyrat1"
+            href="https://www.instagram.com/rrconsultoria_/"
             target="_blank"
             rel="noopener noreferrer"
           >
