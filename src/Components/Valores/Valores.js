@@ -1,25 +1,33 @@
 import { Box, Heading, Text, Image } from "@chakra-ui/react";
-
+import "./Valores.css";
 export default function Valores() {
   return (
     <Box
-      id="about-us"
+      className="valores"
       p={{ base: 4, md: 8 }}
       maxW={{ base: "100%", md: "80%" }}
       mx="auto"
     >
       <Box display={"flex"}>
-        <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }}>
-          Valores en
-        </Heading>
         <Heading
           as="h1"
           size="xl"
           mb={{ base: 4, md: 8 }}
+          font-family="'Montserrat', sans-serif"
+        >
+          VALORES
+        </Heading>
+        <Heading
+          as="h1"
+          // size="xl"
+          mb={{ base: 4, md: 8 }}
           marginLeft={"1%"}
           color={"#446b9c"}
+          font-weight=" bold"
+          font-size="40px"
+          font-family="'Montserrat', sans-serif"
         >
-          RR Consultoría
+          RR CONSULTORÍA
         </Heading>
       </Box>
       <Box
@@ -54,7 +62,7 @@ export default function Valores() {
             fontSize={["13px", "10px", "15px"]}
             color="black"
           >
-            Profesionalismo
+            PROFESIONALISMO
           </Text>
           <Box color="black" marginTop={2}>
             Creemos que el profesionalismo es fundamental para brindar el mejor
@@ -91,7 +99,7 @@ export default function Valores() {
             fontSize={["13px", "10px", "15px"]}
             color="black"
           >
-            Empatía
+            EMPATÍA
           </Text>
           <Box color="black" marginTop={2}>
             En RR Consultoría valoramos la empatía porque entendemos que cada
@@ -127,7 +135,7 @@ export default function Valores() {
             color="black"
             fontSize={["13px", "10px", "15px"]}
           >
-            Honestidad
+            HONESTIDAD
           </Text>
           <Box color="black" marginTop={2}>
             La honestidad es un valor clave en RR Consultoría. Nos comprometemos
@@ -163,7 +171,7 @@ export default function Valores() {
             fontSize={["13px", "10px", "15px"]}
             color="black"
           >
-            Flexibilidad
+            FLEXIBILIDAD
           </Text>
           <Box color="black" marginTop={2}>
             Reconocemos que los desafíos de los recursos humanos pueden surgir

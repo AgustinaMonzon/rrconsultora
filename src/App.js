@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import AboutSabrina from "./Components/AboutUs/AboutSabrina/AboutSabrina";
 import AboutNahir from "./Components/AboutUs/AboutNahir/AboutNahir";
-import Services from "./Components/Services/Services";
+import SoyEmpresa from "./Components/SoyEmpresa/SoyEmpresa";
+import SoyCandidato from "./Components/SoyCandidato/SoyCandidato";
 import Contact from "./Components/Contact/Contact";
-
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/aboutSabrina" element={<AboutSabrina />} />
         <Route path="/aboutNahir" element={<AboutNahir />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/soyEmpresa" element={<SoyEmpresa />} />
+        <Route path="/soyCandidato" element={<SoyCandidato />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>

@@ -40,10 +40,10 @@ export default function NavBar() {
           <Image
             src={logo}
             width={["50px", "70px"]}
-           marginLeft={["20%", "15%"]} 
-           /* backgroundColor={" rgb(157, 210, 245) "} */
-           backgroundColor={" white "}
-            borderRadius={"full"} 
+            marginLeft={["20%", "15%"]}
+            /* backgroundColor={" rgb(157, 210, 245) "} */
+            backgroundColor={" white "}
+            borderRadius={"full"}
           ></Image>
         </Link>
 
@@ -62,7 +62,7 @@ export default function NavBar() {
               my={5}
               w="100%"
             >
-              Home
+              HOME
             </Button>
           </Link>
 
@@ -82,11 +82,11 @@ export default function NavBar() {
               my={5}
               w="100%"
             >
-              Quienes somos
+              QUIÉNES SOMOS
             </Button>
           </ScrollLink>
 
-          <Link to="/services" passHref>
+          <Link to="/soyEmpresa" passHref>
             <Button
               as="a"
               variant="ghost"
@@ -96,10 +96,10 @@ export default function NavBar() {
               my={5}
               w="100%"
             >
-              Soy Empresa
+              SOY EMPRESA
             </Button>
           </Link>
-          <Link to="/services" passHref>
+          <Link to="/soyCandidato" passHref>
             <Button
               as="a"
               variant="ghost"
@@ -109,7 +109,7 @@ export default function NavBar() {
               my={5}
               w="100%"
             >
-              Soy Candidato
+              SOY CANDIDATO
             </Button>
           </Link>
           <Link to="/contact" passHref>
@@ -122,7 +122,7 @@ export default function NavBar() {
               my={5}
               w="100%"
             >
-              Contacto
+              CONTACTO
             </Button>
           </Link>
           <a
@@ -225,7 +225,7 @@ export default function NavBar() {
             </Button>
           </Link>
 
-          <Link to="/services" passHref>
+          {/* <Link to="/services" passHref>
             <Button
               as="a"
               variant="ghost"
@@ -237,7 +237,7 @@ export default function NavBar() {
             >
               Servicios
             </Button>
-          </Link>
+          </Link> */}
           <Link to="/contact" passHref>
             <Button
               as="a"

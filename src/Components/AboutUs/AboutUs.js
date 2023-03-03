@@ -14,7 +14,7 @@ function AboutUs() {
     >
       <Box display={"flex"}>
         <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }}>
-          ¿Quiénes
+          ¿QUIÉNES
         </Heading>
         <Heading
           as="h1"
@@ -23,7 +23,7 @@ function AboutUs() {
           marginLeft={"1%"}
           color={"#446b9c"}
         >
-          somos?
+          SOMOS?
         </Heading>
       </Box>
       <Text fontSize={{ base: "md", md: "lg" }}>
@@ -43,7 +43,7 @@ function AboutUs() {
       <br />
       <br />
       <Box className="aboutChicas" justifyContent="center">
-        <Box display={"flex"} justifyContent="center" marginLeft={"20%"}> 
+        <Box display={"flex"} justifyContent="center" marginLeft={"20%"}>
           <Box className="aboutImgContainer" justifyContent="center">
             <Link to="/aboutSabrina">
               <Image
@@ -52,10 +52,16 @@ function AboutUs() {
                 alt="Foto de perfil de Sabrina"
                 className="aboutImg"
                 justifyContent="center"
-               
               />
-              <Text as="h2" fontSize={["15px","20px"]} className="aboutName" textAlign="center"  marginRight={["0%","55%"]}>
-                Sabrina Reiris
+              <Text
+                as="h2"
+                font-family="'Montserrat', sans-serif"
+                fontSize={["15px", "20px"]}
+                className="aboutName"
+                textAlign="center"
+                marginRight={["0%", "55%"]}
+              >
+                SABRINA REIRIS
               </Text>
             </Link>
           </Box>
@@ -67,8 +73,15 @@ function AboutUs() {
                 alt="Foto de perfil de Nahir"
                 className="aboutImg"
               />
-              <Text as="h2" fontSize={["15px","20px"]} className="aboutName" textAlign="center" marginRight={["0%","55%"]}>
-                Nahir Reverdito
+              <Text
+                font-family="'Montserrat', sans-serif"
+                as="h2"
+                fontSize={["15px", "20px"]}
+                className="aboutName"
+                textAlign="center"
+                marginRight={["0%", "55%"]}
+              >
+                NAHIR REVERDITO
               </Text>
             </Link>
           </Box>

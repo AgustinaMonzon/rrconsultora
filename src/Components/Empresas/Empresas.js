@@ -13,8 +13,14 @@ export default function Empresas() {
       marginTop={"-7%"}
     >
       <Box display={"flex"}>
-        <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }} mr={{ md: "2%" }}>
-          Empresas que confían en
+        <Heading
+          as="h1"
+          size="xl"
+          mb={{ base: 4, md: 8 }}
+          mr={{ md: "2%" }}
+          font-family="'Montserrat', sans-serif"
+        >
+          EMPRESAS QUE CONFÍAN EN
         </Heading>
         <Heading
           marginLeft={"-1%"}
@@ -22,8 +28,9 @@ export default function Empresas() {
           size="xl"
           mb={{ base: 4, md: 8 }}
           color={"#446b9c"}
+          font-family="'Montserrat', sans-serif"
         >
-          nosotras
+          NOSOTRAS
         </Heading>
       </Box>
       <CarrouselEmpresas />
