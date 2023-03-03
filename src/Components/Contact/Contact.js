@@ -150,7 +150,7 @@ const Contact = () => {
             <button
               type="submit"
               style={{
-                backgroundColor: "#2b2c64",
+                backgroundColor: "#06519c",
                 color: "white",
                 padding: "10px 20px",
                 borderRadius: "5px",
