@@ -1,52 +1,69 @@
 import { Box, Heading, Text, Image } from "@chakra-ui/react";
 import Slider from "react-slick";
+import "./Empresas.css";
 
 export default function Empresas() {
   return (
-    <Box
-      id="about-us"
-      p={{ base: 4, md: 8 }}
-      maxW={{ base: "100%", md: "80%" }}
-      mx="auto"
-      backgroundColor={"#c0f0f8"}
-      marginBottom={"10%"}
-      marginTop={"-7%"}
-    >
-      <Box display={"flex"}>
-        <Heading
-          as="h1"
-          size="xl"
-          mb={{ base: 4, md: 8 }}
-          mr={{ md: "2%" }}
-          font-family="'Montserrat', sans-serif"
-        >
-          EMPRESAS QUE CONFÍAN EN
-        </Heading>
-        <Heading
-          marginLeft={"-1%"}
-          as="h1"
-          size="xl"
-          mb={{ base: 4, md: 8 }}
-          color={"#446b9c"}
-          font-family="'Montserrat', sans-serif"
-        >
-          NOSOTRAS
-        </Heading>
+    <div className="Empresas">
+      <Box
+        className="Encabezado"
+        p={{ base: 4, md: 8 }}
+        maxW={{ base: "100%", md: "80%" }}
+        mx="auto"
+        backgroundColor={"white"}
+        marginBottom={"-1%"}
+        marginTop={"-7%"}
+      >
+        <Box display={"flex"}>
+          <Heading
+            as="h1"
+            size="xl"
+            mb={{ base: 4, md: 8 }}
+            mr={{ md: "2%" }}
+            font-family="'Montserrat', sans-serif"
+          >
+            EMPRESAS QUE CONFÍAN EN
+          </Heading>
+          <Heading
+            marginLeft={"-1%"}
+            as="h1"
+            size="xl"
+            mb={{ base: 4, md: 8 }}
+            color={"#446b9c"}
+            font-family="'Montserrat', sans-serif"
+          >
+            NOSOTRAS
+          </Heading>
+        </Box>
       </Box>
-      <CarrouselEmpresas />
-    </Box>
+      <Box
+        className="Carrusel"
+        p={{ base: 4, md: 8 }}
+        w="100%"
+        h="200px"
+        mx="auto"
+        backgroundColor={"#c0f0f8"}
+        marginBottom={"8%"}
+        background="linear-gradient(135deg, #92dde8 0%, #2b2c64 100%)"
+        boxShadow="0 4px 6px rgba(0,0,0,0.1)"
+        borderRadius="md"
+      >
+        <CarrouselEmpresas />
+      </Box>
+    </div>
   );
 }
+
 function CarrouselEmpresas() {
   const imgStyle = {
     margin: "10px 20px",
     maxHeight: "150px",
-    maxWidth: "150px",
-    marginRight: "100px",
+    maxWidth: "350px",
+    marginRight: "80px",
   };
 
   const containerStyle = {
-    maxWidth: "150%",
+    maxWidth: "250%",
   };
 
   const images = [
