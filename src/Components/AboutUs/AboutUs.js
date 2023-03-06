@@ -12,6 +12,7 @@ function AboutUs() {
       maxW={{ base: "100%", md: "80%" }}
       mx="auto"
     >
+      <Link to="/#about-us"></Link>
       <Box display={"flex"}>
         <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }}>
           ¿QUIÉNES

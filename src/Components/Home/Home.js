@@ -5,6 +5,7 @@ import Carrousel from "./Carrousel";
 import AboutUs from "../AboutUs/AboutUs";
 import Valores from "../Valores/Valores";
 import Empresas from "../Empresas/Empresas";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
 
@@ -107,6 +108,10 @@ function Card({ title, color, href }) {
 }
 
 function Home() {
+  const handleScrollToAboutUs = () => {
+    const aboutUsElement = document.getElementById("about-us");
+    aboutUsElement.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <Box display="flex" flexDirection="column" minHeight="100vh">
       <NavBar />
@@ -121,9 +126,9 @@ function Home() {
           />
         </Box>
 
-        <Box mb={10} mt={20}>
+        <Link to="/aboutUs" onClick={handleScrollToAboutUs}>
           <AboutUs />
-        </Box>
+        </Link>
         <Box mb={10} mt={20}>
           <Valores />
         </Box>
