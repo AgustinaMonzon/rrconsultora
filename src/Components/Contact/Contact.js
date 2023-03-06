@@ -80,7 +80,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div id="contact">
       <NavBar />
       <div className="contact-container">
         <form onSubmit={handleSubmit}>
@@ -156,7 +156,6 @@ const Contact = () => {
                 borderRadius: "5px",
                 alignItems: "center",
                 marginTop: "1rem",
-                
               }}
             >
               Enviar Email
@@ -170,4 +169,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
