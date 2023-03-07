@@ -1,8 +1,9 @@
-import { Box, Heading, Text, Image } from "@chakra-ui/react";
+import { Box, Heading, Text, Image, useColorModeValue } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "./Empresas.css";
 
 export default function Empresas() {
+
   return (
     <div className="Empresas">
       <Box
@@ -10,7 +11,7 @@ export default function Empresas() {
         p={{ base: 4, md: 8 }}
         maxW={{ base: "100%", md: "80%" }}
         mx="auto"
-        backgroundColor={"white"}
+        bg={useColorModeValue("white", "gray.800")}
         marginBottom={"-1%"}
         marginTop={"-7%"}
       >
@@ -36,6 +37,7 @@ export default function Empresas() {
           </Heading>
         </Box>
       </Box>
+
       <Box
         className="Carrusel"
         p={{ base: 4, md: 8 }}

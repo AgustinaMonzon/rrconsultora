@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { Box, Heading, Text, Image } from "@chakra-ui/react";
 import Dropzone from "react-dropzone";
 import swal from "sweetalert";
 import PDFViewer from "pdf-viewer-reactjs";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import "./Contact.css";
+import foto from "./contact-bg2.webp"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -85,7 +87,28 @@ const Contact = () => {
       <div className="contact-container">
         <form onSubmit={handleSubmit}>
           <div className="contact">
-            <h2 className="contact-title">Contáctanos</h2>
+          <Box>
+          <Heading
+          as="h1"
+          size={{ base:"md", md: "xl" }}
+          mb={{ base: 6, md: 8 }}
+          font-family="'Montserrat', sans-serif"
+          textAlign={"center"}
+          mt={{ base: 8, md: 0 }}
+          ml={["-11%","0%" ]}
+        >
+          CONTÁCTANOS
+        </Heading>
+  </Box>
+            <Image
+                src={foto}
+                w={["80%", "60%"]}
+                height={['70px','90px','110px','150px']}
+                alt="Foto contacto"
+                justifyContent="center"
+                marginBottom={'2%'}
+                marginLeft={["4%","20%"]}
+              />
             <div className="form">
               <input
                 type="text"
@@ -119,31 +142,7 @@ const Contact = () => {
               {!formData.message && errors.messageError && (
                 <span className="form-error">{errors.messageError}</span>
               )}
-              <div className="dropzone">
-                <Dropzone onDrop={handleDrop}>
-                  {({ getRootProps, getInputProps }) => (
-                    <div {...getRootProps()}>
-                      <input {...getInputProps()} />
-                      <p>
-                        Arrastra y suelta un archivo aquí, o haz clic para
-                        seleccionar un archivo
-                      </p>
-                    </div>
-                  )}
-                </Dropzone>
-                {formData.pdf && (
-                  <div className="pdf-preview">
-                    <PDFViewer
-                      document={{
-                        data: formData.pdf,
-                      }}
-                      hideRotation={true}
-                      hideToolbar={true}
-                      css="pdf-viewer"
-                    />
-                  </div>
-                )}
-              </div>
+              
             </div>
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>

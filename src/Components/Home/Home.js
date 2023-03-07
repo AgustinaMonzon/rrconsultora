@@ -120,7 +120,7 @@ function Home() {
           {/* <Carrousel /> */}
           <Image
             justifyContent={"center"}
-            marginLeft="22%"
+            marginLeft={["14%","20%","20%"]}
             w={"60%"}
             src="https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677772329/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS_1_vvctap.png"
           />
