@@ -6,7 +6,7 @@ import profileImg from "./profile.jpeg";
 
 function AboutUs() {
   return (
-    <Box
+    <section
       id="about-us"
       p={{ base: 4, md: 8 }}
       maxW={{ base: "100%", md: "80%" }}
@@ -88,7 +88,7 @@ function AboutUs() {
           </Box>
         </Box>
       </Box>
-    </Box>
+    </section>
   );
 }
 

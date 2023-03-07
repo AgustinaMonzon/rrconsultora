@@ -108,10 +108,11 @@ function Card({ title, color, href }) {
 }
 
 function Home() {
-  const handleScrollToAboutUs = () => {
+  const scrollToAboutUs = () => {
     const aboutUsElement = document.getElementById("about-us");
     aboutUsElement.scrollIntoView({ behavior: "smooth" });
   };
+
   return (
     <Box display="flex" flexDirection="column" minHeight="100vh">
       <NavBar />
@@ -126,9 +127,8 @@ function Home() {
           />
         </Box>
 
-        <Link to="/aboutUs" onClick={handleScrollToAboutUs}>
-          <AboutUs />
-        </Link>
+        <AboutUs />
+
         <Box mb={10} mt={20}>
           <Valores />
         </Box>
