@@ -1,25 +1,27 @@
 import React from "react";
-import { Box, Heading, Text, Image } from "@chakra-ui/react";
+import { Box, Heading, Text, Image, useColorModeValue } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import "./about.css";
 import profileImg from "./profile.jpeg";
 
 function AboutUs() {
+  const textColor = useColorModeValue("gray.700", "whiteAlpha.900");
   return (
     <section
       id="about-us"
       p={{ base: 4, md: 8 }}
       maxW={{ base: "100%", md: "80%" }}
       mx="auto"
+      
     >
       <Link to="/#about-us"></Link>
       <Box display={"flex"}>
-        <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }}>
+        <Heading as="h1" fontSize={["20px","28px","36px"]} mb={{ base: 4, md: 8 }}  color={textColor}>
           ¿QUIÉNES
         </Heading>
         <Heading
           as="h1"
-          size="xl"
+          fontSize={["20px","28px","36px"]}
           mb={{ base: 4, md: 8 }}
           marginLeft={"1%"}
           color={"#446b9c"}
@@ -27,7 +29,7 @@ function AboutUs() {
           SOMOS?
         </Heading>
       </Box>
-      <Text fontSize={{ base: "md", md: "lg" }}>
+      <Text fontSize={["12px","15px","18px"]} color={textColor} w={["90%","100%"]} >
         Somos RR Consultoría, conformado por dos profesionales innovadoras y
         apasionadas por lo que hacemos. Nos dedicamos a liderar procesos de
         atracción de talentos y brindar soluciones que aporten un plus extra al
@@ -55,12 +57,13 @@ function AboutUs() {
                 justifyContent="center"
               />
               <Text
-                as="h2"
+                as="h3"
                 font-family="'Montserrat', sans-serif"
-                fontSize={["15px", "20px"]}
+                fontSize={["15px", "16px"]}
                 className="aboutName"
                 textAlign="center"
                 marginRight={["0%", "55%"]}
+                color={textColor}
               >
                 SABRINA REIRIS
               </Text>
@@ -76,11 +79,12 @@ function AboutUs() {
               />
               <Text
                 font-family="'Montserrat', sans-serif"
-                as="h2"
-                fontSize={["15px", "20px"]}
+                as="h3"
+                fontSize={["15px", "16px"]}
                 className="aboutName"
                 textAlign="center"
                 marginRight={["0%", "55%"]}
+                color={textColor}
               >
                 NAHIR REVERDITO
               </Text>

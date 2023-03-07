@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "./Empresas.css";
 
 export default function Empresas() {
+
   return (
     <div className="Empresas">
       <Box
