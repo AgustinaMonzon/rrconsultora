@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Image } from "@chakra-ui/react";
+import { Box, Heading, Text, Image, Flex } from "@chakra-ui/react";
 import "./Valores.css";
 export default function Valores() {
   return (
@@ -30,7 +30,7 @@ export default function Valores() {
           RR CONSULTORÍA
         </Heading>
       </Box>
-      <Box
+      <Flex
         padding={"10px"}
         marginBottom={"13%"}
         display={"flex"}
@@ -64,7 +64,7 @@ export default function Valores() {
           >
             PROFESIONALISMO
           </Text>
-          <Box color="black" marginTop={2}>
+          <Box color="black" marginTop={2} >
             Creemos que el profesionalismo es fundamental para brindar el mejor
             servicio a nuestros clientes. Nos esforzamos por mantener altos
             estándares en todo lo que hacemos, desde nuestra comunicación hasta
@@ -182,7 +182,7 @@ export default function Valores() {
             innovadoras y adaptadas a sus necesidades.
           </Box>
         </Box>
-      </Box>
+      </Flex>
     </Box>
   );
 }
