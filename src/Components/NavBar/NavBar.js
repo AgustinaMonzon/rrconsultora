@@ -51,7 +51,7 @@ export default function NavBar() {
 
         <Flex
           display={["none", "none", "flex", "flex"]}
-          marginLeft={["0%", "0%", "20%", "18%", "20%", "8%"]} 
+          marginLeft={["0%", "0%", "0%", "15%", "8%", "8%"]} 
           justifyContent={"center"}
         >
           <Link to="/" passHref>
