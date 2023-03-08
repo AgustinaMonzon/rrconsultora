@@ -41,7 +41,7 @@ export default function NavBar() {
           <Image
             src={logo}
             width={["50px", "70px"]}
-             marginLeft={["0%","-5%","-5%", "260%", "0%", "0%", "0%", "0%", "0%", "75%"]} 
+             marginLeft={["0%","-5%","15%", "150%", "0%", "0%", "0%", "0%", "0%", "75%"]} 
             /* backgroundColor={" rgb(157, 210, 245) "} */
             backgroundColor={" white "}
             borderRadius={"full"}
@@ -51,7 +51,7 @@ export default function NavBar() {
 
         <Flex
           display={["none", "none", "flex", "flex"]}
-          marginLeft={["0%", "0%", "0%", "15%", "8%", "8%"]} 
+          marginLeft={["0%", "0%", "2%", "10%", "8%", "8%"]} 
           justifyContent={"center"}
         >
           <Link to="/" passHref>
@@ -63,7 +63,7 @@ export default function NavBar() {
               aria-label="Home"
               my={5}
               w="100%"
-              fontSize={"13px"}
+              fontSize={["11px","11px","11px","13px"]}
               
             >
               HOME
@@ -85,7 +85,7 @@ export default function NavBar() {
               aria-label="About"
               my={5}
               w="100%"
-              fontSize={"13px"}
+              fontSize={["11px","11px","11px","13px"]}
             >
               QUIÉNES SOMOS
             </Button>
@@ -100,7 +100,7 @@ export default function NavBar() {
               aria-label="Contact"
               my={5}
               w="100%"
-              fontSize={"13px"}
+              fontSize={["11px","11px","11px","13px"]}
             >
               SOY EMPRESA
             </Button>
@@ -114,7 +114,7 @@ export default function NavBar() {
               aria-label="Contact"
               my={5}
               w="100%"
-              fontSize={"13px"}
+              fontSize={["11px","11px","11px","13px"]}
             >
               SOY CANDIDATO
             </Button>
@@ -128,7 +128,7 @@ export default function NavBar() {
               aria-label="Contact"
               my={5}
               w="100%"
-              fontSize={"13px"}
+              fontSize={["11px","11px","11px","13px"]}
             >
               CONTACTO
             </Button>
@@ -142,9 +142,9 @@ export default function NavBar() {
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               aria-label="Contact"
               my={5}
-              w="100%"
-              fontSize={"13"}
-              marginLeft={["0%","0%","0%","40%","67%"]}
+              w={["80%","80%","80%","100%"]}
+              fontSize={["11px","11px","11px","13px"]}
+              marginLeft={["0%","0%","15%","10%","67%"]}
             >
               CARGÁ TU CV
             </Button>
@@ -160,7 +160,7 @@ export default function NavBar() {
               colorScheme="linkedin"
               color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
-               marginLeft={["0%","0%","30%","160%", "200%"]}  
+               marginLeft={["0%","0%","30%","70%", "200%"]} 
               icon={<FaLinkedinIn />}
             />
           </a>
@@ -175,7 +175,7 @@ export default function NavBar() {
               colorScheme="pink"
               color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
-               marginLeft={["0%",,"50%","180%","218%", "215%"]}  
+               marginLeft={["0%",,"50%","90%","218%", "215%"]}  
               icon={<FaInstagram />}
             />
           </a>
@@ -192,7 +192,7 @@ export default function NavBar() {
           display={["flex", "flex", "none", "none"]}
           color="black"
         />
-        <Switch color="black" isChecked={isDark} marginLeft={["0%","4%","4%","8%","8%","7%"]} onChange={toggleColorMode} />
+        <Switch color="black" isChecked={isDark} marginLeft={["0%","4%","3%","5%","8%","7%"]} onChange={toggleColorMode} />
       </Flex>
 
       {/* Mobile Content */}
