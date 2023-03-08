@@ -24,24 +24,26 @@ function Footer() {
       </Box> */}
       <div className="footer-social">
         <a href="https://facebook.com/" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faFacebook} />
+          <FontAwesomeIcon  color={"blue"}  icon={faFacebook} />
         </a>
         <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon  color={"rgb(47, 47, 245)"}  icon={faTwitter} />
         </a>
         <a
           href="https://www.instagram.com/rrconsultoria_/"
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon 
+              color={"rgb(245, 105, 191)"}  icon={faInstagram} />
         </a>
         <a
           href="clinkedin.com/company/r-r-consultoria/?viewAsMember=true"
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon 
+              color={"rgb(22, 61, 236)"} icon={faLinkedin} />
         </a>
       </div>
     </footer>
