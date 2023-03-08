@@ -45,24 +45,25 @@ function AboutUs() {
       </Text>
       <br />
       <br />
-      <Box className="aboutChicas" justifyContent="center">
-        <Box display={"flex"} justifyContent="center" marginLeft={"20%"}>
-          <Box className="aboutImgContainer" justifyContent="center">
+      <Box className="aboutChicas" justifyContent="center" >
+        <Box display={"flex"} justifyContent="center" /* marginLeft={["-12%","20%"]} */ >
+          <Box className="aboutImgContainer" justifyContent="center" >
             <Link to="/aboutSabrina">
               <Image
                 src={profileImg}
-                w={["88%", "35%"]}
+                w={["64.5%", "50%", "50%","35%"]}
                 alt="Foto de perfil de Sabrina"
                 className="aboutImg"
                 justifyContent="center"
+                 marginLeft={["4%","40%","20%","40%"]} 
               />
               <Text
                 as="h3"
                 font-family="'Montserrat', sans-serif"
-                fontSize={["15px", "16px"]}
+                fontSize={["11px","14.4px","13.5px", "16px"]}
                 className="aboutName"
                 textAlign="center"
-                marginRight={["0%", "55%"]}
+                marginRight={["26%","-30%","9%", "-15%"]}
                 color={textColor}
               >
                 SABRINA REIRIS
@@ -73,17 +74,18 @@ function AboutUs() {
             <Link to="/aboutNahir">
               <Image
                 src={profileImg}
-                w={["100%", "35%"]}
+                w={["65%","50%", "50%", "35%"]}
                 alt="Foto de perfil de Nahir"
                 className="aboutImg"
+                marginLeft={["1%","23%","25%"]} 
               />
               <Text
                 font-family="'Montserrat', sans-serif"
                 as="h3"
-                fontSize={["15px", "16px"]}
+                fontSize={["10.5px","13.5px","13.5px", "16px"]}
                 className="aboutName"
                 textAlign="center"
-                marginRight={["0%", "55%"]}
+                marginRight={["33%","5%","0%", "14%"]}
                 color={textColor}
               >
                 NAHIR REVERDITO
