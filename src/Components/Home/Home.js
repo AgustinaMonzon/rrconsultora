@@ -121,7 +121,7 @@ function Home() {
           {/* <Carrousel /> */}
           <Image
             justifyContent={"center"}
-            marginLeft={["14%","20%","20%"]}
+            marginLeft={["14%", "20%", "20%"]}
             w={"60%"}
             src="https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677772329/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS_1_vvctap.png"
           />
@@ -167,20 +167,16 @@ function Home() {
               href="/soyEmpresa"
             />
             <Card
-              title="Servicio de armado de LinkedIn"
-              color="#2b2c64"
-              href="/soyCandidato"
-            />
-            <Card
-              title="Servicio de psicotécnicos"
-              color="#446b9c"
-              href="/soyEmpresa"
-            />
-            <Card
               title="Asesoría Laboral"
               color="#2b2c64"
               href="/soyCandidato"
             />
+            <Card
+              title="Servicio de armado de LinkedIn"
+              color="#2b2c64"
+              href="/soyCandidato"
+            />
+
             <Card
               title="Confección de CVS"
               color="#446b9c"

@@ -8,12 +8,13 @@ function SoyEmpresa() {
     {
       title: "Atracción de talentos",
       description:
-        "Nuestra consultora se encarga de ayudar a las empresas a encontrar el talento adecuado para sus necesidades. Nos enfocamos en identificar y atraer a los candidatos más calificados y adecuados para las posiciones que nuestros clientes necesitan cubrir.",
-    },
-    {
-      title: "Servicio de psicotécnicos.",
-      description:
-        "Los psicotécnicos son una herramienta útil para evaluar a los candidatos en términos de habilidades y aptitudes. Ofrecemos un servicio de psicotécnicos para nuestros clientes, ayudándoles a tomar decisiones informadas en la selección de candidatos y la gestión de su personal.",
+        "La Asesoría Laboral está dirigida tanto para aquellas personas que no tienen trabajo  como para quienes tienen la intención de cambiar o expandirse a un nuevo rubro en el mercado laboral.",
+
+      lista: [
+        "Mediante este servicio te preparamos para diversas modalidades de entrevistas, con el objetivo de aumentar tus posibilidades de avanzar en los procesos de selección.​",
+        "Te ayudamos a mejorar tus habilidades a la hora de responder las preguntas en tus entrevistas laborales.",
+        "Te brindamos los consejos y herramientas necesarias para que puedas desenvolverte de forma eficiente y cuales son las preguntas frecuentes que pueden hacerte.",
+      ],
     },
   ];
 
@@ -29,31 +30,27 @@ function SoyEmpresa() {
 
       <div className="container">
         <div className="content">
-          <h2
-            style={{
-              fontSize: "2.5rem",
-              margin: "0 0 20px",
-              background: "linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              fontWeight: "bold",
-            }}
-          >
-            NUESTROS SERVICIOS PARA EMPRESAS
+          <h2 className="my-headingEm">
+            NUESTROS SERVICIOS <span>PARA EMPRESAS</span>
           </h2>
+
           <ul>
             {servicios.map((servicio, index) => (
               <li key={index}>
                 <h3>{servicio.title}</h3>
                 <p>{servicio.description}</p>
+                <ul>
+                  {servicio.lista.map((descripcion, i) => (
+                    <li key={i}>{descripcion}</li>
+                  ))}
+                </ul>
                 <button
                   onClick={scrollToContact}
                   style={{
                     background:
                       "linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)",
-
                     color: "#2b2c64",
-                    border: "2px solid #4b749c",
+                    border: "2px solid ##e9f8fa",
                     borderRadius: "10px",
                     padding: "10px 20px",
                     fontWeight: "bold",

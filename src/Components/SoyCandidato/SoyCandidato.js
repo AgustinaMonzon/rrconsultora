@@ -13,37 +13,45 @@ function SoyCandidato() {
     {
       title: "Asesoría Laboral",
       description:
-        "Brindamos asesoría a nuestros clientes en temas laborales, como la elaboración de contratos, la gestión de relaciones laborales, el cumplimiento de leyes y regulaciones laborales, entre otros temas.",
+        "La Asesoría Laboral está dirigida tanto para aquellas personas que no tienen trabajo  como para quienes tienen la intención de cambiar o expandirse a un nuevo rubro en el mercado laboral.",
+      lista: [
+        "Nos encargamos de entrenarte para tu próxima entrevista de empleo.",
+        "Mediante este servicio te preparamos para diversas modalidades de entrevistas, con el objetivo de aumentar tus posibilidades de avanzar en los procesos de selección.​",
+        "Te ayudamos a mejorar tus habilidades a la hora de responder las preguntas en tus entrevistas laborales.",
+        "Te brindamos los consejos y herramientas necesarias para que puedas desenvolverte de forma eficiente y cuales son las preguntas frecuentes que pueden hacerte.",
+      ],
     },
     {
       title: "Confección de CVs",
       description:
-        "Sabemos que el CV es la primera impresión que los empleadores tienen de los candidatos, por lo que nos aseguramos de que el CV de nuestros clientes sea profesional, claro y convincente. Nos encargamos de elaborar CVs personalizados para cada candidato, destacando sus habilidades, experiencia y logros.",
+        "Creamos tu CV con análisis, asesoría, estrategia, redacción profesional y diseño gráfico.",
+      lista: [
+        "Confeccionamos tu CV desde cero en un servicio online completo.",
+        "Trabajamos para vos con absoluta dedicación y compromiso hacia tus objetivos laborales.",
+        "Cómo Consultora de Recursos Humanos, hacemos tu CV eficaz, atractivo y profesional para lograr el éxito en las entrevistas laborales, según las últimas tendencias y las mejores prácticas.",
+      ],
     },
+
     {
       title: "Servicio de armado de LinkedIn",
       description:
-        "LinkedIn es una herramienta poderosa para la búsqueda de empleo y la construcción de redes profesionales. Nuestra consultora ofrece un servicio de armado de perfiles de LinkedIn para nuestros clientes, asegurándonos de que su perfil sea atractivo y destacando su experiencia y habilidades.",
+        "Nos encargamos de confeccionar y diseñar tu perfil de Linkedin de acuerdo a tu experiencia y objetivos profesionales.",
+      lista: [
+        "Linkedin es la mayor red profesional del mundo por excelencia, por eso, es indispensable que tengas tu perfil actualizado para conseguir las mejores oportunidades de empleo.",
+        "Confeccionamos tu Linkedin desde cero en un servicio online completo.",
+        "Trabajamos para vos con absoluta dedicación y compromiso hacia tus objetivos laborales.",
+        "Hacemos que tu perfil de Linkedin luzca atractivo y profesional para lograr el éxito en tus búsquedas laborales, teniendo en cuenta las últimas tendencias y las mejores prácticas",
+      ],
     },
   ];
-
   return (
     <div>
       <Navbar />
 
       <div className="container">
         <div className="content">
-          <h2
-            style={{
-              fontSize: "2.5rem",
-              margin: "0 0 20px",
-              background: "linear-gradient(135deg, #4b749c, #92dde8, #dfeef0)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              fontWeight: "bold",
-            }}
-          >
-            SOY CANDIDATO
+          <h2 className="my-headingEm">
+            SOY <span> CANDIDATO</span>
           </h2>
 
           <ul>
@@ -51,6 +59,11 @@ function SoyCandidato() {
               <li key={index}>
                 <h3>{servicio.title}</h3>
                 <p>{servicio.description}</p>
+                <ul>
+                  {servicio.lista.map((descripcion, i) => (
+                    <li key={i}>{descripcion}</li>
+                  ))}
+                </ul>
                 <button
                   onClick={scrollToContact}
                   style={{

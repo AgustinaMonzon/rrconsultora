@@ -12,16 +12,20 @@ function AboutUs() {
       p={{ base: 4, md: 8 }}
       maxW={{ base: "100%", md: "80%" }}
       mx="auto"
-      
     >
       <Link to="/#about-us"></Link>
       <Box display={"flex"}>
-        <Heading as="h1" fontSize={["20px","28px","36px"]} mb={{ base: 4, md: 8 }}  color={textColor}>
+        <Heading
+          as="h1"
+          fontSize={["20px", "28px", "36px"]}
+          mb={{ base: 4, md: 8 }}
+          color={textColor}
+        >
           ¿QUIÉNES
         </Heading>
         <Heading
           as="h1"
-          fontSize={["20px","28px","36px"]}
+          fontSize={["20px", "28px", "36px"]}
           mb={{ base: 4, md: 8 }}
           marginLeft={"1%"}
           color={"#446b9c"}
@@ -29,7 +33,11 @@ function AboutUs() {
           SOMOS?
         </Heading>
       </Box>
-      <Text fontSize={["12px","15px","18px"]} color={textColor} w={["90%","100%"]} >
+      <Text
+        fontSize={["12px", "15px", "18px"]}
+        color={textColor}
+        w={["90%", "100%"]}
+      >
         Somos RR Consultoría, conformado por dos profesionales innovadoras y
         apasionadas por lo que hacemos. Nos dedicamos a liderar procesos de
         atracción de talentos y brindar soluciones que aporten un plus extra al
@@ -45,25 +53,30 @@ function AboutUs() {
       </Text>
       <br />
       <br />
-      <Box className="aboutChicas" justifyContent="center" >
-        <Box display={"flex"} justifyContent="center" /* marginLeft={["-12%","20%"]} */ >
-          <Box className="aboutImgContainer" justifyContent="center" >
+      <Box className="aboutChicas" justifyContent="center">
+        <Box
+          display={"flex"}
+          justifyContent="center" /* marginLeft={["-12%","20%"]} */
+        >
+          <Box className="aboutImgContainer" justifyContent="center">
             <Link to="/aboutSabrina">
               <Image
-                src={profileImg}
-                w={["64.5%", "50%", "50%","35%"]}
+                src="https://res.cloudinary.com/dmuudt7dt/image/upload/c_scale,w_452/v1678368997/Sabri_md3kbe.jpg"
+                w={["64.5%", "50%", "50%", "35%"]}
                 alt="Foto de perfil de Sabrina"
                 className="aboutImg"
                 justifyContent="center"
-                 marginLeft={["4%","40%","20%","40%"]} 
+                marginLeft={["1%", "23%", "25%"]}
+                filter="brightness(110%)"
               />
+
               <Text
                 as="h3"
                 font-family="'Montserrat', sans-serif"
-                fontSize={["11px","14.4px","13.5px", "16px"]}
+                fontSize={["11px", "14.4px", "13.5px", "16px"]}
                 className="aboutName"
                 textAlign="center"
-                marginRight={["26%","-30%","9%", "-15%"]}
+                marginRight={["26%", "-30%", "9%", "-15%"]}
                 color={textColor}
               >
                 SABRINA REIRIS
@@ -73,19 +86,20 @@ function AboutUs() {
           <Box className="aboutImgContainer" ml={[0, 4]}>
             <Link to="/aboutNahir">
               <Image
-                src={profileImg}
-                w={["65%","50%", "50%", "35%"]}
+                src="https://res.cloudinary.com/dmuudt7dt/image/upload/c_scale,w_365/v1678368998/Nahir_i2rcsm.jpg"
+                w={["65%", "50%", "50%", "35%"]}
                 alt="Foto de perfil de Nahir"
                 className="aboutImg"
-                marginLeft={["1%","23%","25%"]} 
+                marginLeft={["1%", "23%", "25%"]}
+                borderEndEndRadius="50%"
               />
               <Text
                 font-family="'Montserrat', sans-serif"
                 as="h3"
-                fontSize={["10.5px","13.5px","13.5px", "16px"]}
+                fontSize={["10.5px", "13.5px", "13.5px", "16px"]}
                 className="aboutName"
                 textAlign="center"
-                marginRight={["33%","5%","0%", "14%"]}
+                marginRight={["33%", "5%", "0%", "14%"]}
                 color={textColor}
               >
                 NAHIR REVERDITO
