@@ -16,12 +16,12 @@ function AboutUs() {
     >
       <Link to="/#about-us"></Link>
       <Box display={"flex"}>
-        <Heading as="h1" fontSize={["20px","28px","36px"]} mb={{ base: 4, md: 8 }}  color={textColor}>
+        <Heading as="h1" fontSize={["17px","28px","36px"]} mb={{ base: 4, md: 8 }}  color={textColor}>
           ¿QUIÉNES
         </Heading>
         <Heading
           as="h1"
-          fontSize={["20px","28px","36px"]}
+          fontSize={["17px","28px","36px"]}
           mb={{ base: 4, md: 8 }}
           marginLeft={"1%"}
           color={"#446b9c"}
@@ -75,6 +75,8 @@ function AboutUs() {
               <Image
                 src={profileImg}
                 w={["65%","50%", "50%", "35%"]}
+                height={"auto"}
+                crop={"fill"}
                 alt="Foto de perfil de Nahir"
                 className="aboutImg"
                 marginLeft={["1%","23%","25%"]} 

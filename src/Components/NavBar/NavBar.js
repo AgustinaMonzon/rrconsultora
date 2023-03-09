@@ -133,7 +133,7 @@ export default function NavBar() {
               CONTACTO
             </Button>
           </Link>
-          <a href="https://docs.google.com/forms/d/1PeGHSBTKg1Hz5GXaY8SSjFGD3k0owQx7V8XrRXsMpFo/edit"  target="_blank"
+          <a href="https://docs.google.com/forms/d/1lq_EhQqFZnD4eeghbt_Z6Z0ejnixuvgcbBNWL1jlYuI/edit"  target="_blank"
             rel="noopener noreferrer">
             <Button
               as="a"
@@ -303,7 +303,7 @@ export default function NavBar() {
               Contacto
             </Button>
           </Link>
-          <a href="https://docs.google.com/forms/d/1PeGHSBTKg1Hz5GXaY8SSjFGD3k0owQx7V8XrRXsMpFo/edit"  target="_blank"
+          <a href="https://docs.google.com/forms/d/1lq_EhQqFZnD4eeghbt_Z6Z0ejnixuvgcbBNWL1jlYuI/edit"  target="_blank"
             rel="noopener noreferrer">
             <Button
               as="a"
