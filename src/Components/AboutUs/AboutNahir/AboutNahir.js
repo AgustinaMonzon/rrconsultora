@@ -5,7 +5,7 @@ import {
   useMediaQuery,
   Flex,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
 } from "@chakra-ui/react";
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
@@ -52,7 +52,7 @@ function AboutSabrina() {
             <Image
               borderRadius="full"
               boxSize="200"
-              src={profileImg}
+              src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678368998/Nahir_i2rcsm.jpg"
               alt="Foto de perfil"
             />
           </Box>
@@ -71,7 +71,7 @@ function AboutSabrina() {
           >
             Nahir Reverdito.
           </Text>
-          <Text fontSize={["12px", "14px", "15px", "16px"]}  color={textColor}>
+          <Text fontSize={["12px", "14px", "15px", "16px"]} color={textColor}>
             Profesional apasionada por la selección y atracción de talentos.
             Creo que lo más importante es generar una cálida experiencia tanto
             para el candidato como para la empresa. Licenciada en Recursos

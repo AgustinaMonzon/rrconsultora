@@ -5,7 +5,7 @@ import {
   useMediaQuery,
   Flex,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
 } from "@chakra-ui/react";
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
@@ -48,13 +48,12 @@ function AboutSabrina() {
         p={["50px", "40px", "20"]}
       >
         {isLargerThan640 && (
-          <Box mr="6" width={["140%", "100%", "45%", "24%"]}  >
+          <Box mr="6" width={["140%", "100%", "45%", "24%"]}>
             <Image
               borderRadius="full"
               boxSize="200"
-              src={profileImg}
+              src="https://res.cloudinary.com/dmuudt7dt/image/upload/c_scale,w_452/v1678368997/Sabri_md3kbe.jpg"
               alt="Foto de perfil"
-             
             />
           </Box>
         )}
