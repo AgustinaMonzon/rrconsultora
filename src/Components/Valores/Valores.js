@@ -1,5 +1,6 @@
 import { Box, Heading, Text, Image, Flex } from "@chakra-ui/react";
 import "./Valores.css";
+
 export default function Valores() {
   return (
     <Box
@@ -8,7 +9,7 @@ export default function Valores() {
       maxW={{ base: "100%", md: "80%" }}
       mx="auto"
     >
-      <Box display={"flex"}>
+      <Box display={{ base: "block", md: "flex" }}>
         <Heading
           as="h1"
           size="xl"
@@ -21,7 +22,7 @@ export default function Valores() {
           as="h1"
           // size="xl"
           mb={{ base: 4, md: 8 }}
-          marginLeft={"1%"}
+          marginLeft={{ base: "0", md: "1%" }}
           color={"#446b9c"}
           font-weight=" bold"
           font-size="40px"
@@ -32,19 +33,22 @@ export default function Valores() {
       </Box>
       <Flex
         padding={"10px"}
-        marginBottom={"13%"}
+        marginBottom={{ base: "10%", md: "13%" }}
         display={"flex"}
-        justifyContent={"space-between"}
-        width={"100%"}
+        justifyContent={{ base: "center", md: "space-between" }}
+        width={{ base: "100%", md: "80%" }}
+        mx="auto"
+        flexDirection={{ base: "column", md: "row" }}
       >
         <Box
           className="card"
           display={"grid"}
           justifyContent={"center"}
           backgroundColor={"rgba(139,200,232,255)"}
-          width={["23%", "23%"]}
+          width={{ base: "100%", md: "23%" }}
           padding={["1%", "2%"]}
           boxShadow={"xl"}
+          marginBottom={{ base: "10%", md: "0" }}
         >
           <Image
             src="https://cdn-icons-png.flaticon.com/512/1244/1244701.png?w=740&t=st=1677694058~exp=1677694658~hmac=6584575706cdfbb4b84f70f777fa1bef5c3833a049c8d93e862e335e57d995af"
@@ -64,7 +68,7 @@ export default function Valores() {
           >
             PROFESIONALISMO
           </Text>
-          <Box color="black" marginTop={2} >
+          <Box color="black" marginTop={2}>
             Creemos que el profesionalismo es fundamental para brindar el mejor
             servicio a nuestros clientes. Nos esforzamos por mantener altos
             estándares en todo lo que hacemos, desde nuestra comunicación hasta
@@ -132,8 +136,8 @@ export default function Valores() {
             justifyContent={"center"}
             display={"grid"}
             fontWeight="bold"
-            color="black"
             fontSize={["13px", "10px", "15px"]}
+            color="black"
           >
             HONESTIDAD
           </Text>

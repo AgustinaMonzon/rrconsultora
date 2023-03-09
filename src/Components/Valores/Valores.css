@@ -4,3 +4,37 @@
         margin-top: 55px;
         height:750px;
 }
+.card {
+        font-size: 15px;
+      }
+      
+  
+@media screen and (max-width: 768px) {
+  .valores {
+   
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+ 
+  .valores > div > div {
+    margin-bottom: 20px;
+  }
+
+
+  .valores > div > h1 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+
+  .card p {
+    font-size: 14px;
+  }
+}
+
+      
+      
