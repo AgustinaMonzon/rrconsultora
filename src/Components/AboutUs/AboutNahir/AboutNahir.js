@@ -27,10 +27,10 @@ function AboutSabrina() {
       <Box>
         <Text
           fontWeight="bold"
-          fontSize={["20px", "22px", "35"]}
+          fontSize={["22px", "24px", "35"]}
           mb="4"
           display={"flex"}
-          ml={["0%", "0%", "0%", "-65%", "-72%", "-76%"]}
+          ml={["-8%", "-8%", "-8%", "-65%", "-72%", "-76%"]}
           mt={["-11%", "-4%", "0%"]}
           justifyContent={"center"}
           color={textColor}

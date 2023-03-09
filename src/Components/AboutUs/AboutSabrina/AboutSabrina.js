@@ -27,7 +27,7 @@ function AboutSabrina() {
       <Box>
         <Text
           fontWeight="bold"
-          fontSize={["20px", "22px", "35"]}
+          fontSize={["22px", "24px", "35"]}
           mb="4"
           display={"flex"}
           ml={["-8%", "-8%", "-8%", "-65%", "-72%", "-76%"]}
@@ -48,12 +48,13 @@ function AboutSabrina() {
         p={["50px", "40px", "20"]}
       >
         {isLargerThan640 && (
-          <Box mr="6" width={["100%", "100%", "45%", "24%"]}  >
+          <Box mr="6" width={["140%", "100%", "45%", "24%"]}  >
             <Image
               borderRadius="full"
               boxSize="200"
               src={profileImg}
               alt="Foto de perfil"
+             
             />
           </Box>
         )}
