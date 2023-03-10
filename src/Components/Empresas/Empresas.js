@@ -15,22 +15,27 @@ export default function Empresas() {
         marginBottom={"-1%"}
         marginTop={"-7%"}
       >
-        <Box display={"flex"}>
+       <Box display={["grid","grid","flex","flex"]}>
           <Heading
             as="h1"
-            size="xl"
-            mb={{ base: 4, md: 8 }}
-            mr={{ md: "2%" }}
+            fontSize={["20px", "28px", "36px"]}
+            mb={{ base: 6, md: 6}}
+            mt={["-33%", "5%"]}
             font-family="'Montserrat', sans-serif"
+            textAlign={"center"}
+             marginLeft={["-8%", "0%", "0%"]} 
           >
             EMPRESAS QUE CONFÍAN EN
           </Heading>
           <Heading
-            marginLeft={"-1%"}
             as="h1"
-            size="xl"
-            mb={{ base: 4, md: 8 }}
+            mb={{ base: 7, md: 8 }}
+            mt={["-18%", "5%"]}
+            textAlign={"center"}
+            marginLeft={["-8%", "1%"]} 
             color={"#446b9c"}
+            font-weight=" bold"
+            fontSize={["20px", "28px", "36px"]}
             font-family="'Montserrat', sans-serif"
           >
             NOSOTRAS
@@ -46,7 +51,7 @@ export default function Empresas() {
         mx="auto"
         backgroundColor={"#c0f0f8"}
         marginBottom={"8%"}
-        background="linear-gradient(135deg, #92dde8 0%, #2b2c64 100%)"
+        background="linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)"
         boxShadow="0 4px 6px rgba(0,0,0,0.1)"
         borderRadius="md"
       >
@@ -57,39 +62,29 @@ export default function Empresas() {
 }
 
 function CarrouselEmpresas() {
-  const imgStyle = {
-    margin: "10px 20px",
-    maxHeight: "150px",
-    maxWidth: "350px",
-    marginRight: "80px",
-  };
-
-  const containerStyle = {
-    maxWidth: "250%",
-  };
-
   const images = [
     {
-      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/c_scale,h_220/v1677668545/WhatsApp_Image_2023-03-01_at_08.00.56_ijm4ue.jpg",
+      url: "https://res.cloudinary.com/dmuudt7dt/image/upload/v1678476045/Dise%C3%B1o_sin_t%C3%ADtulo_39_fnofcg.png",
       alt: "Delicious",
       link: "http://deliciouscafe.com.ar/?fbclid=IwAR2SqSw7mTLgYzYoXMAzA_0qyw2FcU-bK4pgn9Qx1wXrxCePuPxoB_AYXYQs",
     },
     {
-      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677668544/WhatsApp_Image_2023-03-01_at_07.57.57_hwyrxw.jpg",
+      url: "https://res.cloudinary.com/dmuudt7dt/image/upload/v1678457859/Dise%C3%B1o_sin_t%C3%ADtulo_36_lenr68.png",
       alt: "ENVAPLAST",
       link: "https://www.envaplast.com.ar/,",
     },
     {
-      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677668544/WhatsApp_Image_2023-03-01_at_07.59.12_rlfqgc.jpg",
+      url: "https://res.cloudinary.com/dmuudt7dt/image/upload/v1678476045/Dise%C3%B1o_sin_t%C3%ADtulo_37_twofxx.png",
       alt: "BOX CUSTODIA DIGITAL",
       link: "https://pki.boxcustodia.com/",
     },
     {
-      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677668544/WhatsApp_Image_2023-03-01_at_07.57.18_bbkjdy.jpg",
+      url: "https://res.cloudinary.com/dmuudt7dt/image/upload/v1678476045/Dise%C3%B1o_sin_t%C3%ADtulo_38_fntzr7.png",
       alt: "FAMIQ",
       link: "https://www.famiq.com.ar/",
     },
   ];
+
   const settings = {
     dots: false,
     infinite: true,
@@ -98,19 +93,25 @@ function CarrouselEmpresas() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
+
   return (
-    <div className="carruselito" style={containerStyle}>
-      <Slider className="Carrousel" {...settings}>
-        {images.map((image, index) => (
-          <div className="contenedor-foto" key={index}>
-            <a href={image.link} target="_blank" rel="noreferrer">
-              <img src={image.url} alt={image.alt} style={imgStyle} />
-            </a>
-            <div className="caption">{image.caption}</div>
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <Slider {...settings}>
+      {images.map((image, index) => (
+        <div key={index}>
+          <a href={image.link} target="_blank" rel="noreferrer">
+            <img className="carrousel-image" src={image.url} alt={image.alt} />
+          </a>
+        </div>
+      ))}
+    </Slider>
   );
 }

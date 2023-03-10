@@ -52,7 +52,7 @@ function AboutSabrina() {
             <Image
               borderRadius="full"
               boxSize="200"
-              src={profileImg}
+              src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678451654/Dise%C3%B1o_sin_t%C3%ADtulo_30_s7j8yd.png"
               alt="Foto de perfil"
              
             />
@@ -88,7 +88,7 @@ function AboutSabrina() {
             <Image
               borderRadius="full"
               boxSize="150px"
-              src={profileImg}
+              src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678451654/Dise%C3%B1o_sin_t%C3%ADtulo_30_s7j8yd.png"
               alt="Foto de perfil"
             />
           </Box>
