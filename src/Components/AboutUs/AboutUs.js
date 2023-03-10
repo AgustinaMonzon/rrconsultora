@@ -15,21 +15,33 @@ function AboutUs() {
       
     >
       <Link to="/#about-us"></Link>
-      <Box display={"flex"}>
-        <Heading as="h1" fontSize={["17px","28px","36px"]} mb={{ base: 4, md: 8 }}  color={textColor}>
-          ¿QUIÉNES
-        </Heading>
-        <Heading
-          as="h1"
-          fontSize={["17px","28px","36px"]}
-          mb={{ base: 4, md: 8 }}
-          marginLeft={"1%"}
-          color={"#446b9c"}
-        >
-          SOMOS?
-        </Heading>
-      </Box>
-      <Text fontSize={["12px","15px","18px"]} color={textColor} w={["90%","100%"]} >
+      <Box display={["flex"]}>
+          <Heading
+            as="h1"
+            fontSize={["20px", "28px", "36px"]}
+            mb={{ base: 6, md: 6}}
+            mt={["5%", "5%"]}
+            font-family="'Montserrat', sans-serif"
+            textAlign={"center"}
+             marginLeft={["10%", "0%", "0%"]} 
+          >
+            ¿QUIENES
+          </Heading>
+          <Heading
+            as="h1"
+            mb={{ base: 7, md: 8 }}
+            mt={["5%", "5%"]}
+            textAlign={"center"}
+            marginLeft={["2%", "1%"]} 
+            color={"#446b9c"}
+            font-weight=" bold"
+            fontSize={["20px", "28px", "36px"]}
+            font-family="'Montserrat', sans-serif"
+          >
+           SOMOS?
+          </Heading>
+        </Box>
+      <Text fontSize={["13px","15px","18px"]} textAlign={["center","left","left"]} color={textColor} w={["90%","100%"]} >
         Somos RR Consultoría, conformado por dos profesionales innovadoras y
         apasionadas por lo que hacemos. Nos dedicamos a liderar procesos de
         atracción de talentos y brindar soluciones que aporten un plus extra al
@@ -50,7 +62,7 @@ function AboutUs() {
           <Box className="aboutImgContainer" justifyContent="center" >
             <Link to="/aboutSabrina">
               <Image
-                src={profileImg}
+                src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678451275/Dise%C3%B1o_sin_t%C3%ADtulo_29_mpvboa.png"
                 w={["64.5%", "50%", "50%","35%"]}
                 alt="Foto de perfil de Sabrina"
                 className="aboutImg"
@@ -73,7 +85,7 @@ function AboutUs() {
           <Box className="aboutImgContainer" ml={[0, 4]}>
             <Link to="/aboutNahir">
               <Image
-                src={profileImg}
+                src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678449546/Dise%C3%B1o_sin_t%C3%ADtulo_27_e8wfvb.png"
                 w={["65%","50%", "50%", "35%"]}
                 height={"auto"}
                 crop={"fill"}
