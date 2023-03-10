@@ -61,7 +61,7 @@ function AboutUs() {
           <Box className="aboutImgContainer" justifyContent="center">
             <Link to="/aboutSabrina">
               <Image
-                src="https://res.cloudinary.com/dmuudt7dt/image/upload/c_scale,w_452/v1678368997/Sabri_md3kbe.jpg"
+                src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678449750/Dise%C3%B1o_sin_t%C3%ADtulo_28_ke5gkq.png"
                 w={["64.5%", "50%", "50%", "35%"]}
                 alt="Foto de perfil de Sabrina"
                 className="aboutImg"
@@ -86,7 +86,7 @@ function AboutUs() {
           <Box className="aboutImgContainer" ml={[0, 4]}>
             <Link to="/aboutNahir">
               <Image
-                src="https://res.cloudinary.com/dmuudt7dt/image/upload/c_scale,w_365/v1678368998/Nahir_i2rcsm.jpg"
+                src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678449546/Dise%C3%B1o_sin_t%C3%ADtulo_27_e8wfvb.png"
                 w={["65%", "50%", "50%", "35%"]}
                 alt="Foto de perfil de Nahir"
                 className="aboutImg"

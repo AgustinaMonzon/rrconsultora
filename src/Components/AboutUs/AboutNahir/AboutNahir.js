@@ -50,10 +50,12 @@ function AboutSabrina() {
         {isLargerThan640 && (
           <Box mr="6" width={["100%", "100%", "45%", "22%"]}>
             <Image
-              borderRadius="full"
-              boxSize="200"
+              w={["65%", "50%", "50%", "55%"]}
+              alt="Foto de perfil de Nahir"
+              className="aboutImg"
+              marginLeft={["1%", "23%", "25%"]}
+              borderEndEndRadius="50%"
               src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678368998/Nahir_i2rcsm.jpg"
-              alt="Foto de perfil"
             />
           </Box>
         )}
@@ -86,10 +88,12 @@ function AboutSabrina() {
         {!isLargerThan640 && (
           <Box mt="6">
             <Image
-              borderRadius="full"
-              boxSize="150px"
-              src={profileImg}
-              alt="Foto de perfil"
+              w={["65%", "50%", "50%", "55%"]}
+              alt="Foto de perfil de Nahir"
+              className="aboutImg"
+              marginLeft={["1%", "23%", "25%"]}
+              borderEndEndRadius="50%"
+              src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678368998/Nahir_i2rcsm.jpg"
             />
           </Box>
         )}
