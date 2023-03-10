@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./SoyEmpresa.css";
 import NavBar from "../NavBar/NavBar";
 import Contact from "../Contact/Contact";
+import { Heading, Box } from "@chakra-ui/react";
 
 function SoyEmpresa() {
   const servicios = [
@@ -29,11 +30,31 @@ function SoyEmpresa() {
       <NavBar />
 
       <div className="container">
+        <Box display={"flex"}>
+          <Heading
+            as="h1"
+            fontSize={["17px", "28px", "36px"]}
+            mb={{ base: 0, md: 8 }}
+            mt={["-25%", "0%"]}
+            font-family="'Montserrat', sans-serif"
+            marginLeft={["-6%", "-8%", "0%"]}
+          >
+            NUESTROS SERVICIOS
+          </Heading>
+          <Heading
+            as="h1"
+            mb={{ base: 0, md: 8 }}
+            mt={["-25%", "0%"]}
+            marginLeft={["3%", "1%"]}
+            color={"#446b9c"}
+            font-weight=" bold"
+            fontSize={["17px", "28px", "36px"]}
+            font-family="'Montserrat', sans-serif"
+          >
+            PARA EMPRESAS
+          </Heading>
+        </Box>
         <div className="content">
-          <h2 className="my-headingEm">
-            NUESTROS SERVICIOS <span>PARA EMPRESAS</span>
-          </h2>
-
           <ul>
             {servicios.map((servicio, index) => (
               <li key={index}>

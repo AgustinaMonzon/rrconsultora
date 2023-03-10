@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../NavBar/NavBar";
 import Contact from "../Contact/Contact";
 import "./SoyCandidato.css";
+import { Heading, Box } from "@chakra-ui/react";
 
 function SoyCandidato() {
   function scrollToContact() {
@@ -49,11 +50,31 @@ function SoyCandidato() {
       <Navbar />
 
       <div className="container">
+        <Box display={"flex"}>
+          <Heading
+            as="h1"
+            fontSize={["17px", "28px", "36px"]}
+            mb={{ base: 0, md: 8 }}
+            mt={["-25%", "0%"]}
+            font-family="'Montserrat', sans-serif"
+            marginLeft={["-6%", "-8%", "0%"]}
+          >
+            SOY
+          </Heading>
+          <Heading
+            as="h1"
+            mb={{ base: 0, md: 8 }}
+            mt={["-25%", "0%"]}
+            marginLeft={["3%", "1%"]}
+            color={"#446b9c"}
+            font-weight=" bold"
+            fontSize={["17px", "28px", "36px"]}
+            font-family="'Montserrat', sans-serif"
+          >
+            CANDIDATO
+          </Heading>
+        </Box>
         <div className="content">
-          <h2 className="my-headingEm">
-            SOY <span> CANDIDATO</span>
-          </h2>
-
           <ul>
             {servicios.map((servicio, index) => (
               <li key={index}>
