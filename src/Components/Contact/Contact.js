@@ -95,7 +95,7 @@ const Contact = () => {
           font-family="'Montserrat', sans-serif"
           textAlign={"center"}
           mt={{ base: 8, md: 0 }}
-          ml={["-11%","0%" ]}
+          ml={["0%","0%" ]}
         >
           CONTÁCTANOS
         </Heading>
@@ -107,7 +107,7 @@ const Contact = () => {
                 alt="Foto contacto"
                 justifyContent="center"
                 marginBottom={'2%'}
-                marginLeft={["4%","20%"]}
+                marginLeft={["10%","20%"]}
               />
             <div className="form">
               <input

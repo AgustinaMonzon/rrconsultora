@@ -30,7 +30,7 @@ function AboutSabrina() {
           fontSize={["23px", "24px", "30"]}
           mb="4"
           display={"flex"}
-          ml={["-8%", "-8%", "-8%", "-65%", "-72%", "-76%"]}
+          ml={["0%", "0%", "-8%", "-65%", "-72%", "-76%"]}
           mt={["-11%", "-4%", "0%"]}
           justifyContent={"center"}
           color={textColor}
@@ -54,7 +54,8 @@ function AboutSabrina() {
               boxSize="200"
               src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678451654/Dise%C3%B1o_sin_t%C3%ADtulo_30_s7j8yd.png"
               alt="Foto de perfil"
-             
+              boxShadow= "0px 0px 10px 0px   #4b749c" 
+              transition= "transform 0.3s ease-in-out"
             />
           </Box>
         )}
@@ -69,10 +70,11 @@ function AboutSabrina() {
             fontSize={["14px", "16px", "18px", "17px"]}
             fontWeight="bold"
             color={"#446b9c"}
+            marginLeft={["11%","0%"]}
           >
             Sabrina Reiris.
           </Text>
-          <Text fontSize={["13px", "14px", "15px", "16px"]} textAlign={["justify","justify"]} color={textColor}>
+          <Text fontSize={["13px", "14px", "15px", "16px"]}  marginLeft={["11%","0%"]} textAlign={["justify","justify"]} color={textColor}>
             Soy una profesional de Recursos Humanos con más de 6 años de
             experiencia en reclutamiento, selección y consultoría para empresas
             de primer nivel nacional e internacional. Me caracterizo por ser una
@@ -84,19 +86,21 @@ function AboutSabrina() {
           </Text>
         </Box>
         {!isLargerThan640 && (
-          <Box mt="6" width={["90%"]}  marginLeft={["5%"]}  justifyContent={"center"}>
+          <Box mt="6" width={["90%"]}  marginLeft={["30%"]}  justifyContent={"center"}>
             <Image
               borderRadius="full"
               boxSize="150px"
               src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678451654/Dise%C3%B1o_sin_t%C3%ADtulo_30_s7j8yd.png"
               alt="Foto de perfil"
+              boxShadow= "0px 0px 10px 0px   #4b749c" 
+              transition= "transform 0.3s ease-in-out"
             />
           </Box>
         )}
       </Box>
       <Flex
         justifyContent={"center"}
-        marginLeft={["-8%", "-8%", "-3%", "-32%", "-35%", "-35%", "-35%"]}
+        marginLeft={["0%", "0%", "-3%", "-32%", "-35%", "-35%", "-35%"]}
       >
         <a
           href="https://www.linkedin.com/in/sabrinareiris"
