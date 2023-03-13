@@ -1,0 +1,78 @@
+.my-headingEm {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2xl;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.my-headingEm span {
+color: #446b9c;
+  padding: 0 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2xl;
+  
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #4b749c;
+  color: #d4cfcf;
+}
+
+
+
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #4b749c;
+}
+
+p {
+  font-size: 1.4rem;
+  color: #2b2c64;
+}
+
+button {
+  background: linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa);
+  color: #2b2c64;
+  border: 2px solid #e9f8fa;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}

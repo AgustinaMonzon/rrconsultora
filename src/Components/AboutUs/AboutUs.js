@@ -1,30 +1,47 @@
 import React from "react";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text, Image, useColorModeValue } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import "./about.css";
+import profileImg from "./profile.jpeg";
 
 function AboutUs() {
+  const textColor = useColorModeValue("gray.700", "whiteAlpha.900");
   return (
     <Box
       id="about-us"
       p={{ base: 4, md: 8 }}
       maxW={{ base: "100%", md: "80%" }}
       mx="auto"
+      
     >
-      <Box display={"flex"}>
-        <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }}>
-          ¿Quiénes
-        </Heading>
-        <Heading
-          as="h1"
-          size="xl"
-          mb={{ base: 4, md: 8 }}
-          marginLeft={"1%"}
-          color={"rgb(89, 109, 190)"}
-        >
-          somos?
-        </Heading>
-      </Box>
-      <Text fontSize={{ base: "md", md: "lg" }}>
+     
+      <Box display={["flex"]}>
+          <Heading
+            as="h1"
+            fontSize={["20px", "22px", "28px", "36px"]}
+            mb={{ base: 6, md: 6}}
+            mt={["5%", "5%"]}
+            font-family="'Montserrat', sans-serif"
+            textAlign={"center"}
+             marginLeft={["12%", "0%", "0%"]} 
+          >
+            ¿QUIENES
+          </Heading>
+          <Heading
+            as="h1"
+            mb={{ base: 7, md: 8 }}
+            mt={["5%", "5%"]}
+            textAlign={"center"}
+            marginLeft={["2%", "1%"]} 
+            color={"#446b9c"}
+            font-weight=" bold"
+            fontSize={["20px", "22px", "28px", "36px"]}
+            font-family="'Montserrat', sans-serif"
+          >
+           SOMOS?
+          </Heading>
+        </Box>
+      <Text fontSize={["13px","14px","13px","18px"]} textAlign={["center","left","left"]} color={textColor} w={["90%","100%"]} >
         Somos RR Consultoría, conformado por dos profesionales innovadoras y
         apasionadas por lo que hacemos. Nos dedicamos a liderar procesos de
         atracción de talentos y brindar soluciones que aporten un plus extra al
@@ -38,15 +55,62 @@ function AboutUs() {
         organización. Nuestro objetivo es buscar el talento que tu empresa
         necesita a través de un proceso ágil e integral.
       </Text>
-      <div className="aboutChicas">
-        <a href="/aboutSabrina" class="about-link">
-          Sabrina
-        </a>
-        <br />
-        <a href="/aboutNahir" class="about-link">
-          Nahir
-        </a>
-      </div>
+      <br />
+      <br />
+      <Box className="aboutChicas" justifyContent="center" >
+        <Box display={"flex"} justifyContent="center" /* marginLeft={["-12%","20%"]} */ >
+          <Box className="aboutImgContainer" justifyContent="center" >
+            <Link to="/aboutSabrina">
+              <Image
+                src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678451275/Dise%C3%B1o_sin_t%C3%ADtulo_29_mpvboa.png"
+                w={["64.5%", "50%", "50%","35%"]}
+                alt="Foto de perfil de Sabrina"
+                className="aboutImg"
+                justifyContent="center"
+                 marginLeft={["16%","28%","25%","40%"]} 
+                 marginTop={["-5%","15%","0%"]}
+              />
+              <Text
+                as="h3"
+                font-family="'Montserrat', sans-serif"
+                fontSize={["11px","14.4px","13.5px", "16px"]}
+                className="aboutName"
+                textAlign="center"
+                marginRight={["6%","-7%","0%", "-15%"]}
+                color={textColor}
+                marginBottom={["15%","-10%","0%"]}
+              >
+                SABRINA REIRIS
+              </Text>
+            </Link>
+          </Box>
+          <Box className="aboutImgContainer" ml={[0, 4]}>
+            <Link to="/aboutNahir">
+              <Image
+                src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678449546/Dise%C3%B1o_sin_t%C3%ADtulo_27_e8wfvb.png"
+                w={["65%","50%", "50%", "35%"]}
+                height={"auto"}
+                crop={"fill"}
+                alt="Foto de perfil de Nahir"
+                className="aboutImg"
+                marginLeft={["6%","20%","25%"]} 
+                marginTop={["-5%","15%","0%"]}
+              />
+              <Text
+                font-family="'Montserrat', sans-serif"
+                as="h3"
+                fontSize={["10.5px","13.5px","13.5px", "16px"]}
+                className="aboutName"
+                textAlign="center"
+                marginRight={["25%","10%","0%", "14%"]}
+                color={textColor}
+              >
+                NAHIR REVERDITO
+              </Text>
+            </Link>
+          </Box>
+        </Box>
+      </Box>
     </Box>
   );
 }

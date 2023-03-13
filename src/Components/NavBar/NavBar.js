@@ -29,36 +29,44 @@ export default function NavBar() {
         w={"100%"}
         borderTop="1px solid gray"
         // shadow={"lg"}
-        boxShadow={"0 2px 2px rgb(157, 210, 245)"}
+        // boxShadow={"0 2px 2px rgb(157, 210, 245)"}
         borderBottom="1px solid gray"
         padding="0px"
-        backgroundColor={"#f2f2f2"}
-        /*    backgroundColor={"rgba(183, 221, 246, 0.712)"}  */
+        backgroundColor={"#4b749c"}
+        // backgroundColor={"rgba(255, 255, 255, 0.8);"}
+        justifyContent={"center"}
       >
         {/* Desktop */}
         <Link to="/">
           <Image
             src={logo}
             width={["50px", "70px"]}
-            marginLeft={["20%", "10%"]}
+             marginLeft={["0%","-5%","15%", "150%", "0%", "0%", "0%", "0%", "0%", "75%"]} 
+            /* backgroundColor={" rgb(157, 210, 245) "} */
+            backgroundColor={" white "}
+            borderRadius={"full"}
+            justifyContent={"center"}
           ></Image>
         </Link>
 
         <Flex
           display={["none", "none", "flex", "flex"]}
-          marginLeft={["17%", "17%", "17%", "35%", "50%", "58%"]}
+          marginLeft={["0%", "0%", "2%", "10%", "8%", "8%"]} 
+          justifyContent={"center"}
         >
           <Link to="/" passHref>
             <Button
               as="a"
               variant="ghost"
-              color={"black"}
+              color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               aria-label="Home"
               my={5}
               w="100%"
+              fontSize={["11px","11px","11px","13px"]}
+              
             >
-              Home
+              HOME
             </Button>
           </Link>
 
@@ -72,42 +80,75 @@ export default function NavBar() {
             <Button
               as="a"
               variant="ghost"
-              color={"black"}
+              color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               aria-label="About"
               my={5}
               w="100%"
+              fontSize={["11px","11px","11px","13px"]}
             >
-              Quienes somos
+              QUIÉNES SOMOS
             </Button>
           </ScrollLink>
 
-          <Link to="/services" passHref>
+          <Link to="/soyEmpresa" passHref>
             <Button
               as="a"
               variant="ghost"
-              color={"black"}
+              color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               aria-label="Contact"
               my={5}
               w="100%"
+              fontSize={["11px","11px","11px","13px"]}
             >
-              Servicios
+              SOY EMPRESA
+            </Button>
+          </Link>
+          <Link to="/soyCandidato" passHref>
+            <Button
+              as="a"
+              variant="ghost"
+              color={"white"}
+              _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+              aria-label="Contact"
+              my={5}
+              w="100%"
+              fontSize={["11px","11px","11px","13px"]}
+            >
+              SOY CANDIDATO
             </Button>
           </Link>
           <Link to="/contact" passHref>
             <Button
               as="a"
               variant="ghost"
-              color={"black"}
+              color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               aria-label="Contact"
               my={5}
               w="100%"
+              fontSize={["11px","11px","11px","13px"]}
             >
-              Contacto
+              CONTACTO
             </Button>
           </Link>
+          <a href="https://docs.google.com/forms/d/1lq_EhQqFZnD4eeghbt_Z6Z0ejnixuvgcbBNWL1jlYuI/edit"  target="_blank"
+            rel="noopener noreferrer">
+            <Button
+              as="a"
+              color={"white"}
+              colorScheme={"cyan"}
+              _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+              aria-label="Contact"
+              my={5}
+              w={["80%","80%","80%","100%"]}
+              fontSize={["11px","11px","11px","13px"]}
+              marginLeft={["0%","0%","15%","10%","67%"]}
+            >
+              CARGÁ TU CV
+            </Button>
+          </a>
           <a
             href="https://www.linkedin.com/company/r-r-consultoria/?viewAsMember=true"
             target="_blank"
@@ -115,10 +156,11 @@ export default function NavBar() {
           >
             <IconButton
               m="5px"
-              marginTop={"40%"}
-              colorScheme="white"
-              color={"black"}
+              marginTop={"42%"}
+              colorScheme="linkedin"
+              color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+               marginLeft={["0%","0%","30%","70%", "200%"]} 
               icon={<FaLinkedinIn />}
             />
           </a>
@@ -129,10 +171,11 @@ export default function NavBar() {
           >
             <IconButton
               m="5px"
-              marginTop={"40%"}
-              colorScheme="white"
-              color={"black"}
+              marginTop={"42%"}
+              colorScheme="pink"
+              color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+               marginLeft={["0%",,"50%","90%","218%", "215%"]}  
               icon={<FaInstagram />}
             />
           </a>
@@ -141,15 +184,15 @@ export default function NavBar() {
         {/* Mobile */}
         <IconButton
           aria-label="Open Menu"
-          size="lg"
-          marginLeft={["12px", "35px", "280px"]}
+          size="xs"
+          marginLeft={["20px", "45px", "280px"]}
           mr={2}
           icon={<HamburgerIcon />}
           onClick={() => changeDisplay("flex")}
           display={["flex", "flex", "none", "none"]}
           color="black"
         />
-        <Switch color="black" isChecked={isDark} onChange={toggleColorMode} />
+        <Switch color="black" isChecked={isDark} marginLeft={["0%","4%","3%","5%","8%","7%"]} onChange={toggleColorMode} />
       </Flex>
 
       {/* Mobile Content */}
@@ -173,7 +216,7 @@ export default function NavBar() {
             size="lg"
             justifyContent={"center"}
             marginRight={"10%"}
-            icon={<CloseIcon />}
+            icon={< CloseIcon />}
             onClick={() => changeDisplay("none")}
           />
         </Flex>
@@ -204,11 +247,11 @@ export default function NavBar() {
               color={"white"}
               href="#about-us"
             >
-              Quienes somos
+              Quienes Somos
             </Button>
           </Link>
 
-          <Link to="/services" passHref>
+          {/* <Link to="/services" passHref>
             <Button
               as="a"
               variant="ghost"
@@ -219,6 +262,32 @@ export default function NavBar() {
               color={"white"}
             >
               Servicios
+            </Button>
+          </Link> */}
+          <Link to="/soyEmpresa" passHref>
+            <Button
+              as="a"
+              variant="ghost"
+              _hover={{ bg: "rgb(89, 109, 190)" }}
+              aria-label="Contact"
+              my={5}
+              w="100%"
+              color={"white"}
+            >
+              Soy Empresa
+            </Button>
+          </Link>
+          <Link to="/soyCandidato" passHref>
+            <Button
+              as="a"
+              variant="ghost"
+              _hover={{ bg: "rgb(89, 109, 190)" }}
+              aria-label="Contact"
+              my={5}
+              w="100%"
+              color={"white"}
+            >
+              Soy Candidato
             </Button>
           </Link>
           <Link to="/contact" passHref>
@@ -234,28 +303,42 @@ export default function NavBar() {
               Contacto
             </Button>
           </Link>
+          <a href="https://docs.google.com/forms/d/1lq_EhQqFZnD4eeghbt_Z6Z0ejnixuvgcbBNWL1jlYuI/edit"  target="_blank"
+            rel="noopener noreferrer">
+            <Button
+              as="a"
+              colorScheme={"cyan"}
+              _hover={{ bg: "rgb(89, 109, 190)" }}
+              aria-label="Contact"
+              my={5}
+              w="100%"
+              color={"white"}
+            >
+              Cargá Tu CV
+            </Button>
+          </a>
           <a
-            href="https://www.linkedin.com/in/melina-veyrat-durbex-b66b3b227/"
+            href="https://www.linkedin.com/company/r-r-consultoria/?viewAsMember=true"
             target="_blank"
             rel="noopener noreferrer"
           >
             <IconButton
               m="5px"
               marginTop={"40%"}
-              colorScheme="gray"
+              colorScheme="linkedin"
               _hover={{ bg: "rgb(89, 109, 190)" }}
               icon={<FaLinkedinIn />}
             />
           </a>
           <a
-            href="https://github.com/meliveyrat1"
+            href="https://www.instagram.com/rrconsultoria_/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <IconButton
               m="5px"
               marginTop={"40%"}
-              colorScheme="gray"
+              colorScheme="pink"
               _hover={{ bg: "pink" }}
               icon={<FaInstagram />}
             />

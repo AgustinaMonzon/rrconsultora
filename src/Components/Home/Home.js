@@ -1,153 +1,212 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Image, Text, Flex, Heading } from "@chakra-ui/react";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import Carrousel from "./Carrousel";
 import AboutUs from "../AboutUs/AboutUs";
-import Slider from "react-slick";
+import Valores from "../Valores/Valores";
+import Empresas from "../Empresas/Empresas";
+import { Link } from "react-router-dom";
+
 import "./Home.css";
 
-function Home() {
+// function Card({ title, color, href }) {
+//   return (
+//     <Box
+//       borderRadius="md"
+//       boxShadow="md"
+//       bg={color}
+//       color="white"
+//       p={5}
+//       w={{ base: "100%", md: "45%", lg: "30%" }}
+//       mx={{ base: 0, md: 2 }}
+//       my={6}
+//     >
+//       <Text fontWeight="bold" fontSize="lg" mb={3}>
+//         {title}
+//       </Text>
+//       <Flex justifyContent="space-between">
+//         <a href={href}>
+//           <Text>Leer más</Text>
+//         </a>
+//       </Flex>
+//     </Box>
+//   );
+// }
+// function Card({ title, color, href }) {
+//   return (
+//     <Box
+//       borderRadius="md"
+//       boxShadow="md"
+//       bg="#f4fcfd"
+//       color="black"
+//       p={5}
+//       w={{ base: "100%", md: "45%", lg: "30%" }}
+//       mx={{ base: 0, md: 2 }}
+//       my={6}
+//       borderRight={`15px solid ${color}`}
+//       borderBottom={`15px solid ${color}`}
+//       borderTop={`1px solid ${color}`}
+//       borderLeft={`1px solid ${color}`}
+//     >
+//       <Text fontWeight="bold" fontSize="lg" mb={3}>
+//         {title}
+//       </Text>
+//       <Flex justifyContent="space-between">
+//         <a href={href}>
+//           <Text bg="rgba(139, 200, 232, 1)" px={2} py={1} borderRadius="md">
+//             Leer más
+//           </Text>
+//         </a>
+//       </Flex>
+//     </Box>
+//   );
+// }
+function Card({ title, color, href }) {
+  const colors = ["#e9f8fa", "#92dde8", "#24244c", "#2b2c64", "#4b749c"];
+
   return (
-
-    <Box  display="flex" flexDirection="column" minHeight="100vh">
-
-   
-      <NavBar />
-      <Box flexGrow={1}>
-        <Box mt={{ base: 20, md: 20 }}>
-          <Carrousel />
-        </Box>
-        <Box mb={10} mt={20}>
-          <AboutUs />
-        </Box>
-
-        <Box display={"flex"}/*  backgroundColor={"rgba(233, 225, 225, 0.636)"} */
-         justifyContent={"center"} p="25px" marginLeft={"-46%"}>
-        <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }} /* marginRight={"47%"} */>
-          Valores en
-        </Heading>
-        <Heading
-          as="h1"
-          size="xl"
-          mb={{ base: 4, md: 8 }}
-          marginLeft={"1%"}
-          color={"rgb(89, 109, 190)"}
+    <Box
+      borderRadius="lg"
+      boxShadow="md"
+      bg="#FFFFFF"
+      color={"black"}
+      p={10}
+      w="300px"
+      mx={{ base: 0, md: 2 }}
+      my={6}
+      borderWidth={4}
+      borderColor={colors[Math.floor(Math.random() * colors.length)]}
+      borderRight={`15px solid ${color}`}
+      borderBottom={`15px solid ${color}`}
+      transition="all 0.2s ease-in-out"
+      _hover={{
+        transform: "translateY(-4px)",
+        shadow: "lg",
+        borderColor: "#92dde8",
+      }}
+    >
+      <Text
+        fontFamily="'Montserrat', sans-serif;"
+        fontWeight="bold"
+        fontSize="xl"
+        mb={4}
+      >
+        {title}
+      </Text>
+      <a href={href}>
+        <Text
+          color={color}
+          fontWeight="medium"
+          fontSize="md"
+          _hover={{ color: "#4b749c" }}
         >
-          RR Consultoría
-        </Heading>
-      </Box>
-      <Box /* backgroundColor={"rgba(233, 225, 225, 0.636)"} */ paddingBottom="20px"
-       justifyContent={"center"} display={"grid"} marginBottom={"5%"}   marginLeft={"-67%"}>
-      <Text fontSize={{ base: "md", md: "lg" }}>
-     Profesionalismo
-      </Text>
-      <Text fontSize={{ base: "md", md: "lg" }}>
-      Empatía
-      </Text>
-      <Text fontSize={{ base: "md", md: "lg" }}>
-      Honestidad
-      </Text>
-      <Text fontSize={{ base: "md", md: "lg" }}>
-      Flexibilidad
-      </Text>
-      </Box>
-   
-          
-        <Box bg="blue.100" py={6}>
-          <Box maxW="2xl" mx="auto" px={6}>
-            <Box
-              mb={6}
-              fontSize="1xl"
-              fontWeight="bold"
-              textAlign="center"
-              display="flex"
-              alignItems="center"
-              flexDirection={{ base: "column", md: "row" }}
-              justifyContent={"center"}
-              marginLeft={"-84%"}
-            >
-              <Heading
-                as="h1"
-                size="xl"
-                mb={{ base: 4, md: 8 }}
-                mr={{ md: "2%" }}
-              >
-                Empresas que confiaron en
-              </Heading>
-              <Heading
-                as="h1"
-                size="xl"
-                mb={{ base: 4, md: 8 }}
-                color={"rgb(89, 109, 190)"}
-              >
-                nosotros
-              </Heading>
-            </Box>
-            <CarrouselEmpresas />
-          </Box>
-        </Box>
-      </Box>
-      <Footer />
+          Leer más
+        </Text>
+      </a>
     </Box>
   );
 }
 
-function CarrouselEmpresas() {
-  const imgStyle = {
-    margin: "10px 20px",
-    maxHeight: "150px",
-    maxWidth: "150px",
-    marginRight: "100px",
-  };
-
-  const containerStyle = {
-    maxWidth: "150%",
-  };
-
-  const images = [
-    {
-      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/c_scale,h_220/v1677668545/WhatsApp_Image_2023-03-01_at_08.00.56_ijm4ue.jpg",
-      alt: "Delicious",
-      link: "http://deliciouscafe.com.ar/?fbclid=IwAR2SqSw7mTLgYzYoXMAzA_0qyw2FcU-bK4pgn9Qx1wXrxCePuPxoB_AYXYQs",
-    },
-    {
-      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677668544/WhatsApp_Image_2023-03-01_at_07.57.57_hwyrxw.jpg",
-      alt: "ENVAPLAST",
-      link: "https://www.envaplast.com.ar/,",
-    },
-    {
-      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677668544/WhatsApp_Image_2023-03-01_at_07.59.12_rlfqgc.jpg",
-      alt: "BOX CUSTODIA DIGITAL",
-      link: "https://pki.boxcustodia.com/",
-    },
-    {
-      url: "https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677668544/WhatsApp_Image_2023-03-01_at_07.57.18_bbkjdy.jpg",
-      alt: "FAMIQ",
-      link: "https://www.famiq.com.ar/",
-    },
-  ];
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2500,
+function Home() {
+  const handleScrollToAboutUs = () => {
+    const aboutUsElement = document.getElementById("about-us");
+    aboutUsElement.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="carruselito" style={containerStyle}>
-      <Slider className="Carrousel" {...settings}>
-        {images.map((image, index) => (
-          <div className="contenedor-foto" key={index}>
-            <a href={image.link} target="_blank" rel="noreferrer">
-              <img src={image.url} alt={image.alt} style={imgStyle} />
-            </a>
-            <div className="caption">{image.caption}</div>
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <Box display="flex" flexDirection="column" minHeight="100vh">
+      <NavBar />
+      <Box flexGrow={1}>
+        <Box mt={{ base: 20, md: 20 }}>
+          {/* <Carrousel /> */}
+          <Image
+            justifyContent={"center"}
+            marginLeft={["7%","7%","15%","20%"]}
+            w={["85%","85%","70%","60%"]}
+            src="https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677772329/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS_1_vvctap.png"
+          />
+        </Box>
+
+        <Link to="/aboutUs" onClick={handleScrollToAboutUs}>
+          <AboutUs />
+        </Link>
+        <Box mb={10} mt={20}>
+          <Valores />
+        </Box>
+        <Box
+          id="about-us"
+          p={{ base: 4, md: 8 }}
+          maxW={{ base: "100%", md: "80%" }}
+          mx="auto"
+        >
+      <Box display={["flex"]}>
+          <Heading
+            as="h1"
+            fontSize={["20px", "22px", "28px", "36px"]}
+            mb={{ base: 0, md: 0}}
+            mt={["85%","45%", "0%"]}
+            font-family="'Montserrat', sans-serif"
+            textAlign={"center"}
+             marginLeft={["6%", "0%", "0%"]} 
+          >
+            NUESTROS
+          </Heading>
+          <Heading
+            as="h1"
+            mb={{ base: 0, md: 0 }}
+            mt={["85%","45%", "0%"]}
+            textAlign={"center"}
+            marginLeft={["2%", "1%"]} 
+            color={"#446b9c"}
+            font-weight=" bold"
+            fontSize={["20px", "22px", "28px", "36px"]}
+            font-family="'Montserrat', sans-serif"
+          >
+            SERVICIOS
+          </Heading>
+        </Box >
+          <Flex
+            flexWrap="wrap"
+            justifyContent="center"
+            alignItems="center"
+            mt={[4,4,6]}
+            mb={-20}
+            w={["70%","10%","100%"]}
+            marginLeft={["10%","45%","0%"]}
+            display={["flex", "grid", "flex"]}
+          >
+            <Card
+              title="Atracción de talentos"
+              color="#446b9c"
+              href="/soyEmpresa"
+            />
+            <Card
+              title="Asesoría Laboral"
+              color="#2b2c64"
+              href="/soyCandidato"
+            />
+            <Card
+              title="Servicio de armado de LinkedIn"
+              color="#2b2c64"
+              href="/soyCandidato"
+            />
+
+            <Card
+              title="Confección de CVS"
+              color="#446b9c"
+              href="/soyCandidato"
+            />
+          </Flex>
+        </Box>
+        <br />
+        <br />
+        <br />
+        <br />
+        <Box mb={10} mt={20}>
+          <Empresas />
+        </Box>
+      </Box>
+      <Footer />
+    </Box>
   );
 }
 
