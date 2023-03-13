@@ -23,7 +23,7 @@ function AboutUs() {
             mt={["5%", "5%"]}
             font-family="'Montserrat', sans-serif"
             textAlign={"center"}
-             marginLeft={["12%", "0%", "0%"]} 
+             marginLeft={["21%", "0%", "0%"]} 
           >
             ¿QUIENES
           </Heading>
@@ -41,7 +41,7 @@ function AboutUs() {
            SOMOS?
           </Heading>
         </Box>
-      <Text fontSize={["13px","14px","13px","18px"]} textAlign={["justify","justify"]} color={textColor} w={["90%","100%"]} >
+      <Text fontSize={["13px","14px","13px","18px"]} marginLeft={["5%", "0%"]} textAlign={["justify","justify"]} color={textColor} w={["90%","100%"]} >
         Somos RR Consultoría, conformado por dos profesionales innovadoras y
         apasionadas por lo que hacemos. Nos dedicamos a liderar procesos de
         atracción de talentos y brindar soluciones que aporten un plus extra al
@@ -67,7 +67,7 @@ function AboutUs() {
                 alt="Foto de perfil de Sabrina"
                 className="aboutImg"
                 justifyContent="center"
-                 marginLeft={["16%","28%","25%","40%"]} 
+                 marginLeft={["20%","28%","25%","40%"]} 
                  marginTop={["-5%","15%","0%"]}
               />
               <Text
@@ -76,7 +76,7 @@ function AboutUs() {
                 fontSize={["11px","14.4px","13.5px", "16px"]}
                 className="aboutName"
                 textAlign="center"
-                marginRight={["6%","-7%","0%", "-15%"]}
+                marginRight={["-2%","-7%","0%", "-15%"]}
                 color={textColor}
                 marginBottom={["15%","-10%","0%"]}
               >
@@ -93,7 +93,7 @@ function AboutUs() {
                 crop={"fill"}
                 alt="Foto de perfil de Nahir"
                 className="aboutImg"
-                marginLeft={["6%","20%","25%"]} 
+                marginLeft={["13%","20%","25%"]} 
                 marginTop={["-5%","15%","0%"]}
               />
               <Text
@@ -102,7 +102,7 @@ function AboutUs() {
                 fontSize={["10.5px","13.5px","13.5px", "16px"]}
                 className="aboutName"
                 textAlign="center"
-                marginRight={["25%","10%","0%", "14%"]}
+                marginRight={["8%","10%","0%", "14%"]}
                 color={textColor}
               >
                 NAHIR REVERDITO

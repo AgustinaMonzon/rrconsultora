@@ -23,7 +23,7 @@ export default function Empresas() {
             mt={["-22%", "5%"]}
             font-family="'Montserrat', sans-serif"
             textAlign={"center"}
-             marginLeft={["-8%", "0%", "0%"]} 
+             marginLeft={["-4%", "0%", "0%"]} 
           >
             EMPRESAS QUE CONFÍAN EN
           </Heading>
@@ -32,7 +32,7 @@ export default function Empresas() {
             mb={{ base: 7, md: 8 }}
             mt={["-10%", "5%"]}
             textAlign={"center"}
-            marginLeft={["-8%", "1%"]} 
+            marginLeft={["-2%", "1%"]} 
             color={"#446b9c"}
             font-weight=" bold"
             fontSize={["20px", "22px","27px", "36px"]}

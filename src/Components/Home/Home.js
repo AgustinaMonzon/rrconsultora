@@ -120,7 +120,7 @@ function Home() {
           {/* <Carrousel /> */}
           <Image
             justifyContent={"center"}
-            marginLeft={["5%","7%","15%","20%"]}
+            marginLeft={["7.5%","7%","15%","20%"]}
             w={["85%","85%","70%","60%"]}
             src="https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677772329/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS_1_vvctap.png"
           />
@@ -146,7 +146,7 @@ function Home() {
             mt={["85%","45%", "0%"]}
             font-family="'Montserrat', sans-serif"
             textAlign={"center"}
-             marginLeft={["6%", "0%", "0%"]} 
+             marginLeft={["18%", "0%", "0%"]} 
           >
             NUESTROS
           </Heading>
@@ -171,7 +171,7 @@ function Home() {
             mt={[4,4,6]}
             mb={-20}
             w={["70%","10%","100%"]}
-            marginLeft={["10%","45%","0%"]}
+            marginLeft={["15%","45%","0%"]}
             display={["flex", "grid", "flex"]}
           >
             <Card
