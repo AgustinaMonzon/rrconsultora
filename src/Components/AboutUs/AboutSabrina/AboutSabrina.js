@@ -72,7 +72,7 @@ function AboutSabrina() {
           >
             Sabrina Reiris.
           </Text>
-          <Text fontSize={["13px", "14px", "15px", "16px"]} color={textColor}>
+          <Text fontSize={["13px", "14px", "15px", "16px"]} textAlign={["justify","justify"]} color={textColor}>
             Soy una profesional de Recursos Humanos con más de 6 años de
             experiencia en reclutamiento, selección y consultoría para empresas
             de primer nivel nacional e internacional. Me caracterizo por ser una
@@ -111,7 +111,7 @@ function AboutSabrina() {
           />
         </a>
         <a
-          href="https://github.com/meliveyrat1"
+          href="https://www.instagram.com/rrconsultoria_/"
           target="_blank"
           rel="noopener noreferrer"
         >

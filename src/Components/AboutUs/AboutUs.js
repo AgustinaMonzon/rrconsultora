@@ -41,7 +41,7 @@ function AboutUs() {
            SOMOS?
           </Heading>
         </Box>
-      <Text fontSize={["13px","14px","13px","18px"]} textAlign={["center","left","left"]} color={textColor} w={["90%","100%"]} >
+      <Text fontSize={["13px","14px","13px","18px"]} textAlign={["justify","justify"]} color={textColor} w={["90%","100%"]} >
         Somos RR Consultoría, conformado por dos profesionales innovadoras y
         apasionadas por lo que hacemos. Nos dedicamos a liderar procesos de
         atracción de talentos y brindar soluciones que aporten un plus extra al
