@@ -5,11 +5,12 @@ import {
   useMediaQuery,
   Flex,
   IconButton,
-  useColorModeValue,
+  useColorModeValue
 } from "@chakra-ui/react";
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import profileImg from "./profile.jpeg";
 
 function AboutSabrina() {
   const [isLargerThan640] = useMediaQuery("(min-width: 640px)");
@@ -29,7 +30,7 @@ function AboutSabrina() {
           fontSize={["23px", "24px", "30"]}
           mb="4"
           display={"flex"}
-          ml={["-8%", "-8%", "-8%", "-65%", "-72%", "-76%"]}
+          ml={["0%", "0%", "-8%", "-65%", "-72%", "-76%"]}
           mt={["-11%", "-4%", "0%"]}
           justifyContent={"center"}
           color={textColor}
@@ -47,12 +48,14 @@ function AboutSabrina() {
         p={["50px", "40px", "20"]}
       >
         {isLargerThan640 && (
-          <Box mr="6" width={["140%", "100%", "45%", "24%"]}>
+          <Box mr="6" width={["140%", "100%", "45%", "24%"]}  >
             <Image
               borderRadius="full"
               boxSize="200"
               src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678451654/Dise%C3%B1o_sin_t%C3%ADtulo_30_s7j8yd.png"
               alt="Foto de perfil"
+              boxShadow= "0px 0px 10px 0px   #4b749c" 
+              transition= "transform 0.3s ease-in-out"
             />
           </Box>
         )}
@@ -67,14 +70,11 @@ function AboutSabrina() {
             fontSize={["14px", "16px", "18px", "17px"]}
             fontWeight="bold"
             color={"#446b9c"}
+            marginLeft={["11%","0%"]}
           >
             Sabrina Reiris.
           </Text>
-          <Text
-            fontSize={["13px", "14px", "15px", "16px"]}
-            color={textColor}
-            textAlign={["justify", "justify"]}
-          >
+          <Text fontSize={["13px", "14px", "15px", "16px"]}  marginLeft={["11%","0%"]} textAlign={["justify","justify"]} color={textColor}>
             Soy una profesional de Recursos Humanos con más de 6 años de
             experiencia en reclutamiento, selección y consultoría para empresas
             de primer nivel nacional e internacional. Me caracterizo por ser una
@@ -86,24 +86,21 @@ function AboutSabrina() {
           </Text>
         </Box>
         {!isLargerThan640 && (
-          <Box
-            mt="6"
-            width={["90%"]}
-            marginLeft={["5%"]}
-            justifyContent={"center"}
-          >
+          <Box mt="6" width={["90%"]}  marginLeft={["30%"]}  justifyContent={"center"}>
             <Image
               borderRadius="full"
               boxSize="150px"
               src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678451654/Dise%C3%B1o_sin_t%C3%ADtulo_30_s7j8yd.png"
               alt="Foto de perfil"
+              boxShadow= "0px 0px 10px 0px   #4b749c" 
+              transition= "transform 0.3s ease-in-out"
             />
           </Box>
         )}
       </Box>
       <Flex
         justifyContent={"center"}
-        marginLeft={["-8%", "-8%", "-3%", "-32%", "-35%", "-35%", "-35%"]}
+        marginLeft={["0%", "0%", "-3%", "-32%", "-35%", "-35%", "-35%"]}
       >
         <a
           href="https://www.linkedin.com/in/sabrinareiris"
@@ -118,7 +115,7 @@ function AboutSabrina() {
           />
         </a>
         <a
-          href="https://github.com/meliveyrat1"
+          href="https://www.instagram.com/rrconsultoria_/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -130,8 +127,8 @@ function AboutSabrina() {
           />
         </a>
       </Flex>
-      <br />
-
+      <br/>
+      
       <Footer />
     </Box>
   );

@@ -120,13 +120,13 @@ function Home() {
           {/* <Carrousel /> */}
           <Image
             justifyContent={"center"}
-            marginLeft={["7%", "7%", "15%", "20%"]}
-            w={["85%", "85%", "70%", "60%"]}
+            marginLeft={["7.5%","7%","15%","20%"]}
+            w={["85%","85%","70%","60%"]}
             src="https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677772329/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS_1_vvctap.png"
           />
         </Box>
 
-        <Link to="/aboutUs" onClick={handleScrollToAboutUs}>
+        <Link  onClick={handleScrollToAboutUs}>
           <AboutUs />
         </Link>
         <Box mb={10} mt={20}>
@@ -138,40 +138,40 @@ function Home() {
           maxW={{ base: "100%", md: "80%" }}
           mx="auto"
         >
-          <Box display={["flex"]}>
-            <Heading
-              as="h1"
-              fontSize={["20px", "22px", "28px", "36px"]}
-              mb={{ base: 0, md: 0 }}
-              mt={["85%", "45%", "0%"]}
-              font-family="'Montserrat', sans-serif"
-              textAlign={"center"}
-              marginLeft={["6%", "0%", "0%"]}
-            >
-              NUESTROS
-            </Heading>
-            <Heading
-              as="h1"
-              mb={{ base: 0, md: 0 }}
-              mt={["85%", "45%", "0%"]}
-              textAlign={"center"}
-              marginLeft={["2%", "1%"]}
-              color={"#446b9c"}
-              font-weight=" bold"
-              fontSize={["20px", "22px", "28px", "36px"]}
-              font-family="'Montserrat', sans-serif"
-            >
-              SERVICIOS
-            </Heading>
-          </Box>
+      <Box display={["flex"]}>
+          <Heading
+            as="h1"
+            fontSize={["20px", "22px", "28px", "36px"]}
+            mb={{ base: 0, md: 0}}
+            mt={["63%","45%", "0%"]}
+            font-family="'Montserrat', sans-serif"
+            textAlign={"center"}
+             marginLeft={["18%", "0%", "0%"]} 
+          >
+            NUESTROS
+          </Heading>
+          <Heading
+            as="h1"
+            mb={{ base: 0, md: 0 }}
+            mt={["63%","45%", "0%"]}
+            textAlign={"center"}
+            marginLeft={["2%", "1%"]} 
+            color={"#446b9c"}
+            font-weight=" bold"
+            fontSize={["20px", "22px", "28px", "36px"]}
+            font-family="'Montserrat', sans-serif"
+          >
+            SERVICIOS
+          </Heading>
+        </Box >
           <Flex
             flexWrap="wrap"
             justifyContent="center"
             alignItems="center"
-            mt={[4, 4, 6]}
+            mt={[4,4,6]}
             mb={-20}
-            w={["70%", "10%", "100%"]}
-            marginLeft={["10%", "45%", "0%"]}
+            w={["70%","10%","100%"]}
+            marginLeft={["15%","45%","0%"]}
             display={["flex", "grid", "flex"]}
           >
             <Card

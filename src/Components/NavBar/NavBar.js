@@ -107,7 +107,7 @@ export default function NavBar() {
               aria-label="Contact"
               my={5}
               w="100%"
-              fontSize={["11px", "11px", "11px", "13px"]}
+              fontSize={["11px","11px","11px","13px"]}
             >
               SOY EMPRESA
             </Button>
@@ -121,7 +121,7 @@ export default function NavBar() {
               aria-label="Contact"
               my={5}
               w="100%"
-              fontSize={["11px", "11px", "11px", "13px"]}
+              fontSize={["11px","11px","11px","13px"]}
             >
               SOY CANDIDATO
             </Button>
@@ -135,16 +135,13 @@ export default function NavBar() {
               aria-label="Contact"
               my={5}
               w="100%"
-              fontSize={["11px", "11px", "11px", "13px"]}
+              fontSize={["11px","11px","11px","13px"]}
             >
               CONTACTO
             </Button>
           </Link>
-          <a
-            href="https://docs.google.com/forms/d/1lq_EhQqFZnD4eeghbt_Z6Z0ejnixuvgcbBNWL1jlYuI/edit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://docs.google.com/forms/d/1lq_EhQqFZnD4eeghbt_Z6Z0ejnixuvgcbBNWL1jlYuI/edit"  target="_blank"
+            rel="noopener noreferrer">
             <Button
               as="a"
               color={"white"}
@@ -152,9 +149,9 @@ export default function NavBar() {
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
               aria-label="Contact"
               my={5}
-              w={["80%", "80%", "80%", "100%"]}
-              fontSize={["11px", "11px", "11px", "13px"]}
-              marginLeft={["0%", "0%", "15%", "10%", "67%"]}
+              w={["80%","80%","80%","100%"]}
+              fontSize={["11px","11px","11px","13px"]}
+              marginLeft={["0%","0%","15%","10%","67%"]}
             >
               CARGÁ TU CV
             </Button>
@@ -170,7 +167,7 @@ export default function NavBar() {
               colorScheme="linkedin"
               color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
-              marginLeft={["0%", "0%", "30%", "70%", "200%"]}
+               marginLeft={["0%","0%","30%","70%", "200%"]} 
               icon={<FaLinkedinIn />}
             />
           </a>
@@ -185,7 +182,7 @@ export default function NavBar() {
               colorScheme="pink"
               color={"white"}
               _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
-              marginLeft={["0%", , "50%", "90%", "218%", "215%"]}
+               marginLeft={["0%",,"50%","90%","218%", "215%"]}  
               icon={<FaInstagram />}
             />
           </a>
@@ -202,12 +199,7 @@ export default function NavBar() {
           display={["flex", "flex", "none", "none"]}
           color="black"
         />
-        <Switch
-          color="black"
-          isChecked={isDark}
-          marginLeft={["0%", "4%", "3%", "5%", "8%", "7%"]}
-          onChange={toggleColorMode}
-        />
+        <Switch color="black" isChecked={isDark} marginLeft={["0%","4%","3%","5%","8%","7%"]} onChange={toggleColorMode} />
       </Flex>
 
       {/* Mobile Content */}
@@ -231,7 +223,7 @@ export default function NavBar() {
             size="lg"
             justifyContent={"center"}
             marginRight={"10%"}
-            icon={<CloseIcon />}
+            icon={< CloseIcon />}
             onClick={() => changeDisplay("none")}
           />
         </Flex>
@@ -251,7 +243,7 @@ export default function NavBar() {
             </Button>
           </Link>
 
-          <Link to="/about" passHref>
+          <Link to="/#about-us" passHref>
             <Button
               as="a"
               variant="ghost"
@@ -318,11 +310,8 @@ export default function NavBar() {
               Contacto
             </Button>
           </Link>
-          <a
-            href="https://docs.google.com/forms/d/1lq_EhQqFZnD4eeghbt_Z6Z0ejnixuvgcbBNWL1jlYuI/edit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://docs.google.com/forms/d/1lq_EhQqFZnD4eeghbt_Z6Z0ejnixuvgcbBNWL1jlYuI/edit"  target="_blank"
+            rel="noopener noreferrer">
             <Button
               as="a"
               colorScheme={"cyan"}
