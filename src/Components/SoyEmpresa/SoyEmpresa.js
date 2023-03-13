@@ -1,4 +1,3 @@
-
 import React, { useRef } from "react";
 import "./SoyEmpresa.css";
 import NavBar from "../NavBar/NavBar";
@@ -18,7 +17,7 @@ function SoyEmpresa() {
         "Relevamiento personalizado para conocer la cultura propia de cada empresa.",
         "Portales de  búsqueda: base de datos propia, publicación de avisos en diversos medios masivos de comunicación, LinkedIn Recruiter.",
         "Entrevistas para determinar el grado de alineación del candidato a las competencias requeridas.",
-        "Acompañamiento y soporte hasta la incorporación."
+        "Acompañamiento y soporte hasta la incorporación.",
       ],
     },
   ];
@@ -32,17 +31,17 @@ function SoyEmpresa() {
   return (
     <div>
       <NavBar />
-     
+
       <div className="container">
-      <Box display={["grid","grid","flex"]}>
+        <Box display={["grid", "grid", "flex"]}>
           <Heading
             as="h1"
             fontSize={["20px", "28px", "36px"]}
-            mb={{ base: 6, md: 6}}
+            mb={{ base: 6, md: 6 }}
             mt={["-5%", "5%"]}
             font-family="'Montserrat', sans-serif"
             textAlign={"center"}
-             marginLeft={["0%", "0%", "0%"]} 
+            marginLeft={["0%", "0%", "0%"]}
           >
             NUESTROS SERVICIOS
           </Heading>
@@ -51,7 +50,7 @@ function SoyEmpresa() {
             mb={{ base: 7, md: 8 }}
             mt={["-5%", "5%"]}
             textAlign={"center"}
-            marginLeft={["0%", "1%"]} 
+            marginLeft={["0%", "1%"]}
             color={"#446b9c"}
             font-weight=" bold"
             fontSize={["20px", "28px", "36px"]}
@@ -70,7 +69,11 @@ function SoyEmpresa() {
             textAlign={["justify", "justify"]}
           >
             {servicios.map((servicio, index) => (
-              <li key={index} textAlign={["justify", "justify"]}>
+              <li
+                key={index}
+                textAlign={["justify", "justify"]}
+                fontSize={["12px", "14px", "13px", "18px"]}
+              >
                 <h3>{servicio.title}</h3>
                 <p
                   fontSize={`clamp(13px, 2.5vw, 18px)`}
