@@ -33,10 +33,10 @@ function SoyEmpresa() {
         <Box display={["grid", "grid", "flex"]}>
           <Heading
             as="h1"
-            fontSize={["20px", "28px", "36px"]}
+            fontSize={["20px", "28px", "36px", "36px"]}
             mb={{ base: 6, md: 6 }}
             mt={["-5%", "5%"]}
-            font-family="'Montserrat', sans-serif"
+            fontFamily="'Montserrat', sans-serif"
             textAlign={"center"}
             marginLeft={["0%", "0%", "0%"]}
           >
@@ -49,20 +49,22 @@ function SoyEmpresa() {
             textAlign={"center"}
             marginLeft={["0%", "1%"]}
             color={"#446b9c"}
-            font-weight=" bold"
-            fontSize={["20px", "28px", "36px"]}
-            font-family="'Montserrat', sans-serif"
+            fontWeight="bold"
+            fontSize={["20px", "28px", "36px", "36px"]}
+            fontFamily="'Montserrat', sans-serif"
           >
             PARA EMPRESAS
           </Heading>
         </Box>
-        <div className="content">
-          <ul>
+        <div className="content" fontSize={["13px", "15px", "18px"]}>
+          <ul fontSize={["13px", "15px", "18px"]}>
             {servicios.map((servicio, index) => (
               <li key={index}>
                 <h3>{servicio.title}</h3>
-                <p>{servicio.description}</p>
-                <ul>
+                <p fontSize={["10px", "15px", "18px", "18px"]}>
+                  {servicio.description}
+                </p>
+                <ul fontSize={["13px", "15px", "18px"]}>
                   {servicio.lista.map((descripcion, i) => (
                     <li key={i}>{descripcion}</li>
                   ))}
