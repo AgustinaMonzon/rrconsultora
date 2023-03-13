@@ -14,16 +14,16 @@ function AboutUs() {
       mx="auto"
       
     >
-      <Link to="/#about-us"></Link>
+     
       <Box display={["flex"]}>
           <Heading
             as="h1"
-            fontSize={["20px", "28px", "36px"]}
+            fontSize={["20px", "22px", "28px", "36px"]}
             mb={{ base: 6, md: 6}}
             mt={["5%", "5%"]}
             font-family="'Montserrat', sans-serif"
             textAlign={"center"}
-             marginLeft={["10%", "0%", "0%"]} 
+             marginLeft={["12%", "0%", "0%"]} 
           >
             ¿QUIENES
           </Heading>
@@ -35,13 +35,13 @@ function AboutUs() {
             marginLeft={["2%", "1%"]} 
             color={"#446b9c"}
             font-weight=" bold"
-            fontSize={["20px", "28px", "36px"]}
+            fontSize={["20px", "22px", "28px", "36px"]}
             font-family="'Montserrat', sans-serif"
           >
            SOMOS?
           </Heading>
         </Box>
-      <Text fontSize={["13px","15px","18px"]} textAlign={["center","left","left"]} color={textColor} w={["90%","100%"]} >
+      <Text fontSize={["13px","14px","13px","18px"]} textAlign={["center","left","left"]} color={textColor} w={["90%","100%"]} >
         Somos RR Consultoría, conformado por dos profesionales innovadoras y
         apasionadas por lo que hacemos. Nos dedicamos a liderar procesos de
         atracción de talentos y brindar soluciones que aporten un plus extra al
@@ -67,7 +67,8 @@ function AboutUs() {
                 alt="Foto de perfil de Sabrina"
                 className="aboutImg"
                 justifyContent="center"
-                 marginLeft={["4%","40%","20%","40%"]} 
+                 marginLeft={["16%","28%","25%","40%"]} 
+                 marginTop={["-5%","15%","0%"]}
               />
               <Text
                 as="h3"
@@ -75,8 +76,9 @@ function AboutUs() {
                 fontSize={["11px","14.4px","13.5px", "16px"]}
                 className="aboutName"
                 textAlign="center"
-                marginRight={["26%","-30%","9%", "-15%"]}
+                marginRight={["6%","-7%","0%", "-15%"]}
                 color={textColor}
+                marginBottom={["15%","-10%","0%"]}
               >
                 SABRINA REIRIS
               </Text>
@@ -91,7 +93,8 @@ function AboutUs() {
                 crop={"fill"}
                 alt="Foto de perfil de Nahir"
                 className="aboutImg"
-                marginLeft={["1%","23%","25%"]} 
+                marginLeft={["6%","20%","25%"]} 
+                marginTop={["-5%","15%","0%"]}
               />
               <Text
                 font-family="'Montserrat', sans-serif"
@@ -99,7 +102,7 @@ function AboutUs() {
                 fontSize={["10.5px","13.5px","13.5px", "16px"]}
                 className="aboutName"
                 textAlign="center"
-                marginRight={["33%","5%","0%", "14%"]}
+                marginRight={["25%","10%","0%", "14%"]}
                 color={textColor}
               >
                 NAHIR REVERDITO

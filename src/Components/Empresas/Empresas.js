@@ -15,12 +15,12 @@ export default function Empresas() {
         marginBottom={"-1%"}
         marginTop={"-7%"}
       >
-       <Box display={["grid","grid","flex","flex"]}>
+       <Box display={["grid","flex","flex","flex"]}>
           <Heading
             as="h1"
-            fontSize={["20px", "28px", "36px"]}
+            fontSize={["20px", "22px","27px" ,"36px"]}
             mb={{ base: 6, md: 6}}
-            mt={["-33%", "5%"]}
+            mt={["-22%", "5%"]}
             font-family="'Montserrat', sans-serif"
             textAlign={"center"}
              marginLeft={["-8%", "0%", "0%"]} 
@@ -30,12 +30,12 @@ export default function Empresas() {
           <Heading
             as="h1"
             mb={{ base: 7, md: 8 }}
-            mt={["-18%", "5%"]}
+            mt={["-10%", "5%"]}
             textAlign={"center"}
             marginLeft={["-8%", "1%"]} 
             color={"#446b9c"}
             font-weight=" bold"
-            fontSize={["20px", "28px", "36px"]}
+            fontSize={["20px", "22px","27px", "36px"]}
             font-family="'Montserrat', sans-serif"
           >
             NOSOTRAS
