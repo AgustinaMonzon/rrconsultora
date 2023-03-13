@@ -42,6 +42,9 @@ p {
   color: #2b2c64;
   text-align: justify;
 }
+li {
+  font-size: 1.1rem;
+}
 
 button {
   background: linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa);
@@ -58,4 +61,18 @@ button {
 
 button:hover {
   transform: scale(1.1);
+}
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+  li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  button {
+    font-size: 0.6rem;
+    padding: 6px 14px;
+  }
 }
