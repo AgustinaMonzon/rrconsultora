@@ -9,12 +9,15 @@ function SoyEmpresa() {
     {
       title: "Atracción de talentos",
       description:
-        "La Asesoría Laboral está dirigida tanto para aquellas personas que no tienen trabajo  como para quienes tienen la intención de cambiar o expandirse a un nuevo rubro en el mercado laboral.",
+        "A través de una búsqueda excepcional encontramos el mejor talento para la organización requerida. Esto lo hacemos mediante  entrevistas con modelos flexibles que nos permiten adecuarnos no solo a las necesidades de nuestros clientes sino también a las de nuestros candidatos, teniendo en cuenta el perfil que se requiere cubrir.",
 
       lista: [
-        "Mediante este servicio te preparamos para diversas modalidades de entrevistas, con el objetivo de aumentar tus posibilidades de avanzar en los procesos de selección.​",
-        "Te ayudamos a mejorar tus habilidades a la hora de responder las preguntas en tus entrevistas laborales.",
-        "Te brindamos los consejos y herramientas necesarias para que puedas desenvolverte de forma eficiente y cuales son las preguntas frecuentes que pueden hacerte.",
+        "Definición y elaboración del perfil en conjunto.​",
+        "Análisis del puesto a cubrir.",
+        "Relevamiento personalizado para conocer la cultura propia de cada empresa.",
+        "Portales de  búsqueda: base de datos propia, publicación de avisos en diversos medios masivos de comunicación, LinkedIn Recruiter.",
+        "Entrevistas para determinar el grado de alineación del candidato a las competencias requeridas.",
+        "Acompañamiento y soporte hasta la incorporación.",
       ],
     },
   ];
