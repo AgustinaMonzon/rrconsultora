@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "./Empresas.css";
 
 export default function Empresas() {
-
   return (
     <div className="Empresas">
       <Box
@@ -15,15 +14,15 @@ export default function Empresas() {
         marginBottom={"-1%"}
         marginTop={"-7%"}
       >
-       <Box display={["grid","flex","flex","flex"]}>
+        <Box display={["grid", "flex", "flex", "flex"]}>
           <Heading
             as="h1"
-            fontSize={["20px", "22px","27px" ,"36px"]}
-            mb={{ base: 6, md: 6}}
+            fontSize={["20px", "22px", "27px", "36px"]}
+            mb={{ base: 6, md: 6 }}
             mt={["-22%", "5%"]}
             font-family="'Montserrat', sans-serif"
             textAlign={"center"}
-             marginLeft={["-8%", "0%", "0%"]} 
+            marginLeft={["-8%", "0%", "0%"]}
           >
             EMPRESAS QUE CONFÍAN EN
           </Heading>
@@ -32,10 +31,10 @@ export default function Empresas() {
             mb={{ base: 7, md: 8 }}
             mt={["-10%", "5%"]}
             textAlign={"center"}
-            marginLeft={["-8%", "1%"]} 
+            marginLeft={["-8%", "1%"]}
             color={"#446b9c"}
             font-weight=" bold"
-            fontSize={["20px", "22px","27px", "36px"]}
+            fontSize={["20px", "22px", "27px", "36px"]}
             font-family="'Montserrat', sans-serif"
           >
             NOSOTRAS

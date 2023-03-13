@@ -50,15 +50,15 @@ function SoyCandidato() {
       <Navbar />
 
       <div className="container">
-      <Box display={["flex"]}>
+        <Box display={["flex"]}>
           <Heading
             as="h1"
             fontSize={["20px", "28px", "36px"]}
-            mb={{ base: 6, md: 6}}
+            mb={{ base: 6, md: 6 }}
             mt={["-5%", "5%"]}
             font-family="'Montserrat', sans-serif"
-            textAlign={"center"}
-             marginLeft={["0%", "0%", "0%"]} 
+            textAlign={["justify", "justify"]}
+            marginLeft={["0%", "0%", "0%"]}
           >
             SOY
           </Heading>
@@ -66,8 +66,8 @@ function SoyCandidato() {
             as="h1"
             mb={{ base: 7, md: 8 }}
             mt={["-5%", "5%"]}
-            textAlign={"center"}
-            marginLeft={["2%", "1%"]} 
+            textAlign={["justify", "justify"]}
+            marginLeft={["2%", "1%"]}
             color={"#446b9c"}
             font-weight=" bold"
             fontSize={["20px", "28px", "36px"]}
@@ -77,10 +77,9 @@ function SoyCandidato() {
           </Heading>
         </Box>
         <div className="content">
-         
           <ul>
             {servicios.map((servicio, index) => (
-              <li key={index}>
+              <li listStyle={"none"} key={index}>
                 <h3>{servicio.title}</h3>
                 <p>{servicio.description}</p>
                 <ul>

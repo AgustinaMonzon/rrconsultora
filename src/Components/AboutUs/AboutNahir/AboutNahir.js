@@ -5,14 +5,14 @@ import {
   useMediaQuery,
   Flex,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
 } from "@chakra-ui/react";
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import profileImg from "./profile.jpeg";
 
-function AboutSabrina() {
+function AboutNahir() {
   const [isLargerThan640] = useMediaQuery("(min-width: 640px)");
   const textColor = useColorModeValue("gray.700", "whiteAlpha.900");
 
@@ -59,10 +59,10 @@ function AboutSabrina() {
         )}
 
         <Box
-     w={["110%", "100%", "55%", "45%"]}
-     display={"grid"}
-     justifyContent={"center"}
-     mr={["12%", "5%", "15%", "32%"]}
+          w={["110%", "100%", "55%", "45%"]}
+          display={"grid"}
+          justifyContent={"center"}
+          mr={["12%", "5%", "15%", "32%"]}
         >
           <Text
             fontSize={["14px", "16px", "18px", "17px"]}
@@ -71,7 +71,11 @@ function AboutSabrina() {
           >
             Nahir Reverdito.
           </Text>
-          <Text fontSize={["13px", "14px", "15px", "16px"]}  color={textColor}>
+          <Text
+            fontSize={["13px", "14px", "15px", "16px"]}
+            color={textColor}
+            textAlign={["justify", "justify"]}
+          >
             Profesional apasionada por la selección y atracción de talentos.
             Creo que lo más importante es generar una cálida experiencia tanto
             para el candidato como para la empresa. Licenciada en Recursos
@@ -128,4 +132,4 @@ function AboutSabrina() {
   );
 }
 
-export default AboutSabrina;
+export default AboutNahir;

@@ -1,4 +1,3 @@
-
 import React, { useRef } from "react";
 import "./SoyEmpresa.css";
 import NavBar from "../NavBar/NavBar";
@@ -29,41 +28,53 @@ function SoyEmpresa() {
   return (
     <div>
       <NavBar />
-     
+
       <div className="container">
-      <Box display={["grid","grid","flex"]}>
+        <Box display={["grid", "grid", "flex"]}>
           <Heading
             as="h1"
-            fontSize={["20px", "28px", "36px"]}
-            mb={{ base: 6, md: 6}}
+            fontSize={`clamp(20px, 6vw, 36px)`}
+            mb={{ base: 6, md: 6 }}
             mt={["-5%", "5%"]}
-            font-family="'Montserrat', sans-serif"
-            textAlign={"center"}
-             marginLeft={["0%", "0%", "0%"]} 
+            fontFamily="'Montserrat', sans-serif"
+            marginLeft={["0%", "0%", "0%"]}
+            textAlign={["justify", "justify"]}
           >
             NUESTROS SERVICIOS
           </Heading>
           <Heading
+            textAlign={["justify", "justify"]}
             as="h1"
             mb={{ base: 7, md: 8 }}
             mt={["-5%", "5%"]}
-            textAlign={"center"}
-            marginLeft={["0%", "1%"]} 
+            marginLeft={["0%", "1%"]}
             color={"#446b9c"}
-            font-weight=" bold"
-            fontSize={["20px", "28px", "36px"]}
-            font-family="'Montserrat', sans-serif"
+            fontWeight="bold"
+            fontSize={`clamp(20px, 6vw, 36px)`}
+            fontFamily="'Montserrat', sans-serif"
           >
             PARA EMPRESAS
           </Heading>
         </Box>
-        <div className="content">
-         <ul>
+        <div
+          className="content"
+          fontSize={["13px", "15px", "18px"]}
+          textAlign={["justify", "justify"]}
+        >
+          <ul
+            fontSize={["13px", "15px", "18px"]}
+            textAlign={["justify", "justify"]}
+          >
             {servicios.map((servicio, index) => (
-              <li key={index}>
+              <li key={index} textAlign={["justify", "justify"]}>
                 <h3>{servicio.title}</h3>
-                <p>{servicio.description}</p>
-                <ul>
+                <p
+                  fontSize={`clamp(13px, 2.5vw, 18px)`}
+                  textAlign={["justify", "justify"]}
+                >
+                  {servicio.description}
+                </p>
+                <ul fontSize={["13px", "15px", "18px"]}>
                   {servicio.lista.map((descripcion, i) => (
                     <li key={i}>{descripcion}</li>
                   ))}

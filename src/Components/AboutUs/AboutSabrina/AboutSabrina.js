@@ -5,12 +5,11 @@ import {
   useMediaQuery,
   Flex,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
 } from "@chakra-ui/react";
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import profileImg from "./profile.jpeg";
 
 function AboutSabrina() {
   const [isLargerThan640] = useMediaQuery("(min-width: 640px)");
@@ -48,13 +47,12 @@ function AboutSabrina() {
         p={["50px", "40px", "20"]}
       >
         {isLargerThan640 && (
-          <Box mr="6" width={["140%", "100%", "45%", "24%"]}  >
+          <Box mr="6" width={["140%", "100%", "45%", "24%"]}>
             <Image
               borderRadius="full"
               boxSize="200"
               src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678451654/Dise%C3%B1o_sin_t%C3%ADtulo_30_s7j8yd.png"
               alt="Foto de perfil"
-             
             />
           </Box>
         )}
@@ -72,7 +70,11 @@ function AboutSabrina() {
           >
             Sabrina Reiris.
           </Text>
-          <Text fontSize={["13px", "14px", "15px", "16px"]} color={textColor}>
+          <Text
+            fontSize={["13px", "14px", "15px", "16px"]}
+            color={textColor}
+            textAlign={["justify", "justify"]}
+          >
             Soy una profesional de Recursos Humanos con más de 6 años de
             experiencia en reclutamiento, selección y consultoría para empresas
             de primer nivel nacional e internacional. Me caracterizo por ser una
@@ -84,7 +86,12 @@ function AboutSabrina() {
           </Text>
         </Box>
         {!isLargerThan640 && (
-          <Box mt="6" width={["90%"]}  marginLeft={["5%"]}  justifyContent={"center"}>
+          <Box
+            mt="6"
+            width={["90%"]}
+            marginLeft={["5%"]}
+            justifyContent={"center"}
+          >
             <Image
               borderRadius="full"
               boxSize="150px"
@@ -123,8 +130,8 @@ function AboutSabrina() {
           />
         </a>
       </Flex>
-      <br/>
-      
+      <br />
+
       <Footer />
     </Box>
   );
