@@ -28,12 +28,9 @@ export default function NavBar() {
         zIndex={1}
         w={"100%"}
         borderTop="1px solid gray"
-        // shadow={"lg"}
-        // boxShadow={"0 2px 2px rgb(157, 210, 245)"}
         borderBottom="1px solid gray"
         padding="0px"
         backgroundColor={"#4b749c"}
-        // backgroundColor={"rgba(255, 255, 255, 0.8);"}
         justifyContent={"center"}
       >
         {/* Desktop */}
@@ -41,9 +38,19 @@ export default function NavBar() {
           <Image
             src={logo}
             width={["50px", "70px"]}
-             marginLeft={["0%","-5%","15%", "150%", "0%", "0%", "0%", "0%", "0%", "75%"]} 
-            /* backgroundColor={" rgb(157, 210, 245) "} */
-            backgroundColor={" white "}
+            marginLeft={[
+              "0%",
+              "-5%",
+              "15%",
+              "150%",
+              "0%",
+              "0%",
+              "0%",
+              "0%",
+              "0%",
+              "75%",
+            ]}
+            backgroundColor={"white"}
             borderRadius={"full"}
             justifyContent={"center"}
           ></Image>
@@ -51,7 +58,7 @@ export default function NavBar() {
 
         <Flex
           display={["none", "none", "flex", "flex"]}
-          marginLeft={["0%", "0%", "2%", "10%", "8%", "8%"]} 
+          marginLeft={["0%", "0%", "2%", "10%", "8%", "8%"]}
           justifyContent={"center"}
         >
           <Link to="/" passHref>
@@ -63,13 +70,11 @@ export default function NavBar() {
               aria-label="Home"
               my={5}
               w="100%"
-              fontSize={["11px","11px","11px","13px"]}
-              
+              fontSize={["11px", "11px", "11px", "13px"]}
             >
               HOME
             </Button>
           </Link>
-
           <ScrollLink
             to="about-us"
             smooth={true}
@@ -77,18 +82,20 @@ export default function NavBar() {
             offset={-70}
             passHref
           >
-            <Button
-              as="a"
-              variant="ghost"
-              color={"white"}
-              _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
-              aria-label="About"
-              my={5}
-              w="100%"
-              fontSize={["11px","11px","11px","13px"]}
-            >
-              QUIÉNES SOMOS
-            </Button>
+            <Link to="/#about-us" passHref>
+              <Button
+                as="a"
+                variant="ghost"
+                color={"white"}
+                _hover={{ bg: "rgba(183, 221, 246, 0.712)" }}
+                aria-label="About"
+                my={5}
+                w="100%"
+                fontSize={["11px", "11px", "11px", "13px"]}
+              >
+                QUIÉNES SOMOS
+              </Button>
+            </Link>
           </ScrollLink>
 
           <Link to="/soyEmpresa" passHref>
