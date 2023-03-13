@@ -2,39 +2,46 @@ import React from "react";
 import { Box, Heading, Text, Image, useColorModeValue } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import "./about.css";
-import profileImg from "./profile.jpeg";
 
 function AboutUs() {
   const textColor = useColorModeValue("gray.700", "whiteAlpha.900");
   return (
-    <section
+    <Box
       id="about-us"
       p={{ base: 4, md: 8 }}
       maxW={{ base: "100%", md: "80%" }}
       mx="auto"
     >
       <Link to="/#about-us"></Link>
-      <Box display={"flex"}>
+      <Box display={["flex"]}>
         <Heading
           as="h1"
           fontSize={["20px", "28px", "36px"]}
-          mb={{ base: 4, md: 8 }}
-          color={textColor}
+          mb={{ base: 6, md: 6 }}
+          mt={["5%", "5%"]}
+          font-family="'Montserrat', sans-serif"
+          textAlign={"center"}
+          marginLeft={["10%", "0%", "0%"]}
         >
-          ¿QUIÉNES
+          ¿QUIENES
         </Heading>
         <Heading
           as="h1"
-          fontSize={["20px", "28px", "36px"]}
-          mb={{ base: 4, md: 8 }}
-          marginLeft={"1%"}
+          mb={{ base: 7, md: 8 }}
+          mt={["5%", "5%"]}
+          textAlign={"center"}
+          marginLeft={["2%", "1%"]}
           color={"#446b9c"}
+          font-weight=" bold"
+          fontSize={["20px", "28px", "36px"]}
+          font-family="'Montserrat', sans-serif"
         >
           SOMOS?
         </Heading>
       </Box>
       <Text
-        fontSize={["12px", "15px", "18px"]}
+        fontSize={["13px", "15px", "18px"]}
+        textAlign={["center", "left", "left"]}
         color={textColor}
         w={["90%", "100%"]}
       >
@@ -61,15 +68,13 @@ function AboutUs() {
           <Box className="aboutImgContainer" justifyContent="center">
             <Link to="/aboutSabrina">
               <Image
-                src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678449750/Dise%C3%B1o_sin_t%C3%ADtulo_28_ke5gkq.png"
+                src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678451275/Dise%C3%B1o_sin_t%C3%ADtulo_29_mpvboa.png"
                 w={["64.5%", "50%", "50%", "35%"]}
                 alt="Foto de perfil de Sabrina"
                 className="aboutImg"
                 justifyContent="center"
-                marginLeft={["1%", "23%", "25%"]}
-                filter="brightness(110%)"
+                marginLeft={["4%", "40%", "20%", "40%"]}
               />
-
               <Text
                 as="h3"
                 font-family="'Montserrat', sans-serif"
@@ -88,10 +93,11 @@ function AboutUs() {
               <Image
                 src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678449546/Dise%C3%B1o_sin_t%C3%ADtulo_27_e8wfvb.png"
                 w={["65%", "50%", "50%", "35%"]}
+                height={"auto"}
+                crop={"fill"}
                 alt="Foto de perfil de Nahir"
                 className="aboutImg"
                 marginLeft={["1%", "23%", "25%"]}
-                borderEndEndRadius="50%"
               />
               <Text
                 font-family="'Montserrat', sans-serif"
@@ -108,7 +114,7 @@ function AboutUs() {
           </Box>
         </Box>
       </Box>
-    </section>
+    </Box>
   );
 }
 

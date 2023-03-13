@@ -8,25 +8,27 @@ export default function Valores() {
       maxW={{ base: "100%", md: "80%" }}
       mx="auto"
     >
-      <Box display={"flex"}>
+      <Box display={["grid", "grid", "flex"]}>
         <Heading
           as="h1"
-          fontSize={["17px", "28px", "36px"]}
-          mb={{ base: 0, md: 8 }}
-          mt={["-25%", "0%"]}
+          fontSize={["20px", "28px", "36px"]}
+          mb={{ base: 6, md: 6 }}
+          mt={["-25%", "0", "0%", "-5%"]}
           font-family="'Montserrat', sans-serif"
-          marginLeft={["-6%", "-8%", "0%"]}
+          textAlign={"center"}
+          marginLeft={["-18%", "0%", "0%"]}
         >
-          VALORES
+          VALORES EN
         </Heading>
         <Heading
           as="h1"
-          mb={{ base: 0, md: 8 }}
-          mt={["-25%", "0%"]}
-          marginLeft={["3%", "1%"]}
+          mb={{ base: 7, md: 8 }}
+          mt={["-10%", "0", "0%", "-5%"]}
+          textAlign={"center"}
+          marginLeft={["-16%", "1%"]}
           color={"#446b9c"}
           font-weight=" bold"
-          fontSize={["17px", "28px", "36px"]}
+          fontSize={["20px", "28px", "36px"]}
           font-family="'Montserrat', sans-serif"
         >
           RR CONSULTORÍA
@@ -35,12 +37,12 @@ export default function Valores() {
       <Flex
         padding={"10px"}
         marginBottom={"13%"}
-        marginTop={["-15%", "0%"]}
+        marginTop={["0%", "0%"]}
         display={["grid", "grid", "flex"]}
         justifyContent={["center", "space-between"]}
         width={"105%"}
-        h={["100%", "80%"]}
-        marginLeft={["-9%", "0%"]}
+        h={["100%", "85%"]}
+        marginLeft={["-8%", "0%"]}
       >
         <Box
           className="card"
@@ -52,22 +54,22 @@ export default function Valores() {
           padding={["1%", "2%"]}
           boxShadow={"xl"}
           borderWidth={["2px", "0"]}
-          borderBottomColor={"#4b749c"}
+          borderColor={"#4b749c"}
         >
           <Image
             src="https://cdn-icons-png.flaticon.com/512/1244/1244701.png?w=740&t=st=1677694058~exp=1677694658~hmac=6584575706cdfbb4b84f70f777fa1bef5c3833a049c8d93e862e335e57d995af"
-            width={["25%", "80%"]}
+            width={["27%", "80%"]}
             height={["95%", "90%"]}
             display={"flex"}
             justifyContent={"center"}
-            marginLeft={["38%", "10%"]}
+            marginLeft={["37%", "10%"]}
           />
           <Text
             textAlign={"center"}
             justifyContent={"center"}
             display={"grid"}
             fontWeight="bold"
-            fontSize={["10px", "10px", "15px"]}
+            fontSize={["12px", "10px", "15px"]}
             color="black"
             w={["100%", "100%"]}
           >
@@ -78,7 +80,7 @@ export default function Valores() {
             marginTop={[1, 2]}
             w={["100%", "100%"]}
             h={"100%"}
-            fontSize={["10px", "10px", "14px"]} /* backgroundColor={"green"} */
+            fontSize={["11px", "10px", "15px"]} /* backgroundColor={"green"} */
           >
             Creemos que el profesionalismo es fundamental para brindar el mejor
             servicio a nuestros clientes. Nos esforzamos por mantener altos
@@ -98,15 +100,15 @@ export default function Valores() {
           padding={["1%", "2%"]}
           boxShadow={"xl"}
           borderWidth={["2px", "0"]}
-          borderBottomColor={"#4b749c"}
+          borderColor={"#4b749c"}
         >
           <Image
             src="https://cdn-icons-png.flaticon.com/512/1189/1189183.png?w=740&t=st=1677694438~exp=1677695038~hmac=f49a9f0654855cb7bd1893522eae04cabe1bf295d7a29bffb812a9b378c9e502"
-            width={["25%", "80%"]}
+            width={["27%", "80%"]}
             height={["95%", "90%"]}
             display={"flex"}
             justifyContent={"center"}
-            marginLeft={["38%", "10%"]}
+            marginLeft={["37%", "10%"]}
           />
 
           <Text
@@ -114,15 +116,16 @@ export default function Valores() {
             justifyContent={"center"}
             display={"grid"}
             fontWeight="bold"
-            fontSize={["10px", "10px", "15px"]}
+            fontSize={["12px", "10px", "15px"]}
             color="black"
+            marginTop={[0, 2]}
           >
             EMPATÍA
           </Text>
           <Box
             color="black"
-            marginTop={[1, 2]}
-            fontSize={["10px", "10px", "14px"]}
+            marginTop={[1, 3]}
+            fontSize={["11px", "10px", "15px"]}
           >
             En RR Consultoría valoramos la empatía porque entendemos que cada
             cliente es único y tiene necesidades y circunstancias únicas.
@@ -141,15 +144,15 @@ export default function Valores() {
           padding={["1%", "2%"]}
           boxShadow={"xl"}
           borderWidth={["2px", "0"]}
-          borderBottomColor={"#4b749c"}
+          borderColor={"#4b749c"}
         >
           <Image
             src="https://cdn-icons-png.flaticon.com/512/1246/1246329.png?w=740&t=st=1677694549~exp=1677695149~hmac=5b1cd652e7009addb89893383ec8db3d4b02cce9c77d063180e13f9ebb0c9215"
-            width={["25%", "80%"]}
+            width={["27%", "80%"]}
             height={["95%", "90%"]}
             display={"flex"}
             justifyContent={"center"}
-            marginLeft={["38%", "10%"]}
+            marginLeft={["37%", "10%"]}
           />
 
           <Text
@@ -158,14 +161,15 @@ export default function Valores() {
             display={"grid"}
             fontWeight="bold"
             color="black"
-            fontSize={["10px", "10px", "15px"]}
+            fontSize={["12px", "10px", "15px"]}
+            marginTop={[0, -5]}
           >
             HONESTIDAD
           </Text>
           <Box
             color="black"
-            marginTop={[1, 2]}
-            fontSize={["10px", "10px", "14px"]}
+            marginTop={[1, -5]}
+            fontSize={["11px", "10px", "15px"]}
           >
             La honestidad es un valor clave en RR Consultoría. Nos comprometemos
             a ser honestos y transparentes con nuestros clientes en todo
@@ -184,15 +188,15 @@ export default function Valores() {
           padding={["1%", "2%"]}
           boxShadow={"xl"}
           borderWidth={["2px", "0"]}
-          borderBottomColor={"#4b749c"}
+          borderColor={"#4b749c"}
         >
           <Image
             src="https://cdn-icons-png.flaticon.com/512/1244/1244554.png?w=740&t=st=1677694582~exp=1677695182~hmac=02bf4dfebe923ee12dfcd609a3e16839de0651506905fdda38f3744b994adbd1"
-            width={["25%", "80%"]}
+            width={["27%", "80%"]}
             height={["95%", "90%"]}
             display={"flex"}
             justifyContent={"center"}
-            marginLeft={["38%", "10%"]}
+            marginLeft={["37%", "10%"]}
           />
 
           <Text
@@ -200,15 +204,16 @@ export default function Valores() {
             justifyContent={"center"}
             display={"grid"}
             fontWeight="bold"
-            fontSize={["10px", "10px", "15px"]}
+            fontSize={["12px", "10px", "15px"]}
             color="black"
+            marginTop={[0, 2]}
           >
             FLEXIBILIDAD
           </Text>
           <Box
             color="black"
             marginTop={[1, 2]}
-            fontSize={["10px", "10px", "14px"]}
+            fontSize={["11px", "10px", "15px"]}
           >
             Reconocemos que los desafíos de los recursos humanos pueden surgir
             en cualquier momento y que nuestras soluciones deben ser flexibles

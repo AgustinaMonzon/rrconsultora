@@ -14,22 +14,27 @@ export default function Empresas() {
         marginBottom={"-1%"}
         marginTop={"-7%"}
       >
-        <Box display={"flex"}>
+        <Box display={["grid", "grid", "flex", "flex"]}>
           <Heading
             as="h1"
-            size="xl"
-            mb={{ base: 4, md: 8 }}
-            mr={{ md: "2%" }}
+            fontSize={["20px", "28px", "36px"]}
+            mb={{ base: 6, md: 6 }}
+            mt={["-33%", "5%"]}
             font-family="'Montserrat', sans-serif"
+            textAlign={"center"}
+            marginLeft={["-8%", "0%", "0%"]}
           >
             EMPRESAS QUE CONFÍAN EN
           </Heading>
           <Heading
-            marginLeft={"-1%"}
             as="h1"
-            size="xl"
-            mb={{ base: 4, md: 8 }}
+            mb={{ base: 7, md: 8 }}
+            mt={["-18%", "5%"]}
+            textAlign={"center"}
+            marginLeft={["-8%", "1%"]}
             color={"#446b9c"}
+            font-weight=" bold"
+            fontSize={["20px", "28px", "36px"]}
             font-family="'Montserrat', sans-serif"
           >
             NOSOTRAS

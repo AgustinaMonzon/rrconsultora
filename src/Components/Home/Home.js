@@ -108,11 +108,10 @@ function Card({ title, color, href }) {
 }
 
 function Home() {
-  const scrollToAboutUs = () => {
+  const handleScrollToAboutUs = () => {
     const aboutUsElement = document.getElementById("about-us");
     aboutUsElement.scrollIntoView({ behavior: "smooth" });
   };
-
   return (
     <Box display="flex" flexDirection="column" minHeight="100vh">
       <NavBar />
@@ -121,14 +120,15 @@ function Home() {
           {/* <Carrousel /> */}
           <Image
             justifyContent={"center"}
-            marginLeft={["14%", "20%", "20%"]}
-            w={"60%"}
+            marginLeft={["2%", "20%", "20%"]}
+            w={["85%", "60%"]}
             src="https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677772329/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS_1_vvctap.png"
           />
         </Box>
 
-        <AboutUs />
-
+        <Link to="/aboutUs" onClick={handleScrollToAboutUs}>
+          <AboutUs />
+        </Link>
         <Box mb={10} mt={20}>
           <Valores />
         </Box>
@@ -138,18 +138,27 @@ function Home() {
           maxW={{ base: "100%", md: "80%" }}
           mx="auto"
         >
-          <Box display={"flex"}>
-            <Heading as="h1" size="xl" mb={{ base: 4, md: 8 }}>
-              NUESTROS
-            </Heading>
-
+          <Box display={["flex"]}>
             <Heading
               as="h1"
-              size="xl"
-              mb={{ base: 4, md: 8 }}
-              marginLeft={"1%"}
+              fontSize={["20px", "28px", "36px"]}
+              mb={{ base: 0, md: 0 }}
+              mt={["85%", "0%"]}
+              font-family="'Montserrat', sans-serif"
+              textAlign={"center"}
+              marginLeft={["6%", "0%", "0%"]}
+            >
+              NUESTROS
+            </Heading>
+            <Heading
+              as="h1"
+              mb={{ base: 0, md: 0 }}
+              mt={["85%", "0%"]}
+              textAlign={"center"}
+              marginLeft={["2%", "1%"]}
               color={"#446b9c"}
-              font-weight="bold"
+              font-weight=" bold"
+              fontSize={["20px", "28px", "36px"]}
               font-family="'Montserrat', sans-serif"
             >
               SERVICIOS
@@ -159,7 +168,10 @@ function Home() {
             flexWrap="wrap"
             justifyContent="center"
             alignItems="center"
-            mt={10}
+            mt={4}
+            mb={-20}
+            w={["70%", "100%"]}
+            marginLeft={["10%", "0%"]}
           >
             <Card
               title="Atracción de talentos"

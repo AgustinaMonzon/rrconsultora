@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../NavBar/NavBar";
 import Contact from "../Contact/Contact";
+import { Box, Heading } from "@chakra-ui/react";
 import "./SoyCandidato.css";
-import { Heading, Box } from "@chakra-ui/react";
 
 function SoyCandidato() {
   function scrollToContact() {
@@ -50,25 +50,27 @@ function SoyCandidato() {
       <Navbar />
 
       <div className="container">
-        <Box display={"flex"}>
+        <Box display={["flex"]}>
           <Heading
             as="h1"
-            fontSize={["17px", "28px", "36px"]}
-            mb={{ base: 0, md: 8 }}
-            mt={["-25%", "0%"]}
+            fontSize={["20px", "28px", "36px"]}
+            mb={{ base: 6, md: 6 }}
+            mt={["-5%", "5%"]}
             font-family="'Montserrat', sans-serif"
-            marginLeft={["-6%", "-8%", "0%"]}
+            textAlign={"center"}
+            marginLeft={["0%", "0%", "0%"]}
           >
             SOY
           </Heading>
           <Heading
             as="h1"
-            mb={{ base: 0, md: 8 }}
-            mt={["-25%", "0%"]}
-            marginLeft={["3%", "1%"]}
+            mb={{ base: 7, md: 8 }}
+            mt={["-5%", "5%"]}
+            textAlign={"center"}
+            marginLeft={["2%", "1%"]}
             color={"#446b9c"}
             font-weight=" bold"
-            fontSize={["17px", "28px", "36px"]}
+            fontSize={["20px", "28px", "36px"]}
             font-family="'Montserrat', sans-serif"
           >
             CANDIDATO

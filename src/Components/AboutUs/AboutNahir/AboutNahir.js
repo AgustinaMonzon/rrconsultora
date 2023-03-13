@@ -10,9 +10,8 @@ import {
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import profileImg from "./profile.jpeg";
 
-function AboutSabrina() {
+function AboutNahir() {
   const [isLargerThan640] = useMediaQuery("(min-width: 640px)");
   const textColor = useColorModeValue("gray.700", "whiteAlpha.900");
 
@@ -50,12 +49,10 @@ function AboutSabrina() {
         {isLargerThan640 && (
           <Box mr="6" width={["100%", "100%", "45%", "22%"]}>
             <Image
-              w={["65%", "50%", "50%", "55%"]}
-              alt="Foto de perfil de Nahir"
-              className="aboutImg"
-              marginLeft={["1%", "23%", "25%"]}
-              borderEndEndRadius="50%"
+              borderRadius="full"
+              boxSize="200"
               src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678368998/Nahir_i2rcsm.jpg"
+              alt="Foto de perfil"
             />
           </Box>
         )}
@@ -88,12 +85,10 @@ function AboutSabrina() {
         {!isLargerThan640 && (
           <Box mt="6">
             <Image
-              w={["65%", "50%", "50%", "55%"]}
-              alt="Foto de perfil de Nahir"
-              className="aboutImg"
-              marginLeft={["1%", "23%", "25%"]}
-              borderEndEndRadius="50%"
+              borderRadius="full"
+              boxSize="150px"
               src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678368998/Nahir_i2rcsm.jpg"
+              alt="Foto de perfil"
             />
           </Box>
         )}
@@ -132,4 +127,4 @@ function AboutSabrina() {
   );
 }
 
-export default AboutSabrina;
+export default AboutNahir;

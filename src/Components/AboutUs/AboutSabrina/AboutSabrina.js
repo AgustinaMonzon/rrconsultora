@@ -10,7 +10,6 @@ import {
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import profileImg from "./profile.jpeg";
 
 function AboutSabrina() {
   const [isLargerThan640] = useMediaQuery("(min-width: 640px)");
@@ -48,14 +47,12 @@ function AboutSabrina() {
         p={["50px", "40px", "20"]}
       >
         {isLargerThan640 && (
-          <Box mr="6" width={["100%", "100%", "45%", "22%"]}>
+          <Box mr="6" width={["140%", "100%", "45%", "24%"]}>
             <Image
-              w={["65%", "50%", "50%", "55%"]}
-              alt="Foto de perfil de Nahir"
-              className="aboutImg"
-              marginLeft={["1%", "23%", "25%"]}
-              borderEndEndRadius="50%"
-              src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678449750/Dise%C3%B1o_sin_t%C3%ADtulo_28_ke5gkq.png"
+              borderRadius="full"
+              boxSize="200"
+              src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678451654/Dise%C3%B1o_sin_t%C3%ADtulo_30_s7j8yd.png"
+              alt="Foto de perfil"
             />
           </Box>
         )}
@@ -87,12 +84,10 @@ function AboutSabrina() {
         {!isLargerThan640 && (
           <Box mt="6">
             <Image
-              w={["65%", "50%", "50%", "55%"]}
-              alt="Foto de perfil de Nahir"
-              className="aboutImg"
-              marginLeft={["1%", "23%", "25%"]}
-              borderEndEndRadius="50%"
-              src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678449750/Dise%C3%B1o_sin_t%C3%ADtulo_28_ke5gkq.png"
+              borderRadius="full"
+              boxSize="150px"
+              src="https://res.cloudinary.com/dmuudt7dt/image/upload/v1678451654/Dise%C3%B1o_sin_t%C3%ADtulo_30_s7j8yd.png"
+              alt="Foto de perfil"
             />
           </Box>
         )}
