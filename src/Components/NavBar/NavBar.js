@@ -243,7 +243,7 @@ export default function NavBar() {
             </Button>
           </Link>
 
-          <Link to="/about" passHref>
+          <Link to="/#about-us" passHref>
             <Button
               as="a"
               variant="ghost"

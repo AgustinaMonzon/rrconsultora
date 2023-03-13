@@ -71,7 +71,7 @@ function AboutSabrina() {
           >
             Nahir Reverdito.
           </Text>
-          <Text fontSize={["13px", "14px", "15px", "16px"]}  color={textColor}>
+          <Text fontSize={["13px", "14px", "15px", "16px"]} textAlign={["justify","justify"]}  color={textColor}>
             Profesional apasionada por la selección y atracción de talentos.
             Creo que lo más importante es generar una cálida experiencia tanto
             para el candidato como para la empresa. Licenciada en Recursos
@@ -111,7 +111,7 @@ function AboutSabrina() {
           />
         </a>
         <a
-          href="https://github.com/meliveyrat1"
+          href="https://www.instagram.com/rrconsultoria_/"
           target="_blank"
           rel="noopener noreferrer"
         >
