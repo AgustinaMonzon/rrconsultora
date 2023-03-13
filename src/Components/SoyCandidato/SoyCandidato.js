@@ -57,7 +57,7 @@ function SoyCandidato() {
             mb={{ base: 6, md: 6 }}
             mt={["-5%", "5%"]}
             font-family="'Montserrat', sans-serif"
-            textAlign={"center"}
+            textAlign={["justify", "justify"]}
             marginLeft={["0%", "0%", "0%"]}
           >
             SOY
@@ -66,7 +66,7 @@ function SoyCandidato() {
             as="h1"
             mb={{ base: 7, md: 8 }}
             mt={["-5%", "5%"]}
-            textAlign={"center"}
+            textAlign={["justify", "justify"]}
             marginLeft={["2%", "1%"]}
             color={"#446b9c"}
             font-weight=" bold"
@@ -79,7 +79,7 @@ function SoyCandidato() {
         <div className="content">
           <ul>
             {servicios.map((servicio, index) => (
-              <li key={index}>
+              <li listStyle={"none"} key={index}>
                 <h3>{servicio.title}</h3>
                 <p>{servicio.description}</p>
                 <ul>

@@ -37,16 +37,16 @@ function SoyEmpresa() {
             mb={{ base: 6, md: 6 }}
             mt={["-5%", "5%"]}
             fontFamily="'Montserrat', sans-serif"
-            textAlign={"center"}
             marginLeft={["0%", "0%", "0%"]}
+            textAlign={["justify", "justify"]}
           >
             NUESTROS SERVICIOS
           </Heading>
           <Heading
+            textAlign={["justify", "justify"]}
             as="h1"
             mb={{ base: 7, md: 8 }}
             mt={["-5%", "5%"]}
-            textAlign={"center"}
             marginLeft={["0%", "1%"]}
             color={"#446b9c"}
             fontWeight="bold"
@@ -56,12 +56,22 @@ function SoyEmpresa() {
             PARA EMPRESAS
           </Heading>
         </Box>
-        <div className="content" fontSize={["13px", "15px", "18px"]}>
-          <ul fontSize={["13px", "15px", "18px"]}>
+        <div
+          className="content"
+          fontSize={["13px", "15px", "18px"]}
+          textAlign={["justify", "justify"]}
+        >
+          <ul
+            fontSize={["13px", "15px", "18px"]}
+            textAlign={["justify", "justify"]}
+          >
             {servicios.map((servicio, index) => (
-              <li key={index}>
+              <li key={index} textAlign={["justify", "justify"]}>
                 <h3>{servicio.title}</h3>
-                <p fontSize={`clamp(13px, 2.5vw, 18px)`}>
+                <p
+                  fontSize={`clamp(13px, 2.5vw, 18px)`}
+                  textAlign={["justify", "justify"]}
+                >
                   {servicio.description}
                 </p>
                 <ul fontSize={["13px", "15px", "18px"]}>

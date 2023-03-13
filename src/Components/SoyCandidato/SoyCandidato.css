@@ -23,6 +23,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: justify;
 }
 
 li {
@@ -33,11 +34,13 @@ h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
   color: #4b749c;
+  list-style: none;
 }
 
 p {
   font-size: 1.4rem;
   color: #2b2c64;
+  text-align: justify;
 }
 
 button {
