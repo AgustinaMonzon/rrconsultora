@@ -26,7 +26,7 @@ function AboutSabrina() {
       <Box>
         <Text
           fontWeight="bold"
-          fontSize={["22px", "24px", "35"]}
+          fontSize={["23px", "24px", "30"]}
           mb="4"
           display={"flex"}
           ml={["-8%", "-8%", "-8%", "-65%", "-72%", "-76%"]}
@@ -34,7 +34,7 @@ function AboutSabrina() {
           justifyContent={"center"}
           color={textColor}
         >
-          Acerca de mi
+          ACERCA DE MI
         </Text>
       </Box>
       <Box
@@ -58,19 +58,23 @@ function AboutSabrina() {
         )}
 
         <Box
-          w={["120%", "100%", "55%", "45%"]}
+          w={["110%", "100%", "55%", "45%"]}
           display={"grid"}
           justifyContent={"center"}
-          mr={["6%", "5%", "15%", "32%"]}
+          mr={["12%", "5%", "15%", "32%"]}
         >
           <Text
-            fontSize={["12px", "14px", "18px", "17px"]}
+            fontSize={["14px", "16px", "18px", "17px"]}
             fontWeight="bold"
             color={"#446b9c"}
           >
             Sabrina Reiris.
           </Text>
-          <Text fontSize={["12px", "14px", "15px", "16px"]} color={textColor}>
+          <Text
+            fontSize={["13px", "14px", "15px", "16px"]}
+            color={textColor}
+            textAlign={["justify", "justify"]}
+          >
             Soy una profesional de Recursos Humanos con más de 6 años de
             experiencia en reclutamiento, selección y consultoría para empresas
             de primer nivel nacional e internacional. Me caracterizo por ser una
@@ -82,7 +86,12 @@ function AboutSabrina() {
           </Text>
         </Box>
         {!isLargerThan640 && (
-          <Box mt="6">
+          <Box
+            mt="6"
+            width={["90%"]}
+            marginLeft={["5%"]}
+            justifyContent={"center"}
+          >
             <Image
               borderRadius="full"
               boxSize="150px"
@@ -94,7 +103,7 @@ function AboutSabrina() {
       </Box>
       <Flex
         justifyContent={"center"}
-        marginLeft={["0%", "0%", "-3%", "-32%", "-35%", "-35%", "-35%"]}
+        marginLeft={["-8%", "-8%", "-3%", "-32%", "-35%", "-35%", "-35%"]}
       >
         <a
           href="https://www.linkedin.com/in/sabrinareiris"
@@ -121,6 +130,8 @@ function AboutSabrina() {
           />
         </a>
       </Flex>
+      <br />
+
       <Footer />
     </Box>
   );

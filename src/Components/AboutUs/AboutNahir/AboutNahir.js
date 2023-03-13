@@ -10,6 +10,7 @@ import {
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import profileImg from "./profile.jpeg";
 
 function AboutNahir() {
   const [isLargerThan640] = useMediaQuery("(min-width: 640px)");
@@ -26,7 +27,7 @@ function AboutNahir() {
       <Box>
         <Text
           fontWeight="bold"
-          fontSize={["22px", "24px", "35"]}
+          fontSize={["23px", "24px", "30"]}
           mb="4"
           display={"flex"}
           ml={["-8%", "-8%", "-8%", "-65%", "-72%", "-76%"]}
@@ -34,7 +35,7 @@ function AboutNahir() {
           justifyContent={"center"}
           color={textColor}
         >
-          Acerca de mi
+          ACERCA DE MI
         </Text>
       </Box>
       <Box
@@ -58,19 +59,23 @@ function AboutNahir() {
         )}
 
         <Box
-          w={["120%", "100%", "55%", "45%"]}
+          w={["110%", "100%", "55%", "45%"]}
           display={"grid"}
           justifyContent={"center"}
-          mr={["6%", "5%", "15%", "32%"]}
+          mr={["12%", "5%", "15%", "32%"]}
         >
           <Text
-            fontSize={["12px", "14px", "18px", "17px"]}
+            fontSize={["14px", "16px", "18px", "17px"]}
             fontWeight="bold"
             color={"#446b9c"}
           >
             Nahir Reverdito.
           </Text>
-          <Text fontSize={["12px", "14px", "15px", "16px"]} color={textColor}>
+          <Text
+            fontSize={["13px", "14px", "15px", "16px"]}
+            color={textColor}
+            textAlign={["justify", "justify"]}
+          >
             Profesional apasionada por la selección y atracción de talentos.
             Creo que lo más importante es generar una cálida experiencia tanto
             para el candidato como para la empresa. Licenciada en Recursos
@@ -83,7 +88,7 @@ function AboutNahir() {
           </Text>
         </Box>
         {!isLargerThan640 && (
-          <Box mt="6">
+          <Box mt="6" width={["90%"]} marginLeft={["5%"]}>
             <Image
               borderRadius="full"
               boxSize="150px"
@@ -95,7 +100,7 @@ function AboutNahir() {
       </Box>
       <Flex
         justifyContent={"center"}
-        marginLeft={["0%", "0%", "-3%", "-32%", "-35%", "-35%", "-35%"]}
+        marginLeft={["-8%", "-8%", "-3%", "-32%", "-35%", "-35%", "-35%"]}
       >
         <a
           href="https://www.linkedin.com/in/nahir-reverdito"
