@@ -121,7 +121,7 @@ function Home() {
           <Image
             justifyContent={"center"}
             marginLeft={["2%", "20%", "20%"]}
-            w={["85%", "60%"]}
+            w={["88%", "65%"]}
             src="https://res.cloudinary.com/dc9ofeyv7/image/upload/v1677772329/FORTALECIENDO_LA_MANERA_QUE_CONECTAN_LAS_PERSONAS_Y_LAS_EMPRESAS_1_vvctap.png"
           />
         </Box>

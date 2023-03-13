@@ -33,7 +33,7 @@ function SoyEmpresa() {
         <Box display={["grid", "grid", "flex"]}>
           <Heading
             as="h1"
-            fontSize={["20px", "28px", "36px", "36px"]}
+            fontSize={`clamp(20px, 6vw, 36px)`}
             mb={{ base: 6, md: 6 }}
             mt={["-5%", "5%"]}
             fontFamily="'Montserrat', sans-serif"
@@ -50,7 +50,7 @@ function SoyEmpresa() {
             marginLeft={["0%", "1%"]}
             color={"#446b9c"}
             fontWeight="bold"
-            fontSize={["20px", "28px", "36px", "36px"]}
+            fontSize={`clamp(20px, 6vw, 36px)`}
             fontFamily="'Montserrat', sans-serif"
           >
             PARA EMPRESAS
@@ -61,7 +61,7 @@ function SoyEmpresa() {
             {servicios.map((servicio, index) => (
               <li key={index}>
                 <h3>{servicio.title}</h3>
-                <p fontSize={["10px", "15px", "18px", "18px"]}>
+                <p fontSize={`clamp(13px, 2.5vw, 18px)`}>
                   {servicio.description}
                 </p>
                 <ul fontSize={["13px", "15px", "18px"]}>
