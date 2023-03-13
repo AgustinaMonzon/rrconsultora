@@ -60,13 +60,25 @@ function SoyEmpresa() {
             PARA EMPRESAS
           </Heading>
         </Box>
-        <div className="content">
-         <ul>
+        <div
+          className="content"
+          fontSize={["13px", "15px", "18px"]}
+          textAlign={["justify", "justify"]}
+        >
+          <ul
+            fontSize={["13px", "15px", "18px"]}
+            textAlign={["justify", "justify"]}
+          >
             {servicios.map((servicio, index) => (
-              <li key={index}>
+              <li key={index} textAlign={["justify", "justify"]}>
                 <h3>{servicio.title}</h3>
-                <p>{servicio.description}</p>
-                <ul>
+                <p
+                  fontSize={`clamp(13px, 2.5vw, 18px)`}
+                  textAlign={["justify", "justify"]}
+                >
+                  {servicio.description}
+                </p>
+                <ul fontSize={["13px", "15px", "18px"]}>
                   {servicio.lista.map((descripcion, i) => (
                     <li key={i}>{descripcion}</li>
                   ))}

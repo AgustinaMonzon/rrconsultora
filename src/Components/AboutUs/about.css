@@ -8,7 +8,7 @@
 
 .aboutImg {
   border-radius: 50%;
-  box-shadow: 0px 0px 10px 0px /*  rgb(50, 50, 240)  */  #4b749c ;
+  box-shadow: 0px 0px 10px 0px   #4b749c ;
   transition: transform 0.3s ease-in-out;
   text-align: center;
   margin: 20px;
