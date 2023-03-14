@@ -90,7 +90,7 @@ function AboutUs() {
               aria-label="Contact"
               my={0}
               fontSize={["11px","11px","11px","13px"]}
-              marginLeft={["25%","30%","46%","40%","47%"]}
+              marginLeft={["25%","30%","46%","40%","48%"]}
               size={["xs", "sm", "sm", "sm"]}
             >
               Sabrina Reiris
@@ -117,7 +117,7 @@ function AboutUs() {
               aria-label="Contact"
               my={0}
               fontSize={["8px","11px","11px","13px"]}
-              marginLeft={["15%","20%","30%","30%","31%"]}
+              marginLeft={["15%","20%","30%","30%","32%"]}
               size={["xs", "sm", "sm", "sm"]}
             >
               Nahir Reverdito

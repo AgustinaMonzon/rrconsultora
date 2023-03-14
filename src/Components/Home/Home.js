@@ -129,7 +129,9 @@ function Home() {
         <Link  onClick={handleScrollToAboutUs}>
           <AboutUs />
         </Link>
-        <Box mb={10} mt={20}>
+        <br/>
+        
+        <Box mb={10} mt={[ 20]}>
           <Valores />
         </Box>
         <Box
@@ -143,7 +145,7 @@ function Home() {
             as="h1"
             fontSize={["20px", "22px", "28px", "36px"]}
             mb={{ base: 0, md: 0}}
-            mt={["68%","45%", "0%"]}
+            mt={["68%","45%", "-10%"]}
             font-family="'Montserrat', sans-serif"
             textAlign={"center"}
              marginLeft={["18%", "0%", "0%"]} 
@@ -153,7 +155,7 @@ function Home() {
           <Heading
             as="h1"
             mb={{ base: 0, md: 0 }}
-            mt={["68%","45%", "0%"]}
+            mt={["68%","45%", "-10%"]}
             textAlign={"center"}
             marginLeft={["2%", "1%"]} 
             color={"#446b9c"}
