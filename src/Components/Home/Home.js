@@ -143,7 +143,7 @@ function Home() {
             as="h1"
             fontSize={["20px", "22px", "28px", "36px"]}
             mb={{ base: 0, md: 0}}
-            mt={["63%","45%", "0%"]}
+            mt={["68%","45%", "0%"]}
             font-family="'Montserrat', sans-serif"
             textAlign={"center"}
              marginLeft={["18%", "0%", "0%"]} 
@@ -153,7 +153,7 @@ function Home() {
           <Heading
             as="h1"
             mb={{ base: 0, md: 0 }}
-            mt={["63%","45%", "0%"]}
+            mt={["68%","45%", "0%"]}
             textAlign={"center"}
             marginLeft={["2%", "1%"]} 
             color={"#446b9c"}

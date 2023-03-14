@@ -23,12 +23,10 @@ function Footer() {
         <Text color="black">© All Rights Reserved 2023</Text>
       </Box> */}
       <div className="footer-social">
-        <a href="https://facebook.com/" target="_blank" rel="noreferrer">
+        <a href="https://www.facebook.com/rrconsultoriaa?mibextid=LQQJ4d" target="_blank" rel="noreferrer">
           <FontAwesomeIcon  color={"blue"}  icon={faFacebook} />
         </a>
-        <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon  color={"rgb(47, 47, 245)"}  icon={faTwitter} />
-        </a>
+        
         <a
           href="https://www.instagram.com/rrconsultoria_/"
           target="_blank"
@@ -38,7 +36,7 @@ function Footer() {
               color={"rgb(245, 105, 191)"}  icon={faInstagram} />
         </a>
         <a
-          href="clinkedin.com/company/r-r-consultoria/?viewAsMember=true"
+          href="https://www.linkedin.com/company/r-r-consultoria/?viewAsMember=true"
           target="_blank"
           rel="noreferrer"
         >

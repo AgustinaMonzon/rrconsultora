@@ -37,7 +37,7 @@ function SoyEmpresa() {
           <Heading
             as="h1"
 
-            fontSize={["12px", "28px", "36px"]}
+            fontSize={["20px", "28px", "36px"]}
 
 
             mb={{ base: 6, md: 6 }}
@@ -87,9 +87,10 @@ function SoyEmpresa() {
                 <ul fontSize={["13px", "15px", "18px"]}>
                   {servicio.lista.map((descripcion, i) => (
                     <li key={i}>{descripcion}</li>
-                  ))}
+                    ))}
                 </ul>
                 <Button
+
                   size={["xs", "sm", "md", "md"]}
                   background="linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)"
                   color="#2b2c64"
@@ -103,6 +104,7 @@ function SoyEmpresa() {
                   transition="all 0.3s ease-in-out"
                   onClick={scrollToContact}
                 >
+
                   + MÁS INFO
                 </Button>
               </li>

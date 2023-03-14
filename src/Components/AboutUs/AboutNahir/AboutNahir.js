@@ -87,7 +87,7 @@ function AboutSabrina() {
           </Text>
         </Box>
         {!isLargerThan640 && (
-          <Box mt="6" width={["90%"]} marginLeft={["30%"]}>
+          <Box mt="6" width={["90%"]} marginLeft={["32%"]}>
             <Image
               borderRadius="full"
               boxSize="150px"

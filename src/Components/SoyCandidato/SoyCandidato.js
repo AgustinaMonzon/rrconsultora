@@ -105,6 +105,7 @@ function SoyCandidato() {
                   transition="all 0.3s ease-in-out"
                   onClick={scrollToContact}
                 >
+
                   + MÁS INFO
                 </Button>
               </li>

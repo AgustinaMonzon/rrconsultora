@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Box, Heading, Text, Image } from "@chakra-ui/react";
-import Dropzone from "react-dropzone";
 import swal from "sweetalert";
-import PDFViewer from "pdf-viewer-reactjs";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import "./Contact.css";
-import foto from "./contact-bg2.webp"
+import emailjs from "emailjs-com";
+import foto from "./contact-bg2.webp";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -31,19 +30,6 @@ const Contact = () => {
       ...errors,
       [e.target.name + "Error"]: "",
     });
-  };
-
-  const handleDrop = (acceptedFiles) => {
-    if (acceptedFiles.length === 1) {
-      const pdfFile = acceptedFiles[0];
-      const reader = new FileReader();
-      reader.onload = () => {
-        setFormData({ ...formData, pdf: reader.result });
-      };
-      reader.readAsDataURL(pdfFile);
-    } else {
-      swal("Solo puede subir un archivo PDF", "", "error");
-    }
   };
 
   const validate = () => {
@@ -76,8 +62,33 @@ const Contact = () => {
     const isValid = validate();
 
     if (isValid) {
-      // Send email
-      console.log(formData);
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      };
+
+      emailjs
+        .send(
+          "service_ydvfaic",
+          "template_9kagvt6",
+          templateParams,
+          "o0DaSAmEbrXKeI0ds"
+        )
+        .then((res) => {
+          console.log("Email successfully sent!");
+          swal({
+            text: "Email enviado correctamente",
+            icon: "success",
+          });
+          setFormData({ name: "", email: "", message: "" });
+        })
+        .catch((err) => {
+          console.error("Failed to send email:", err);
+          swal({
+            text: "Falló el envío de email",
+          });
+        });
     }
   };
 
@@ -87,28 +98,29 @@ const Contact = () => {
       <div className="contact-container">
         <form onSubmit={handleSubmit}>
           <div className="contact">
-          <Box>
-          <Heading
-          as="h1"
-          size={{ base:"md", md: "xl" }}
-          mb={{ base: 6, md: 8 }}
-          font-family="'Montserrat', sans-serif"
-          textAlign={"center"}
-          mt={{ base: 8, md: 0 }}
-          ml={["0%","0%" ]}
-        >
-          CONTÁCTANOS
-        </Heading>
-  </Box>
+            <Box>
+              <Heading
+                as="h1"
+                size={{ base: "md", md: "xl" }}
+                mb={{ base: 6, md: 8 }}
+                font-family="'Montserrat', sans-serif"
+                textAlign={"center"}
+                mt={{ base: 8, md: 0 }}
+                ml={["0%", "0%"]}
+              >
+                CONTÁCTANOS
+              </Heading>
+            </Box>
+
             <Image
-                src={foto}
-                w={["80%", "60%"]}
-                height={['70px','90px','110px','150px']}
-                alt="Foto contacto"
-                justifyContent="center"
-                marginBottom={'2%'}
-                marginLeft={["10%","20%"]}
-              />
+              src={foto}
+              w={["80%", "60%"]}
+              height={["70px", "90px", "110px", "150px"]}
+              alt="Foto contacto"
+              justifyContent="center"
+              marginBottom={"2%"}
+              marginLeft={["10%", "20%"]}
+            />
             <div className="form">
               <input
                 type="text"
@@ -142,7 +154,6 @@ const Contact = () => {
               {!formData.message && errors.messageError && (
                 <span className="form-error">{errors.messageError}</span>
               )}
-              
             </div>
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
