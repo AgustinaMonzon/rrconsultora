@@ -7,17 +7,18 @@ import { Heading, Box, Button } from "@chakra-ui/react";
 function SoyEmpresa() {
   const servicios = [
     {
-      title: "Atracción de talentos",
+      title: ". Atracción de talentos",
       description:
         "A través de una búsqueda excepcional encontramos el mejor talento para la organización requerida. Esto lo hacemos mediante  entrevistas con modelos flexibles que nos permiten adecuarnos no solo a las necesidades de nuestros clientes sino también a las de nuestros candidatos, teniendo en cuenta el perfil que se requiere cubrir.",
 
       lista: [
-        "Definición y elaboración del perfil en conjunto.​",
-        "Análisis del puesto a cubrir.",
-        "Relevamiento personalizado para conocer la cultura propia de cada empresa.",
-        "Portales de  búsqueda: base de datos propia, publicación de avisos en diversos medios masivos de comunicación, LinkedIn Recruiter.",
-        "Entrevistas para determinar el grado de alineación del candidato a las competencias requeridas.",
-        "Acompañamiento y soporte hasta la incorporación.",
+        "",
+        "° Definición y elaboración del perfil en conjunto.​",
+        "° Análisis del puesto a cubrir.",
+        "° Relevamiento personalizado para conocer la cultura propia de cada empresa.",
+        "° Portales de  búsqueda: base de datos propia, publicación de avisos en diversos medios masivos de comunicación, LinkedIn Recruiter.",
+        "° Entrevistas para determinar el grado de alineación del candidato a las competencias requeridas.",
+        "° Acompañamiento y soporte hasta la incorporación.",
       ],
     },
   ];
