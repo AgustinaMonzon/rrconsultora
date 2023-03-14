@@ -78,7 +78,7 @@ function SoyEmpresa() {
                 textAlign={["justify", "justify"]}
                 fontSize={["12px", "14px", "13px", "18px"]}
               >
-              <h2 style={{ fontSize: "24px", color: "#4b749c" }}>{servicio.title}</h2>
+              <h2 style={{ fontSize: "26px", color: "#4b749c",  font-weight=" bold" }}>{servicio.title}</h2>
                 <p
                   fontSize={`clamp(10px, 2.5vw, 18px)`}
                   textAlign={["justify", "justify"]}
