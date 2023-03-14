@@ -92,34 +92,20 @@ function SoyCandidato() {
                   ))}
                 </ul>
                 <Button
-                    size={["xs", "sm","md","md"]}
-                    background=
-                      "linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)"
-                    color= "#2b2c64"
-                    border= "2px solid ##e9f8fa"
-                    borderRadius= "5px"
-                    padding= "10px 20px"
-                    fontWeight= "bold"
-                    fontSize= "1rem"
-                    cursor= "pointer"
-                    boxShadow= "0px 4px 4px rgba(0, 0, 0, 0.25)"
-                    transition= "all 0.3s ease-in-out"
-                    marginLeft={["12%","3.5%"]}
-                    onClick={scrollToContact}
-                 /*  style={{
-                    background:
-                      "linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)",
-                    color: "#2b2c64",
-                    border: "2px solid ##e9f8fa",
-                    borderRadius: "10px",
-                    padding: "10px 20px",
-                    fontWeight: "bold",
-                    fontSize: "1rem",
-                    cursor: "pointer",
-                    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-                    transition: "all 0.3s ease-in-out",
-                  }} */
-                  >
+                  size={["xs", "sm", "md", "md"]}
+                  background="linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)"
+                  color="#2b2c64"
+                  border="2px solid ##e9f8fa"
+                  borderRadius="5px"
+                  padding="10px 20px"
+                  fontWeight="bold"
+                  fontSize="1rem"
+                  cursor="pointer"
+                  boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
+                  transition="all 0.3s ease-in-out"
+                  onClick={scrollToContact}
+                >
+
                   + MÁS INFO
                 </Button>
               </li>
