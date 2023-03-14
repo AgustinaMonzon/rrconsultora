@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../NavBar/NavBar";
 import Contact from "../Contact/Contact";
-import { Box, Heading, Button } from "@chakra-ui/react";
+import { Box, Heading, Button,  } from "@chakra-ui/react";
 import "./SoyCandidato.css";
 
 function SoyCandidato() {
@@ -12,36 +12,39 @@ function SoyCandidato() {
 
   const servicios = [
     {
-      title: "Asesoría Laboral",
+      title: ". Asesoría Laboral",
       description:
         "La Asesoría Laboral está dirigida tanto para aquellas personas que no tienen trabajo  como para quienes tienen la intención de cambiar o expandirse a un nuevo rubro en el mercado laboral.",
       lista: [
-        "Nos encargamos de entrenarte para tu próxima entrevista de empleo.",
-        "Mediante este servicio te preparamos para diversas modalidades de entrevistas, con el objetivo de aumentar tus posibilidades de avanzar en los procesos de selección.​",
-        "Te ayudamos a mejorar tus habilidades a la hora de responder las preguntas en tus entrevistas laborales.",
-        "Te brindamos los consejos y herramientas necesarias para que puedas desenvolverte de forma eficiente y cuales son las preguntas frecuentes que pueden hacerte.",
+        "",
+        "° Nos encargamos de entrenarte para tu próxima entrevista de empleo.",
+        "° Mediante este servicio te preparamos para diversas modalidades de entrevistas, con el objetivo de aumentar tus posibilidades de avanzar en los procesos de selección.​",
+        "° Te ayudamos a mejorar tus habilidades a la hora de responder las preguntas en tus entrevistas laborales.",
+        "° Te brindamos los consejos y herramientas necesarias para que puedas desenvolverte de forma eficiente y cuales son las preguntas frecuentes que pueden hacerte.",
       ],
     },
     {
-      title: "Confección de CVs",
+      title: ". Confección de CVs",
       description:
         "Creamos tu CV con análisis, asesoría, estrategia, redacción profesional y diseño gráfico.",
       lista: [
-        "Confeccionamos tu CV desde cero en un servicio online completo.",
-        "Trabajamos para vos con absoluta dedicación y compromiso hacia tus objetivos laborales.",
-        "Cómo Consultora de Recursos Humanos, hacemos tu CV eficaz, atractivo y profesional para lograr el éxito en las entrevistas laborales, según las últimas tendencias y las mejores prácticas.",
+        "",
+        "° Confeccionamos tu CV desde cero en un servicio online completo.",
+        "° Trabajamos para vos con absoluta dedicación y compromiso hacia tus objetivos laborales.",
+        "° Cómo Consultora de Recursos Humanos, hacemos tu CV eficaz, atractivo y profesional para lograr el éxito en las entrevistas laborales, según las últimas tendencias y las mejores prácticas.",
       ],
     },
 
     {
-      title: "Servicio de armado de LinkedIn",
+      title: ". Servicio de armado de LinkedIn",
       description:
         "Nos encargamos de confeccionar y diseñar tu perfil de Linkedin de acuerdo a tu experiencia y objetivos profesionales.",
       lista: [
-        "Linkedin es la mayor red profesional del mundo por excelencia, por eso, es indispensable que tengas tu perfil actualizado para conseguir las mejores oportunidades de empleo.",
-        "Confeccionamos tu Linkedin desde cero en un servicio online completo.",
-        "Trabajamos para vos con absoluta dedicación y compromiso hacia tus objetivos laborales.",
-        "Hacemos que tu perfil de Linkedin luzca atractivo y profesional para lograr el éxito en tus búsquedas laborales, teniendo en cuenta las últimas tendencias y las mejores prácticas",
+        "",
+        "° Linkedin es la mayor red profesional del mundo por excelencia, por eso, es indispensable que tengas tu perfil actualizado para conseguir las mejores oportunidades de empleo.",
+        "° Confeccionamos tu Linkedin desde cero en un servicio online completo.",
+        "° Trabajamos para vos con absoluta dedicación y compromiso hacia tus objetivos laborales.",
+        "° Hacemos que tu perfil de Linkedin luzca atractivo y profesional para lograr el éxito en tus búsquedas laborales, teniendo en cuenta las últimas tendencias y las mejores prácticas",
       ],
     },
   ];
@@ -80,7 +83,7 @@ function SoyCandidato() {
           <ul>
             {servicios.map((servicio, index) => (
               <li key={index}>
-                <h3>{servicio.title}</h3>
+                <h3 fontSize={["13px", "14px", "13px", "18px"]} fontWeight={"bold"}>{servicio.title}</h3>
                 <p fontSize={["13px", "14px", "13px", "18px"]}>
                   {servicio.description}
                 </p>
