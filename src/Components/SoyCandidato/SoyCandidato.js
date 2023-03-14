@@ -81,10 +81,14 @@ function SoyCandidato() {
             {servicios.map((servicio, index) => (
               <li key={index}>
                 <h3>{servicio.title}</h3>
-                <p>{servicio.description}</p>
+                <p fontSize={["13px", "14px", "13px", "18px"]}>
+                  {servicio.description}
+                </p>
                 <ul>
                   {servicio.lista.map((descripcion, i) => (
-                    <li key={i}>{descripcion}</li>
+                    <li key={i} fontSize={["13px", "14px", "13px", "18px"]}>
+                      {descripcion}
+                    </li>
                   ))}
                 </ul>
                 <Button
