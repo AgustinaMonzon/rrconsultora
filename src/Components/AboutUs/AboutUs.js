@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Text, Image, useColorModeValue } from "@chakra-ui/react";
+import { Box, Heading, Text, Image, useColorModeValue, Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import "./about.css";
 import profileImg from "./profile.jpeg";
@@ -70,7 +70,7 @@ function AboutUs() {
                  marginLeft={["20%","28%","25%","40%"]} 
                  marginTop={["-5%","15%","0%"]}
               />
-              <Text
+              {/* <Text
                 as="h3"
                 font-family="'Montserrat', sans-serif"
                 fontSize={["11px","14.4px","13.5px", "16px"]}
@@ -81,7 +81,20 @@ function AboutUs() {
                 marginBottom={["15%","-10%","0%"]}
               >
                 SABRINA REIRIS
-              </Text>
+              </Text> */}
+                <Button
+              as="a"
+              color={"black"}
+              backgroundColor={"rgba(163, 214, 248, 0.849)"}
+              _hover={{ bg: "white" }}
+              aria-label="Contact"
+              my={0}
+              fontSize={["11px","11px","11px","13px"]}
+              marginLeft={["25%","30%","46%","40%","47%"]}
+              size={["xs", "sm", "sm", "sm"]}
+            >
+              Sabrina Reiris
+            </Button>
             </Link>
           </Box>
           <Box className="aboutImgContainer" ml={[0, 4]}>
@@ -96,17 +109,19 @@ function AboutUs() {
                 marginLeft={["13%","20%","25%"]} 
                 marginTop={["-5%","15%","0%"]}
               />
-              <Text
-                font-family="'Montserrat', sans-serif"
-                as="h3"
-                fontSize={["10.5px","13.5px","13.5px", "16px"]}
-                className="aboutName"
-                textAlign="center"
-                marginRight={["8%","10%","0%", "14%"]}
-                color={textColor}
-              >
-                NAHIR REVERDITO
-              </Text>
+                     <Button
+              as="a"
+              color={"black"}
+              backgroundColor={"rgba(163, 214, 248, 0.849)"}
+              _hover={{ bg: "white" }}
+              aria-label="Contact"
+              my={0}
+              fontSize={["8px","11px","11px","13px"]}
+              marginLeft={["15%","20%","30%","30%","31%"]}
+              size={["xs", "sm", "sm", "sm"]}
+            >
+              Nahir Reverdito
+            </Button>
             </Link>
           </Box>
         </Box>

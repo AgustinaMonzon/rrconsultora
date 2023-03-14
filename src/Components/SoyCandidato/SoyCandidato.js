@@ -72,9 +72,9 @@ function SoyCandidato() {
             textAlign={"center"}
             marginLeft={["2%", "1%"]}
             color={"#446b9c"}
-            font-weight=" bold"
+            fontWeight=" bold"
             fontSize={["20px", "28px", "36px"]}
-            font-family="'Montserrat', sans-serif"
+            fontfamily="'Montserrat', sans-serif"
           >
             CANDIDATO
           </Heading>
@@ -83,7 +83,7 @@ function SoyCandidato() {
           <ul>
             {servicios.map((servicio, index) => (
               <li key={index}>
-              <h2 style={{ fontSize: "26px", color: "#4b749c",  font-weight=" bold" }}>{servicio.title}</h2>
+              <h2 style={{ fontSize: "22px", color: "#4b749c",  fontWeight:" bold" }}>{servicio.title}</h2>
                 <p fontSize={["13px", "14px", "13px", "18px"]}>
                   {servicio.description}
                 </p>

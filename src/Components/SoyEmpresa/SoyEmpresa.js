@@ -34,13 +34,11 @@ function SoyEmpresa() {
       <NavBar />
 
       <div className="container">
+        
         <Box display={["grid", "grid", "flex"]}>
           <Heading
             as="h1"
-
             fontSize={["20px", "28px", "36px"]}
-
-
             mb={{ base: 6, md: 6 }}
             mt={["-5%", "5%"]}
             font-family="'Montserrat', sans-serif"
@@ -56,11 +54,11 @@ function SoyEmpresa() {
             textAlign={"center"}
             marginLeft={["0%", "1%"]}
             color={"#446b9c"}
-            font-weight=" bold"
+            fontWeight=" bold"
             fontSize={["20px", "28px", "36px"]}
-            font-family="'Montserrat', sans-serif"
+            fontfamily="'Montserrat', sans-serif"
           >
-            PARA EMPRESAS
+              PARA EMPRESAS
           </Heading>
         </Box>
         <div
@@ -78,7 +76,7 @@ function SoyEmpresa() {
                 textAlign={["justify", "justify"]}
                 fontSize={["12px", "14px", "13px", "18px"]}
               >
-              <h2 style={{ fontSize: "26px", color: "#4b749c",  font-weight=" bold" }}>{servicio.title}</h2>
+              <h2 style={{ fontSize: "22px", color: "#4b749c",  fontWeight:" bold" }}>{servicio.title}</h2>
                 <p
                   fontSize={`clamp(10px, 2.5vw, 18px)`}
                   textAlign={["justify", "justify"]}
