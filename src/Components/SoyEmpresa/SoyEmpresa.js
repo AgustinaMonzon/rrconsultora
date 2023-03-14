@@ -36,10 +36,7 @@ function SoyEmpresa() {
         <Box display={["grid", "grid", "flex"]}>
           <Heading
             as="h1"
-
             fontSize={["20px", "28px", "36px"]}
-
-
             mb={{ base: 6, md: 6 }}
             mt={["-5%", "5%"]}
             font-family="'Montserrat', sans-serif"
@@ -77,7 +74,7 @@ function SoyEmpresa() {
                 textAlign={["justify", "justify"]}
                 fontSize={["12px", "14px", "13px", "18px"]}
               >
-                <h3>{servicio.title}</h3>
+                <h2 style={{ fontSize: "22px" }}>{servicio.title}</h2>
                 <p
                   fontSize={`clamp(10px, 2.5vw, 18px)`}
                   textAlign={["justify", "justify"]}
@@ -87,10 +84,9 @@ function SoyEmpresa() {
                 <ul fontSize={["13px", "15px", "18px"]}>
                   {servicio.lista.map((descripcion, i) => (
                     <li key={i}>{descripcion}</li>
-                    ))}
+                  ))}
                 </ul>
                 <Button
-
                   size={["xs", "sm", "md", "md"]}
                   background="linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)"
                   color="#2b2c64"
@@ -104,7 +100,6 @@ function SoyEmpresa() {
                   transition="all 0.3s ease-in-out"
                   onClick={scrollToContact}
                 >
-
                   + MÁS INFO
                 </Button>
               </li>

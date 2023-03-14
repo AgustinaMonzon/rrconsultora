@@ -30,11 +30,11 @@ li {
   margin-bottom: 40px;
 }
 
-h3 {
-  font-size: 1.8rem;
+h2 {
   margin-bottom: 10px;
   color: #4b749c;
   list-style: none;
+  background-color: #4b749c01;
 }
 
 p {

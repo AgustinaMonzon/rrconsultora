@@ -80,7 +80,7 @@ function SoyCandidato() {
           <ul>
             {servicios.map((servicio, index) => (
               <li key={index}>
-                <h3>{servicio.title}</h3>
+                <h2 style={{ fontSize: "22px" }}>{servicio.title}</h2>
                 <p fontSize={["13px", "14px", "13px", "18px"]}>
                   {servicio.description}
                 </p>
@@ -105,7 +105,6 @@ function SoyCandidato() {
                   transition="all 0.3s ease-in-out"
                   onClick={scrollToContact}
                 >
-
                   + MÁS INFO
                 </Button>
               </li>
