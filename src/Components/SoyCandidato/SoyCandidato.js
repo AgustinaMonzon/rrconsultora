@@ -83,7 +83,7 @@ function SoyCandidato() {
           <ul>
             {servicios.map((servicio, index) => (
               <li key={index}>
-              <h2 style={{ fontSize: "22px" }}>{servicio.title}</h2>
+              <h2 style={{ fontSize: "22px", color: "#4b749c" }}>{servicio.title}</h2>
                 <p fontSize={["13px", "14px", "13px", "18px"]}>
                   {servicio.description}
                 </p>
