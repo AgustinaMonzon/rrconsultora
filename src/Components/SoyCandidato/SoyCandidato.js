@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../NavBar/NavBar";
 import Contact from "../Contact/Contact";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Button } from "@chakra-ui/react";
 import "./SoyCandidato.css";
 
 function SoyCandidato() {
@@ -50,15 +50,15 @@ function SoyCandidato() {
       <Navbar />
 
       <div className="container">
-      <Box display={["flex"]}>
+        <Box display={["flex"]}>
           <Heading
             as="h1"
             fontSize={["20px", "28px", "36px"]}
-            mb={{ base: 6, md: 6}}
+            mb={{ base: 6, md: 6 }}
             mt={["-5%", "5%"]}
             font-family="'Montserrat', sans-serif"
             textAlign={"center"}
-             marginLeft={["0%", "0%", "0%"]} 
+            marginLeft={["0%", "0%", "0%"]}
           >
             SOY
           </Heading>
@@ -67,7 +67,7 @@ function SoyCandidato() {
             mb={{ base: 7, md: 8 }}
             mt={["-5%", "5%"]}
             textAlign={"center"}
-            marginLeft={["2%", "1%"]} 
+            marginLeft={["2%", "1%"]}
             color={"#446b9c"}
             font-weight=" bold"
             fontSize={["20px", "28px", "36px"]}
@@ -77,7 +77,6 @@ function SoyCandidato() {
           </Heading>
         </Box>
         <div className="content">
-         
           <ul>
             {servicios.map((servicio, index) => (
               <li key={index}>
@@ -88,24 +87,22 @@ function SoyCandidato() {
                     <li key={i}>{descripcion}</li>
                   ))}
                 </ul>
-                <button
+                <Button
+                  size={["xs", "sm", "md", "md"]}
+                  background="linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)"
+                  color="#2b2c64"
+                  border="2px solid ##e9f8fa"
+                  borderRadius="5px"
+                  padding="10px 20px"
+                  fontWeight="bold"
+                  fontSize="1rem"
+                  cursor="pointer"
+                  boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
+                  transition="all 0.3s ease-in-out"
                   onClick={scrollToContact}
-                  style={{
-                    background:
-                      "linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)",
-                    color: "#2b2c64",
-                    border: "2px solid ##e9f8fa",
-                    borderRadius: "10px",
-                    padding: "10px 20px",
-                    fontWeight: "bold",
-                    fontSize: "1rem",
-                    cursor: "pointer",
-                    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-                    transition: "all 0.3s ease-in-out",
-                  }}
                 >
                   + MÁS INFO
-                </button>
+                </Button>
               </li>
             ))}
           </ul>
