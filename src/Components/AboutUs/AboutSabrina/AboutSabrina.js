@@ -86,7 +86,7 @@ function AboutSabrina() {
           </Text>
         </Box>
         {!isLargerThan640 && (
-          <Box mt="6" width={["90%"]}  marginLeft={["30%"]}  justifyContent={"center"}>
+          <Box mt="6" width={["90%"]}  marginLeft={["32%"]}  justifyContent={"center"}>
             <Image
               borderRadius="full"
               boxSize="150px"

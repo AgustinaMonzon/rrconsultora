@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./SoyEmpresa.css";
 import NavBar from "../NavBar/NavBar";
 import Contact from "../Contact/Contact";
-import { Heading, Box } from "@chakra-ui/react";
+import { Heading, Box, Button } from "@chakra-ui/react";
 
 function SoyEmpresa() {
   const servicios = [
@@ -37,7 +37,7 @@ function SoyEmpresa() {
           <Heading
             as="h1"
 
-            fontSize={["12px", "28px", "36px"]}
+            fontSize={["20px", "28px", "36px"]}
 
 
             mb={{ base: 6, md: 6 }}
@@ -87,11 +87,24 @@ function SoyEmpresa() {
                 <ul fontSize={["13px", "15px", "18px"]}>
                   {servicio.lista.map((descripcion, i) => (
                     <li key={i}>{descripcion}</li>
-                  ))}
+                    ))}
                 </ul>
-                <button
-                  onClick={scrollToContact}
-                  style={{
+                <Button
+                    size={["xs", "sm","md","md"]}
+                    background=
+                      "linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)"
+                    color= "#2b2c64"
+                    border= "2px solid ##e9f8fa"
+                    borderRadius= "5px"
+                    padding= "10px 20px"
+                    fontWeight= "bold"
+                    fontSize= "1rem"
+                    cursor= "pointer"
+                    boxShadow= "0px 4px 4px rgba(0, 0, 0, 0.25)"
+                    transition= "all 0.3s ease-in-out"
+                    marginLeft={["12%","3.5%"]}
+                    onClick={scrollToContact}
+                 /*  style={{
                     background:
                       "linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)",
                     color: "#2b2c64",
@@ -103,10 +116,10 @@ function SoyEmpresa() {
                     cursor: "pointer",
                     boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                     transition: "all 0.3s ease-in-out",
-                  }}
-                >
+                  }} */
+                  >
                   + MÁS INFO
-                </button>
+                </Button>
               </li>
             ))}
           </ul>

@@ -191,7 +191,7 @@ export default function NavBar() {
         {/* Mobile */}
         <IconButton
           aria-label="Open Menu"
-          size="xs"
+          size="sm"
           marginLeft={["20px", "45px", "280px"]}
           mr={2}
           icon={<HamburgerIcon />}
@@ -199,7 +199,7 @@ export default function NavBar() {
           display={["flex", "flex", "none", "none"]}
           color="black"
         />
-        <Switch color="black" isChecked={isDark} marginLeft={["0%","4%","3%","5%","8%","7%"]} onChange={toggleColorMode} />
+        <Switch color="black" isChecked={isDark} marginLeft={["4%","4%","3%","5%","8%","7%"]} onChange={toggleColorMode} />
       </Flex>
 
       {/* Mobile Content */}

@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../NavBar/NavBar";
 import Contact from "../Contact/Contact";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Button } from "@chakra-ui/react";
 import "./SoyCandidato.css";
 
 function SoyCandidato() {
@@ -91,9 +91,22 @@ function SoyCandidato() {
                     </li>
                   ))}
                 </ul>
-                <button
-                  onClick={scrollToContact}
-                  style={{
+                <Button
+                    size={["xs", "sm","md","md"]}
+                    background=
+                      "linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)"
+                    color= "#2b2c64"
+                    border= "2px solid ##e9f8fa"
+                    borderRadius= "5px"
+                    padding= "10px 20px"
+                    fontWeight= "bold"
+                    fontSize= "1rem"
+                    cursor= "pointer"
+                    boxShadow= "0px 4px 4px rgba(0, 0, 0, 0.25)"
+                    transition= "all 0.3s ease-in-out"
+                    marginLeft={["12%","3.5%"]}
+                    onClick={scrollToContact}
+                 /*  style={{
                     background:
                       "linear-gradient(135deg, #4b749c, #92dde8, #e9f8fa)",
                     color: "#2b2c64",
@@ -105,10 +118,10 @@ function SoyCandidato() {
                     cursor: "pointer",
                     boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                     transition: "all 0.3s ease-in-out",
-                  }}
-                >
+                  }} */
+                  >
                   + MÁS INFO
-                </button>
+                </Button>
               </li>
             ))}
           </ul>
