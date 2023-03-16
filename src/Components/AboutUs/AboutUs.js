@@ -25,7 +25,7 @@ function AboutUs() {
             textAlign={"center"}
              marginLeft={["21%", "0%", "0%"]} 
           >
-            ¿QUIENES
+            ¿QUIÉNES
           </Heading>
           <Heading
             as="h1"

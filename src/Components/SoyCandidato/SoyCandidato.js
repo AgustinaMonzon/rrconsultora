@@ -31,7 +31,7 @@ function SoyCandidato() {
         "",
         "° Confeccionamos tu CV desde cero en un servicio online completo.",
         "° Trabajamos para vos con absoluta dedicación y compromiso hacia tus objetivos laborales.",
-        "° Cómo Consultora de Recursos Humanos, hacemos tu CV eficaz, atractivo y profesional para lograr el éxito en las entrevistas laborales, según las últimas tendencias y las mejores prácticas.",
+        "° Como Consultora de Recursos Humanos, hacemos tu CV eficaz, atractivo y profesional para lograr el éxito en las entrevistas laborales, según las últimas tendencias y las mejores prácticas.",
       ],
     },
 
