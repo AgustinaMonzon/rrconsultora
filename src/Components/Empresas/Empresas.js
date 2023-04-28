@@ -79,10 +79,31 @@ function CarrouselEmpresas() {
       link: "https://pki.boxcustodia.com/",
     },
     {
-      url: "https://res.cloudinary.com/dmuudt7dt/image/upload/v1678476045/Dise%C3%B1o_sin_t%C3%ADtulo_38_fntzr7.png",
-      alt: "FAMIQ",
-      link: "https://www.famiq.com.ar/",
+      url: "https://res.cloudinary.com/dmuudt7dt/image/upload/v1682691495/Dise%C3%B1o_sin_t%C3%ADtulo_57_sp8juq.png",
+      alt: "LATAM",
+      link: "https://latam.pg.com/",
     },
+      {
+      url: "https://res.cloudinary.com/dmuudt7dt/image/upload/v1682691495/Dise%C3%B1o_sin_t%C3%ADtulo_58_v0lmbf.png",
+      alt: "TOYOTA",
+      link: "https://www.toyota.com.ar/",
+    },
+      {
+      url: "https://res.cloudinary.com/dmuudt7dt/image/upload/v1682691495/Dise%C3%B1o_sin_t%C3%ADtulo_56_fnz85h.png",
+      alt: "LOGÍSTICA MILO",
+      link: "https://www.logisticamilo.com.ar/",
+    },
+      {
+      url: "https://res.cloudinary.com/dmuudt7dt/image/upload/v1682691495/Dise%C3%B1o_sin_t%C3%ADtulo_55_xw0box.png",
+      alt: "HANDICAP DEPORTES",
+      link: "https://www.handicapdeportes.com.ar/",
+    },
+     {
+      url: "https://res.cloudinary.com/dmuudt7dt/image/upload/v1682691495/Dise%C3%B1o_sin_t%C3%ADtulo_54_-_copia_rq2jgg.png",
+      alt: "OSITO AZUL",
+      link: "https://www.ositoazul.com.ar/",
+    }
+   
   ];
 
   const settings = {
